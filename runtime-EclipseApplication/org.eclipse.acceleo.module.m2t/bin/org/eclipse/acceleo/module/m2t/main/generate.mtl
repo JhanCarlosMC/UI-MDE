@@ -1,0 +1,56 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generate.
+ */]
+[module generate('http://uidiagram')]
+
+
+[**
+ * The documentation of the template generateElement.
+ * @param anUserInterface
+ */]
+[template public generateElement(anUserInterface : UserInterface)]
+[comment @main/]
+[file (anUserInterface.name+'.html', false, 'UTF-8')]
+
+
+[/file]
+[/template]
+
+[template public generateCodeWidgets(anUserInterface : UserInterface)]
+[for(widget : ModelElement | lstModelElements)]
+[if (widget.oclIsKindOf(GraphicalIndividual))]
+[generateIndividualElement(widget)/]
+[/if]
+[if (widget.oclIsKindOf(GraphicalContainer))]
+
+[/if]
+[/for]
+[/template]
+
+[template public generateGraphicalContainer(anGraphicalContainer : ModelElement)]
+[if (anGraphicalContainer.oclIsKindOf(Container)) ]
+    <div>  
+[for (widget : ModelElement | anGraphicalContainer.oclAsType(GraphicalContainer))]
+[if (widget.oclIsKindOf(GraphicalIndividual))]
+[generateIndividualElement(widget)/]
+[/if]
+[if (widget.oclIsKindOf(GraphicalContainer))]
+[generateGraphicalContainer(widget)/]
+[/if]
+[/for]
+    </div>
+[/if]
+[/template]
+
+[template public generateIndividualElement(anIndividualElement : ModelElement)]
+[if (anIndividualElement.oclIsKindOf(Label))]
+  <label for="[anIndividualElement.title/]">[anIndividualElement.title/]</label>
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(TextInput))]
+    <input type="[anIndividualElement.title/]" placeholder="[anIndividualElement.title/]"></input>
+[/if]
+
+
+[/template]

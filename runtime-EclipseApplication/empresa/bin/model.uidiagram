@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uidiagram:UI_Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uidiagram="http://uidiagram">
+  <listUserInterface name="Registro">
+    <lstModelElements xsi:type="uidiagram:Label" name="Nombre:"/>
+    <lstModelElements xsi:type="uidiagram:TextInput" name="nombre"/>
+    <lstModelElements xsi:type="uidiagram:Label" name="Cedula:"/>
+    <lstModelElements xsi:type="uidiagram:TextInput" name="cedula"/>
+    <lstModelElements xsi:type="uidiagram:Label" name="Apellido:"/>
+    <lstModelElements xsi:type="uidiagram:TextInput" name="apellido"/>
+    <lstModelElements xsi:type="uidiagram:Button" name="Registrar"/>
+  </listUserInterface>
+</uidiagram:UI_Diagram>
