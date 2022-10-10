@@ -136,6 +136,9 @@ public class UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart exten
 			if (type == UidiagramElementTypes.TreeView_3030) {
 				return this;
 			}
+			if (type == UidiagramElementTypes.Column_3032) {
+				return this;
+			}
 			return getParent().getTargetEditPart(request);
 		}
 		if (request instanceof CreateUnspecifiedTypeConnectionRequest) {

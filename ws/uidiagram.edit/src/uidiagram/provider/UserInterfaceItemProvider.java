@@ -70,10 +70,12 @@ public class UserInterfaceItemProvider
 			addPositionXPropertyDescriptor(object);
 			addPositionYPropertyDescriptor(object);
 			addWidthPropertyDescriptor(object);
-			addHeigthPropertyDescriptor(object);
+			addHeightPropertyDescriptor(object);
 			addBackgroundColorPropertyDescriptor(object);
 			addTitleFontPropertyDescriptor(object);
 			addTitleFontSizePropertyDescriptor(object);
+			addPathImagePropertyDescriptor(object);
+			addStylePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -183,7 +185,7 @@ public class UserInterfaceItemProvider
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -205,7 +207,7 @@ public class UserInterfaceItemProvider
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -227,29 +229,29 @@ public class UserInterfaceItemProvider
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
 
 	/**
-	 * This adds a property descriptor for the Heigth feature.
+	 * This adds a property descriptor for the Height feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addHeigthPropertyDescriptor(Object object) {
+	protected void addHeightPropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_UserInterface_heigth_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_UserInterface_heigth_feature", "_UI_UserInterface_type"),
-				 UidiagramPackage.Literals.USER_INTERFACE__HEIGTH,
+				 getString("_UI_UserInterface_height_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_UserInterface_height_feature", "_UI_UserInterface_type"),
+				 UidiagramPackage.Literals.USER_INTERFACE__HEIGHT,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -312,6 +314,50 @@ public class UserInterfaceItemProvider
 				 getString("_UI_UserInterface_titleFontSize_feature"),
 				 getString("_UI_PropertyDescriptor_description", "_UI_UserInterface_titleFontSize_feature", "_UI_UserInterface_type"),
 				 UidiagramPackage.Literals.USER_INTERFACE__TITLE_FONT_SIZE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Path Image feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addPathImagePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_UserInterface_pathImage_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_UserInterface_pathImage_feature", "_UI_UserInterface_type"),
+				 UidiagramPackage.Literals.USER_INTERFACE__PATH_IMAGE,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Style feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addStylePropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_UserInterface_style_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_UserInterface_style_feature", "_UI_UserInterface_type"),
+				 UidiagramPackage.Literals.USER_INTERFACE__STYLE,
 				 true,
 				 false,
 				 false,
@@ -395,10 +441,12 @@ public class UserInterfaceItemProvider
 			case UidiagramPackage.USER_INTERFACE__POSITION_X:
 			case UidiagramPackage.USER_INTERFACE__POSITION_Y:
 			case UidiagramPackage.USER_INTERFACE__WIDTH:
-			case UidiagramPackage.USER_INTERFACE__HEIGTH:
+			case UidiagramPackage.USER_INTERFACE__HEIGHT:
 			case UidiagramPackage.USER_INTERFACE__BACKGROUND_COLOR:
 			case UidiagramPackage.USER_INTERFACE__TITLE_FONT:
 			case UidiagramPackage.USER_INTERFACE__TITLE_FONT_SIZE:
+			case UidiagramPackage.USER_INTERFACE__PATH_IMAGE:
+			case UidiagramPackage.USER_INTERFACE__STYLE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 			case UidiagramPackage.USER_INTERFACE__LST_MODEL_ELEMENTS:
@@ -508,6 +556,11 @@ public class UserInterfaceItemProvider
 			(createChildParameter
 				(UidiagramPackage.Literals.USER_INTERFACE__LST_MODEL_ELEMENTS,
 				 UidiagramFactory.eINSTANCE.createTreeView()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UidiagramPackage.Literals.USER_INTERFACE__LST_MODEL_ELEMENTS,
+				 UidiagramFactory.eINSTANCE.createColumn()));
 	}
 
 	/**

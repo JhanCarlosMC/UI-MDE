@@ -26,10 +26,12 @@ import uidiagram.UidiagramPackage;
  *   <li>{@link uidiagram.impl.ModelElementImpl#getPositionX <em>Position X</em>}</li>
  *   <li>{@link uidiagram.impl.ModelElementImpl#getPositionY <em>Position Y</em>}</li>
  *   <li>{@link uidiagram.impl.ModelElementImpl#getWidth <em>Width</em>}</li>
- *   <li>{@link uidiagram.impl.ModelElementImpl#getHeigth <em>Heigth</em>}</li>
+ *   <li>{@link uidiagram.impl.ModelElementImpl#getHeight <em>Height</em>}</li>
  *   <li>{@link uidiagram.impl.ModelElementImpl#getBackgroundColor <em>Background Color</em>}</li>
  *   <li>{@link uidiagram.impl.ModelElementImpl#getTitleFont <em>Title Font</em>}</li>
  *   <li>{@link uidiagram.impl.ModelElementImpl#getTitleFontSize <em>Title Font Size</em>}</li>
+ *   <li>{@link uidiagram.impl.ModelElementImpl#getPathImage <em>Path Image</em>}</li>
+ *   <li>{@link uidiagram.impl.ModelElementImpl#getStyle <em>Style</em>}</li>
  * </ul>
  *
  * @generated
@@ -103,7 +105,7 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String POSITION_X_EDEFAULT = null;
+	protected static final int POSITION_X_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getPositionX() <em>Position X</em>}' attribute.
@@ -113,7 +115,7 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * @generated
 	 * @ordered
 	 */
-	protected String positionX = POSITION_X_EDEFAULT;
+	protected int positionX = POSITION_X_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getPositionY() <em>Position Y</em>}' attribute.
@@ -123,7 +125,7 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String POSITION_Y_EDEFAULT = null;
+	protected static final int POSITION_Y_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getPositionY() <em>Position Y</em>}' attribute.
@@ -133,7 +135,7 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * @generated
 	 * @ordered
 	 */
-	protected String positionY = POSITION_Y_EDEFAULT;
+	protected int positionY = POSITION_Y_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getWidth() <em>Width</em>}' attribute.
@@ -143,7 +145,7 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String WIDTH_EDEFAULT = null;
+	protected static final int WIDTH_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getWidth() <em>Width</em>}' attribute.
@@ -153,27 +155,27 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * @generated
 	 * @ordered
 	 */
-	protected String width = WIDTH_EDEFAULT;
+	protected int width = WIDTH_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getHeigth() <em>Heigth</em>}' attribute.
+	 * The default value of the '{@link #getHeight() <em>Height</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHeigth()
+	 * @see #getHeight()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HEIGTH_EDEFAULT = null;
+	protected static final int HEIGHT_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #getHeigth() <em>Heigth</em>}' attribute.
+	 * The cached value of the '{@link #getHeight() <em>Height</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHeigth()
+	 * @see #getHeight()
 	 * @generated
 	 * @ordered
 	 */
-	protected String heigth = HEIGTH_EDEFAULT;
+	protected int height = HEIGHT_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getBackgroundColor() <em>Background Color</em>}' attribute.
@@ -234,6 +236,46 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * @ordered
 	 */
 	protected String titleFontSize = TITLE_FONT_SIZE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPathImage() <em>Path Image</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPathImage()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PATH_IMAGE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPathImage() <em>Path Image</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPathImage()
+	 * @generated
+	 * @ordered
+	 */
+	protected String pathImage = PATH_IMAGE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getStyle() <em>Style</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStyle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String STYLE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getStyle() <em>Style</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStyle()
+	 * @generated
+	 * @ordered
+	 */
+	protected String style = STYLE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -322,7 +364,7 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPositionX() {
+	public int getPositionX() {
 		return positionX;
 	}
 
@@ -331,8 +373,8 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPositionX(String newPositionX) {
-		String oldPositionX = positionX;
+	public void setPositionX(int newPositionX) {
+		int oldPositionX = positionX;
 		positionX = newPositionX;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__POSITION_X, oldPositionX, positionX));
@@ -343,7 +385,7 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPositionY() {
+	public int getPositionY() {
 		return positionY;
 	}
 
@@ -352,8 +394,8 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPositionY(String newPositionY) {
-		String oldPositionY = positionY;
+	public void setPositionY(int newPositionY) {
+		int oldPositionY = positionY;
 		positionY = newPositionY;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__POSITION_Y, oldPositionY, positionY));
@@ -364,7 +406,7 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getWidth() {
+	public int getWidth() {
 		return width;
 	}
 
@@ -373,8 +415,8 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setWidth(String newWidth) {
-		String oldWidth = width;
+	public void setWidth(int newWidth) {
+		int oldWidth = width;
 		width = newWidth;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__WIDTH, oldWidth, width));
@@ -385,8 +427,8 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHeigth() {
-		return heigth;
+	public int getHeight() {
+		return height;
 	}
 
 	/**
@@ -394,11 +436,11 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHeigth(String newHeigth) {
-		String oldHeigth = heigth;
-		heigth = newHeigth;
+	public void setHeight(int newHeight) {
+		int oldHeight = height;
+		height = newHeight;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__HEIGTH, oldHeigth, heigth));
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__HEIGHT, oldHeight, height));
 	}
 
 	/**
@@ -469,6 +511,48 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getPathImage() {
+		return pathImage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPathImage(String newPathImage) {
+		String oldPathImage = pathImage;
+		pathImage = newPathImage;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__PATH_IMAGE, oldPathImage, pathImage));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getStyle() {
+		return style;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setStyle(String newStyle) {
+		String oldStyle = style;
+		style = newStyle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.MODEL_ELEMENT__STYLE, oldStyle, style));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -484,14 +568,18 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 				return getPositionY();
 			case UidiagramPackage.MODEL_ELEMENT__WIDTH:
 				return getWidth();
-			case UidiagramPackage.MODEL_ELEMENT__HEIGTH:
-				return getHeigth();
+			case UidiagramPackage.MODEL_ELEMENT__HEIGHT:
+				return getHeight();
 			case UidiagramPackage.MODEL_ELEMENT__BACKGROUND_COLOR:
 				return getBackgroundColor();
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT:
 				return getTitleFont();
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT_SIZE:
 				return getTitleFontSize();
+			case UidiagramPackage.MODEL_ELEMENT__PATH_IMAGE:
+				return getPathImage();
+			case UidiagramPackage.MODEL_ELEMENT__STYLE:
+				return getStyle();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -514,16 +602,16 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 				setColor((String)newValue);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__POSITION_X:
-				setPositionX((String)newValue);
+				setPositionX((Integer)newValue);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__POSITION_Y:
-				setPositionY((String)newValue);
+				setPositionY((Integer)newValue);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__WIDTH:
-				setWidth((String)newValue);
+				setWidth((Integer)newValue);
 				return;
-			case UidiagramPackage.MODEL_ELEMENT__HEIGTH:
-				setHeigth((String)newValue);
+			case UidiagramPackage.MODEL_ELEMENT__HEIGHT:
+				setHeight((Integer)newValue);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__BACKGROUND_COLOR:
 				setBackgroundColor((String)newValue);
@@ -533,6 +621,12 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT_SIZE:
 				setTitleFontSize((String)newValue);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__PATH_IMAGE:
+				setPathImage((String)newValue);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__STYLE:
+				setStyle((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -564,8 +658,8 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 			case UidiagramPackage.MODEL_ELEMENT__WIDTH:
 				setWidth(WIDTH_EDEFAULT);
 				return;
-			case UidiagramPackage.MODEL_ELEMENT__HEIGTH:
-				setHeigth(HEIGTH_EDEFAULT);
+			case UidiagramPackage.MODEL_ELEMENT__HEIGHT:
+				setHeight(HEIGHT_EDEFAULT);
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__BACKGROUND_COLOR:
 				setBackgroundColor(BACKGROUND_COLOR_EDEFAULT);
@@ -575,6 +669,12 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 				return;
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT_SIZE:
 				setTitleFontSize(TITLE_FONT_SIZE_EDEFAULT);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__PATH_IMAGE:
+				setPathImage(PATH_IMAGE_EDEFAULT);
+				return;
+			case UidiagramPackage.MODEL_ELEMENT__STYLE:
+				setStyle(STYLE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -595,19 +695,23 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 			case UidiagramPackage.MODEL_ELEMENT__COLOR:
 				return COLOR_EDEFAULT == null ? color != null : !COLOR_EDEFAULT.equals(color);
 			case UidiagramPackage.MODEL_ELEMENT__POSITION_X:
-				return POSITION_X_EDEFAULT == null ? positionX != null : !POSITION_X_EDEFAULT.equals(positionX);
+				return positionX != POSITION_X_EDEFAULT;
 			case UidiagramPackage.MODEL_ELEMENT__POSITION_Y:
-				return POSITION_Y_EDEFAULT == null ? positionY != null : !POSITION_Y_EDEFAULT.equals(positionY);
+				return positionY != POSITION_Y_EDEFAULT;
 			case UidiagramPackage.MODEL_ELEMENT__WIDTH:
-				return WIDTH_EDEFAULT == null ? width != null : !WIDTH_EDEFAULT.equals(width);
-			case UidiagramPackage.MODEL_ELEMENT__HEIGTH:
-				return HEIGTH_EDEFAULT == null ? heigth != null : !HEIGTH_EDEFAULT.equals(heigth);
+				return width != WIDTH_EDEFAULT;
+			case UidiagramPackage.MODEL_ELEMENT__HEIGHT:
+				return height != HEIGHT_EDEFAULT;
 			case UidiagramPackage.MODEL_ELEMENT__BACKGROUND_COLOR:
 				return BACKGROUND_COLOR_EDEFAULT == null ? backgroundColor != null : !BACKGROUND_COLOR_EDEFAULT.equals(backgroundColor);
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT:
 				return TITLE_FONT_EDEFAULT == null ? titleFont != null : !TITLE_FONT_EDEFAULT.equals(titleFont);
 			case UidiagramPackage.MODEL_ELEMENT__TITLE_FONT_SIZE:
 				return TITLE_FONT_SIZE_EDEFAULT == null ? titleFontSize != null : !TITLE_FONT_SIZE_EDEFAULT.equals(titleFontSize);
+			case UidiagramPackage.MODEL_ELEMENT__PATH_IMAGE:
+				return PATH_IMAGE_EDEFAULT == null ? pathImage != null : !PATH_IMAGE_EDEFAULT.equals(pathImage);
+			case UidiagramPackage.MODEL_ELEMENT__STYLE:
+				return STYLE_EDEFAULT == null ? style != null : !STYLE_EDEFAULT.equals(style);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -634,14 +738,18 @@ public class ModelElementImpl extends EObjectImpl implements ModelElement {
 		result.append(positionY);
 		result.append(", width: ");
 		result.append(width);
-		result.append(", heigth: ");
-		result.append(heigth);
+		result.append(", height: ");
+		result.append(height);
 		result.append(", backgroundColor: ");
 		result.append(backgroundColor);
 		result.append(", titleFont: ");
 		result.append(titleFont);
 		result.append(", titleFontSize: ");
 		result.append(titleFontSize);
+		result.append(", pathImage: ");
+		result.append(pathImage);
+		result.append(", style: ");
+		result.append(style);
 		result.append(')');
 		return result.toString();
 	}

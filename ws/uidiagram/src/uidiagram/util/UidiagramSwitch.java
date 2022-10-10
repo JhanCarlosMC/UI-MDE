@@ -224,6 +224,14 @@ public class UidiagramSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case UidiagramPackage.COLUMN: {
+				Column column = (Column)theEObject;
+				T result = caseColumn(column);
+				if (result == null) result = caseGraphicalIndividual(column);
+				if (result == null) result = caseModelElement(column);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			default: return defaultCase(theEObject);
 		}
 	}
@@ -540,6 +548,21 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseTreeView(TreeView object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Column</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Column</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseColumn(Column object) {
 		return null;
 	}
 

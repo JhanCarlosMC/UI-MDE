@@ -27,6 +27,7 @@ import org.eclipse.gmf.runtime.notation.View;
 import uidiagram.UidiagramPackage;
 import uidiagram.diagram.edit.parts.Button2EditPart;
 import uidiagram.diagram.edit.parts.CheckBox2EditPart;
+import uidiagram.diagram.edit.parts.Column2EditPart;
 import uidiagram.diagram.edit.parts.ComboBox2EditPart;
 import uidiagram.diagram.edit.parts.Frame2EditPart;
 import uidiagram.diagram.edit.parts.GroupEditPart;
@@ -112,6 +113,7 @@ public class UserInterfaceUserInterfaceLstModelElementsCompartmentCanonicalEditP
 		case Notebook2EditPart.VISUAL_ID:
 		case Separator2EditPart.VISUAL_ID:
 		case TreeView2EditPart.VISUAL_ID:
+		case Column2EditPart.VISUAL_ID:
 			return true;
 		}
 		return false;

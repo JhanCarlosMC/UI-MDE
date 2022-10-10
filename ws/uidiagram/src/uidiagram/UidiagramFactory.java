@@ -211,6 +211,15 @@ public interface UidiagramFactory extends EFactory {
 	TreeView createTreeView();
 
 	/**
+	 * Returns a new object of class '<em>Column</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Column</em>'.
+	 * @generated
+	 */
+	Column createColumn();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

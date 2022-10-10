@@ -32,6 +32,8 @@ import uidiagram.diagram.edit.parts.Button2EditPart;
 import uidiagram.diagram.edit.parts.ButtonEditPart;
 import uidiagram.diagram.edit.parts.CheckBox2EditPart;
 import uidiagram.diagram.edit.parts.CheckBoxEditPart;
+import uidiagram.diagram.edit.parts.Column2EditPart;
+import uidiagram.diagram.edit.parts.ColumnEditPart;
 import uidiagram.diagram.edit.parts.ComboBox2EditPart;
 import uidiagram.diagram.edit.parts.ComboBoxEditPart;
 import uidiagram.diagram.edit.parts.Frame2EditPart;
@@ -346,6 +348,11 @@ public class UidiagramNavigatorContentProvider implements ICommonContentProvider
 			connectedViews = getChildrenByType(connectedViews,
 					UidiagramVisualIDRegistry.getType(TreeView2EditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv), UidiagramVisualIDRegistry
+					.getType(UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					UidiagramVisualIDRegistry.getType(Column2EditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			return result.toArray();
 		}
 
@@ -428,6 +435,11 @@ public class UidiagramNavigatorContentProvider implements ICommonContentProvider
 			connectedViews = getChildrenByType(connectedViews,
 					UidiagramVisualIDRegistry.getType(TreeViewEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
+					UidiagramVisualIDRegistry.getType(GroupGroupLstChildModelElementsCompartmentEditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					UidiagramVisualIDRegistry.getType(ColumnEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			return result.toArray();
 		}
 
@@ -509,6 +521,11 @@ public class UidiagramNavigatorContentProvider implements ICommonContentProvider
 					UidiagramVisualIDRegistry.getType(GroupGroupLstChildModelElementsCompartment2EditPart.VISUAL_ID));
 			connectedViews = getChildrenByType(connectedViews,
 					UidiagramVisualIDRegistry.getType(TreeViewEditPart.VISUAL_ID));
+			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
+			connectedViews = getChildrenByType(Collections.singleton(sv),
+					UidiagramVisualIDRegistry.getType(GroupGroupLstChildModelElementsCompartment2EditPart.VISUAL_ID));
+			connectedViews = getChildrenByType(connectedViews,
+					UidiagramVisualIDRegistry.getType(ColumnEditPart.VISUAL_ID));
 			result.addAll(createNavigatorItems(connectedViews, parentElement, false));
 			return result.toArray();
 		}

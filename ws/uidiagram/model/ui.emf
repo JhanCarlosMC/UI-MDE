@@ -17,13 +17,15 @@ class UserInterface {
     attr String title;
     attr String idModelElement;
     attr String color;
-    attr String positionX;
-    attr String positionY;
-    attr String width;
-    attr String heigth;
+    attr int positionX;
+    attr int positionY;
+    attr int width;
+    attr int height;
     attr String backgroundColor;
     attr String titleFont;
     attr String titleFontSize;
+    attr String pathImage;
+    attr String style;
    
    	@gmf.compartment
     val ModelElement[*] lstModelElements;   	
@@ -34,13 +36,15 @@ class ModelElement  {
     attr String name;
     attr String idModelElement;
     attr String color;
-    attr String positionX;
-    attr String positionY;
-    attr String width;
-    attr String heigth;
+    attr int positionX;
+    attr int positionY;
+    attr int width;
+    attr int height;
     attr String backgroundColor;
     attr String titleFont;
     attr String titleFontSize;
+    attr String pathImage;
+    attr String style;
 }
 
 class GraphicalContainer extends ModelElement {

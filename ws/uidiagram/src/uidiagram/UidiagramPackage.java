@@ -185,13 +185,13 @@ public interface UidiagramPackage extends EPackage {
 	int USER_INTERFACE__WIDTH = 6;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_INTERFACE__HEIGTH = 7;
+	int USER_INTERFACE__HEIGHT = 7;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -221,13 +221,31 @@ public interface UidiagramPackage extends EPackage {
 	int USER_INTERFACE__TITLE_FONT_SIZE = 10;
 
 	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INTERFACE__PATH_IMAGE = 11;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_INTERFACE__STYLE = 12;
+
+	/**
 	 * The feature id for the '<em><b>Lst Model Elements</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_INTERFACE__LST_MODEL_ELEMENTS = 11;
+	int USER_INTERFACE__LST_MODEL_ELEMENTS = 13;
 
 	/**
 	 * The number of structural features of the '<em>User Interface</em>' class.
@@ -236,7 +254,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_INTERFACE_FEATURE_COUNT = 12;
+	int USER_INTERFACE_FEATURE_COUNT = 14;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.ModelElementImpl <em>Model Element</em>}' class.
@@ -303,13 +321,13 @@ public interface UidiagramPackage extends EPackage {
 	int MODEL_ELEMENT__WIDTH = 5;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_ELEMENT__HEIGTH = 6;
+	int MODEL_ELEMENT__HEIGHT = 6;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -339,13 +357,31 @@ public interface UidiagramPackage extends EPackage {
 	int MODEL_ELEMENT__TITLE_FONT_SIZE = 9;
 
 	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ELEMENT__PATH_IMAGE = 10;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MODEL_ELEMENT__STYLE = 11;
+
+	/**
 	 * The number of structural features of the '<em>Model Element</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MODEL_ELEMENT_FEATURE_COUNT = 10;
+	int MODEL_ELEMENT_FEATURE_COUNT = 12;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.GraphicalContainerImpl <em>Graphical Container</em>}' class.
@@ -412,13 +448,13 @@ public interface UidiagramPackage extends EPackage {
 	int GRAPHICAL_CONTAINER__WIDTH = MODEL_ELEMENT__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPHICAL_CONTAINER__HEIGTH = MODEL_ELEMENT__HEIGTH;
+	int GRAPHICAL_CONTAINER__HEIGHT = MODEL_ELEMENT__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -446,6 +482,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int GRAPHICAL_CONTAINER__TITLE_FONT_SIZE = MODEL_ELEMENT__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_CONTAINER__PATH_IMAGE = MODEL_ELEMENT__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_CONTAINER__STYLE = MODEL_ELEMENT__STYLE;
 
 	/**
 	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
@@ -530,13 +584,13 @@ public interface UidiagramPackage extends EPackage {
 	int GRAPHICAL_INDIVIDUAL__WIDTH = MODEL_ELEMENT__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GRAPHICAL_INDIVIDUAL__HEIGTH = MODEL_ELEMENT__HEIGTH;
+	int GRAPHICAL_INDIVIDUAL__HEIGHT = MODEL_ELEMENT__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -564,6 +618,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE = MODEL_ELEMENT__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_INDIVIDUAL__PATH_IMAGE = MODEL_ELEMENT__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRAPHICAL_INDIVIDUAL__STYLE = MODEL_ELEMENT__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Graphical Individual</em>' class.
@@ -639,13 +711,13 @@ public interface UidiagramPackage extends EPackage {
 	int GROUP__WIDTH = GRAPHICAL_CONTAINER__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__HEIGTH = GRAPHICAL_CONTAINER__HEIGTH;
+	int GROUP__HEIGHT = GRAPHICAL_CONTAINER__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -673,6 +745,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int GROUP__TITLE_FONT_SIZE = GRAPHICAL_CONTAINER__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__PATH_IMAGE = GRAPHICAL_CONTAINER__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GROUP__STYLE = GRAPHICAL_CONTAINER__STYLE;
 
 	/**
 	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
@@ -757,13 +847,13 @@ public interface UidiagramPackage extends EPackage {
 	int BUTTON__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BUTTON__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int BUTTON__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -791,6 +881,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int BUTTON__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUTTON__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BUTTON__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Button</em>' class.
@@ -866,13 +974,13 @@ public interface UidiagramPackage extends EPackage {
 	int LABEL__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LABEL__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int LABEL__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -900,6 +1008,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int LABEL__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Label</em>' class.
@@ -975,13 +1101,13 @@ public interface UidiagramPackage extends EPackage {
 	int CHECK_BOX__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int CHECK_BOX__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1009,6 +1135,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int CHECK_BOX__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHECK_BOX__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHECK_BOX__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Check Box</em>' class.
@@ -1084,13 +1228,13 @@ public interface UidiagramPackage extends EPackage {
 	int TEXT_INPUT__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int TEXT_INPUT__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1118,6 +1262,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int TEXT_INPUT__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXT_INPUT__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEXT_INPUT__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Text Input</em>' class.
@@ -1193,13 +1355,13 @@ public interface UidiagramPackage extends EPackage {
 	int RADIO_BUTTON__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RADIO_BUTTON__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int RADIO_BUTTON__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1227,6 +1389,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int RADIO_BUTTON__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RADIO_BUTTON__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RADIO_BUTTON__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Radio Button</em>' class.
@@ -1302,13 +1482,13 @@ public interface UidiagramPackage extends EPackage {
 	int FRAME__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FRAME__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int FRAME__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1336,6 +1516,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int FRAME__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FRAME__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Frame</em>' class.
@@ -1411,13 +1609,13 @@ public interface UidiagramPackage extends EPackage {
 	int LABEL_FRAME__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LABEL_FRAME__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int LABEL_FRAME__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1445,6 +1643,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int LABEL_FRAME__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL_FRAME__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LABEL_FRAME__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Label Frame</em>' class.
@@ -1520,13 +1736,13 @@ public interface UidiagramPackage extends EPackage {
 	int MENU_BUTTON__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MENU_BUTTON__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int MENU_BUTTON__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1554,6 +1770,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int MENU_BUTTON__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MENU_BUTTON__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MENU_BUTTON__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Menu Button</em>' class.
@@ -1629,13 +1863,13 @@ public interface UidiagramPackage extends EPackage {
 	int SCROLL_BAR__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SCROLL_BAR__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int SCROLL_BAR__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1663,6 +1897,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int SCROLL_BAR__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCROLL_BAR__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SCROLL_BAR__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Scroll Bar</em>' class.
@@ -1738,13 +1990,13 @@ public interface UidiagramPackage extends EPackage {
 	int SPIN_BOX__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPIN_BOX__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int SPIN_BOX__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1772,6 +2024,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int SPIN_BOX__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPIN_BOX__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPIN_BOX__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Spin Box</em>' class.
@@ -1847,13 +2117,13 @@ public interface UidiagramPackage extends EPackage {
 	int COMBO_BOX__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int COMBO_BOX__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int COMBO_BOX__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1881,6 +2151,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int COMBO_BOX__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMBO_BOX__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COMBO_BOX__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Combo Box</em>' class.
@@ -1956,13 +2244,13 @@ public interface UidiagramPackage extends EPackage {
 	int NOTEBOOK__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int NOTEBOOK__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int NOTEBOOK__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1990,6 +2278,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int NOTEBOOK__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOTEBOOK__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOTEBOOK__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Notebook</em>' class.
@@ -2065,13 +2371,13 @@ public interface UidiagramPackage extends EPackage {
 	int SEPARATOR__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SEPARATOR__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int SEPARATOR__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -2099,6 +2405,24 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int SEPARATOR__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEPARATOR__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SEPARATOR__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
 	 * The number of structural features of the '<em>Separator</em>' class.
@@ -2174,13 +2498,13 @@ public interface UidiagramPackage extends EPackage {
 	int TREE_VIEW__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
-	 * The feature id for the '<em><b>Heigth</b></em>' attribute.
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TREE_VIEW__HEIGTH = GRAPHICAL_INDIVIDUAL__HEIGTH;
+	int TREE_VIEW__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -2210,6 +2534,24 @@ public interface UidiagramPackage extends EPackage {
 	int TREE_VIEW__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TREE_VIEW__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TREE_VIEW__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
+
+	/**
 	 * The number of structural features of the '<em>Tree View</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2217,6 +2559,134 @@ public interface UidiagramPackage extends EPackage {
 	 * @ordered
 	 */
 	int TREE_VIEW_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
+
+
+	/**
+	 * The meta object id for the '{@link uidiagram.impl.ColumnImpl <em>Column</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see uidiagram.impl.ColumnImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getColumn()
+	 * @generated
+	 */
+	int COLUMN = 21;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__NAME = GRAPHICAL_INDIVIDUAL__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Id Model Element</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
+
+	/**
+	 * The feature id for the '<em><b>Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Position X</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
+
+	/**
+	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
+
+	/**
+	 * The feature id for the '<em><b>Width</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
+
+	/**
+	 * The feature id for the '<em><b>Height</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
+
+	/**
+	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
+
+	/**
+	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
+
+	/**
+	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+
+	/**
+	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+
+	/**
+	 * The feature id for the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
+
+	/**
+	 * The number of structural features of the '<em>Column</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 
 	/**
@@ -2349,15 +2819,15 @@ public interface UidiagramPackage extends EPackage {
 	EAttribute getUserInterface_Width();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.UserInterface#getHeigth <em>Heigth</em>}'.
+	 * Returns the meta object for the attribute '{@link uidiagram.UserInterface#getHeight <em>Height</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Heigth</em>'.
-	 * @see uidiagram.UserInterface#getHeigth()
+	 * @return the meta object for the attribute '<em>Height</em>'.
+	 * @see uidiagram.UserInterface#getHeight()
 	 * @see #getUserInterface()
 	 * @generated
 	 */
-	EAttribute getUserInterface_Heigth();
+	EAttribute getUserInterface_Height();
 
 	/**
 	 * Returns the meta object for the attribute '{@link uidiagram.UserInterface#getBackgroundColor <em>Background Color</em>}'.
@@ -2391,6 +2861,28 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getUserInterface_TitleFontSize();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.UserInterface#getPathImage <em>Path Image</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Path Image</em>'.
+	 * @see uidiagram.UserInterface#getPathImage()
+	 * @see #getUserInterface()
+	 * @generated
+	 */
+	EAttribute getUserInterface_PathImage();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.UserInterface#getStyle <em>Style</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Style</em>'.
+	 * @see uidiagram.UserInterface#getStyle()
+	 * @see #getUserInterface()
+	 * @generated
+	 */
+	EAttribute getUserInterface_Style();
 
 	/**
 	 * Returns the meta object for the containment reference list '{@link uidiagram.UserInterface#getLstModelElements <em>Lst Model Elements</em>}'.
@@ -2480,15 +2972,15 @@ public interface UidiagramPackage extends EPackage {
 	EAttribute getModelElement_Width();
 
 	/**
-	 * Returns the meta object for the attribute '{@link uidiagram.ModelElement#getHeigth <em>Heigth</em>}'.
+	 * Returns the meta object for the attribute '{@link uidiagram.ModelElement#getHeight <em>Height</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Heigth</em>'.
-	 * @see uidiagram.ModelElement#getHeigth()
+	 * @return the meta object for the attribute '<em>Height</em>'.
+	 * @see uidiagram.ModelElement#getHeight()
 	 * @see #getModelElement()
 	 * @generated
 	 */
-	EAttribute getModelElement_Heigth();
+	EAttribute getModelElement_Height();
 
 	/**
 	 * Returns the meta object for the attribute '{@link uidiagram.ModelElement#getBackgroundColor <em>Background Color</em>}'.
@@ -2522,6 +3014,28 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getModelElement_TitleFontSize();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.ModelElement#getPathImage <em>Path Image</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Path Image</em>'.
+	 * @see uidiagram.ModelElement#getPathImage()
+	 * @see #getModelElement()
+	 * @generated
+	 */
+	EAttribute getModelElement_PathImage();
+
+	/**
+	 * Returns the meta object for the attribute '{@link uidiagram.ModelElement#getStyle <em>Style</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Style</em>'.
+	 * @see uidiagram.ModelElement#getStyle()
+	 * @see #getModelElement()
+	 * @generated
+	 */
+	EAttribute getModelElement_Style();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.GraphicalContainer <em>Graphical Container</em>}'.
@@ -2705,6 +3219,16 @@ public interface UidiagramPackage extends EPackage {
 	EClass getTreeView();
 
 	/**
+	 * Returns the meta object for class '{@link uidiagram.Column <em>Column</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Column</em>'.
+	 * @see uidiagram.Column
+	 * @generated
+	 */
+	EClass getColumn();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2829,12 +3353,12 @@ public interface UidiagramPackage extends EPackage {
 		EAttribute USER_INTERFACE__WIDTH = eINSTANCE.getUserInterface_Width();
 
 		/**
-		 * The meta object literal for the '<em><b>Heigth</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Height</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute USER_INTERFACE__HEIGTH = eINSTANCE.getUserInterface_Heigth();
+		EAttribute USER_INTERFACE__HEIGHT = eINSTANCE.getUserInterface_Height();
 
 		/**
 		 * The meta object literal for the '<em><b>Background Color</b></em>' attribute feature.
@@ -2859,6 +3383,22 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute USER_INTERFACE__TITLE_FONT_SIZE = eINSTANCE.getUserInterface_TitleFontSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Path Image</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INTERFACE__PATH_IMAGE = eINSTANCE.getUserInterface_PathImage();
+
+		/**
+		 * The meta object literal for the '<em><b>Style</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_INTERFACE__STYLE = eINSTANCE.getUserInterface_Style();
 
 		/**
 		 * The meta object literal for the '<em><b>Lst Model Elements</b></em>' containment reference list feature.
@@ -2927,12 +3467,12 @@ public interface UidiagramPackage extends EPackage {
 		EAttribute MODEL_ELEMENT__WIDTH = eINSTANCE.getModelElement_Width();
 
 		/**
-		 * The meta object literal for the '<em><b>Heigth</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Height</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute MODEL_ELEMENT__HEIGTH = eINSTANCE.getModelElement_Heigth();
+		EAttribute MODEL_ELEMENT__HEIGHT = eINSTANCE.getModelElement_Height();
 
 		/**
 		 * The meta object literal for the '<em><b>Background Color</b></em>' attribute feature.
@@ -2957,6 +3497,22 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute MODEL_ELEMENT__TITLE_FONT_SIZE = eINSTANCE.getModelElement_TitleFontSize();
+
+		/**
+		 * The meta object literal for the '<em><b>Path Image</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_ELEMENT__PATH_IMAGE = eINSTANCE.getModelElement_PathImage();
+
+		/**
+		 * The meta object literal for the '<em><b>Style</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MODEL_ELEMENT__STYLE = eINSTANCE.getModelElement_Style();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.GraphicalContainerImpl <em>Graphical Container</em>}' class.
@@ -3135,6 +3691,16 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass TREE_VIEW = eINSTANCE.getTreeView();
+
+		/**
+		 * The meta object literal for the '{@link uidiagram.impl.ColumnImpl <em>Column</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see uidiagram.impl.ColumnImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getColumn()
+		 * @generated
+		 */
+		EClass COLUMN = eINSTANCE.getColumn();
 
 	}
 

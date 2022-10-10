@@ -271,142 +271,152 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String ComboBox3CreationTool_title;
+	public static String Column3CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String ComboBox3CreationTool_desc;
+	public static String Column3CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Frame4CreationTool_title;
+	public static String ComboBox4CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Frame4CreationTool_desc;
+	public static String ComboBox4CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Group5CreationTool_title;
+	public static String Frame5CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Group5CreationTool_desc;
+	public static String Frame5CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Label6CreationTool_title;
+	public static String Group6CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Label6CreationTool_desc;
+	public static String Group6CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String LabelFrame7CreationTool_title;
+	public static String Label7CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String LabelFrame7CreationTool_desc;
+	public static String Label7CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String MenuButton8CreationTool_title;
+	public static String LabelFrame8CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String MenuButton8CreationTool_desc;
+	public static String LabelFrame8CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Notebook9CreationTool_title;
+	public static String MenuButton9CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Notebook9CreationTool_desc;
+	public static String MenuButton9CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String RadioButton10CreationTool_title;
+	public static String Notebook10CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String RadioButton10CreationTool_desc;
+	public static String Notebook10CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String ScrollBar11CreationTool_title;
+	public static String RadioButton11CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String ScrollBar11CreationTool_desc;
+	public static String RadioButton11CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Separator12CreationTool_title;
+	public static String ScrollBar12CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Separator12CreationTool_desc;
+	public static String ScrollBar12CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String SpinBox13CreationTool_title;
+	public static String Separator13CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String SpinBox13CreationTool_desc;
+	public static String Separator13CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String TextInput14CreationTool_title;
+	public static String SpinBox14CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String TextInput14CreationTool_desc;
+	public static String SpinBox14CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String TreeView15CreationTool_title;
+	public static String TextInput15CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String TreeView15CreationTool_desc;
+	public static String TextInput15CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String UserInterface16CreationTool_title;
+	public static String TreeView16CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String UserInterface16CreationTool_desc;
+	public static String TreeView16CreationTool_desc;
+
+	/**
+	* @generated
+	*/
+	public static String UserInterface17CreationTool_title;
+
+	/**
+	* @generated
+	*/
+	public static String UserInterface17CreationTool_desc;
 
 	/**
 	* @generated

@@ -17,6 +17,7 @@ import org.eclipse.gmf.runtime.notation.View;
 
 import uidiagram.diagram.edit.parts.Button2EditPart;
 import uidiagram.diagram.edit.parts.CheckBox2EditPart;
+import uidiagram.diagram.edit.parts.Column2EditPart;
 import uidiagram.diagram.edit.parts.ComboBox2EditPart;
 import uidiagram.diagram.edit.parts.Frame2EditPart;
 import uidiagram.diagram.edit.parts.GroupEditPart;
@@ -163,6 +164,12 @@ public class UserInterfaceItemSemanticEditPolicy extends UidiagramBaseItemSemant
 						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
 						break;
 					case TreeView2EditPart.VISUAL_ID:
+						cmd.add(new DestroyElementCommand(
+								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
+						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 
+						// cmd.add(new org.eclipse.gmf.runtime.diagram.core.commands.DeleteCommand(getEditingDomain(), cnode));
+						break;
+					case Column2EditPart.VISUAL_ID:
 						cmd.add(new DestroyElementCommand(
 								new DestroyElementRequest(getEditingDomain(), cnode.getElement(), false))); // directlyOwned: true
 						// don't need explicit deletion of cnode as parent's view deletion would clean child views as well 

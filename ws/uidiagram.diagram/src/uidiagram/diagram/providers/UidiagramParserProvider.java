@@ -21,6 +21,8 @@ import uidiagram.diagram.edit.parts.ButtonName2EditPart;
 import uidiagram.diagram.edit.parts.ButtonNameEditPart;
 import uidiagram.diagram.edit.parts.CheckBoxName2EditPart;
 import uidiagram.diagram.edit.parts.CheckBoxNameEditPart;
+import uidiagram.diagram.edit.parts.ColumnName2EditPart;
+import uidiagram.diagram.edit.parts.ColumnNameEditPart;
 import uidiagram.diagram.edit.parts.ComboBoxName2EditPart;
 import uidiagram.diagram.edit.parts.ComboBoxNameEditPart;
 import uidiagram.diagram.edit.parts.FrameName2EditPart;
@@ -348,6 +350,23 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
+	private IParser columnName_5032Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getColumnName_5032Parser() {
+		if (columnName_5032Parser == null) {
+			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Name() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			columnName_5032Parser = parser;
+		}
+		return columnName_5032Parser;
+	}
+
+	/**
+	* @generated
+	*/
 	private IParser buttonName_5017Parser;
 
 	/**
@@ -586,6 +605,23 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 	/**
 	* @generated
 	*/
+	private IParser columnName_5033Parser;
+
+	/**
+	* @generated
+	*/
+	private IParser getColumnName_5033Parser() {
+		if (columnName_5033Parser == null) {
+			EAttribute[] features = new EAttribute[] { UidiagramPackage.eINSTANCE.getModelElement_Name() };
+			MessageFormatParser parser = new MessageFormatParser(features);
+			columnName_5033Parser = parser;
+		}
+		return columnName_5033Parser;
+	}
+
+	/**
+	* @generated
+	*/
 	protected IParser getParser(int visualID) {
 		switch (visualID) {
 		case UserInterfaceNameEditPart.VISUAL_ID:
@@ -622,6 +658,8 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 			return getSeparatorName_5013Parser();
 		case TreeViewNameEditPart.VISUAL_ID:
 			return getTreeViewName_5014Parser();
+		case ColumnNameEditPart.VISUAL_ID:
+			return getColumnName_5032Parser();
 		case ButtonName2EditPart.VISUAL_ID:
 			return getButtonName_5017Parser();
 		case LabelName2EditPart.VISUAL_ID:
@@ -650,6 +688,8 @@ public class UidiagramParserProvider extends AbstractProvider implements IParser
 			return getSeparatorName_5029Parser();
 		case TreeViewName2EditPart.VISUAL_ID:
 			return getTreeViewName_5030Parser();
+		case ColumnName2EditPart.VISUAL_ID:
+			return getColumnName_5033Parser();
 		}
 		return null;
 	}

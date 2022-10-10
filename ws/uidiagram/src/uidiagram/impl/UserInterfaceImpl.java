@@ -37,10 +37,12 @@ import uidiagram.UserInterface;
  *   <li>{@link uidiagram.impl.UserInterfaceImpl#getPositionX <em>Position X</em>}</li>
  *   <li>{@link uidiagram.impl.UserInterfaceImpl#getPositionY <em>Position Y</em>}</li>
  *   <li>{@link uidiagram.impl.UserInterfaceImpl#getWidth <em>Width</em>}</li>
- *   <li>{@link uidiagram.impl.UserInterfaceImpl#getHeigth <em>Heigth</em>}</li>
+ *   <li>{@link uidiagram.impl.UserInterfaceImpl#getHeight <em>Height</em>}</li>
  *   <li>{@link uidiagram.impl.UserInterfaceImpl#getBackgroundColor <em>Background Color</em>}</li>
  *   <li>{@link uidiagram.impl.UserInterfaceImpl#getTitleFont <em>Title Font</em>}</li>
  *   <li>{@link uidiagram.impl.UserInterfaceImpl#getTitleFontSize <em>Title Font Size</em>}</li>
+ *   <li>{@link uidiagram.impl.UserInterfaceImpl#getPathImage <em>Path Image</em>}</li>
+ *   <li>{@link uidiagram.impl.UserInterfaceImpl#getStyle <em>Style</em>}</li>
  *   <li>{@link uidiagram.impl.UserInterfaceImpl#getLstModelElements <em>Lst Model Elements</em>}</li>
  * </ul>
  *
@@ -135,7 +137,7 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String POSITION_X_EDEFAULT = null;
+	protected static final int POSITION_X_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getPositionX() <em>Position X</em>}' attribute.
@@ -145,7 +147,7 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * @generated
 	 * @ordered
 	 */
-	protected String positionX = POSITION_X_EDEFAULT;
+	protected int positionX = POSITION_X_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getPositionY() <em>Position Y</em>}' attribute.
@@ -155,7 +157,7 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String POSITION_Y_EDEFAULT = null;
+	protected static final int POSITION_Y_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getPositionY() <em>Position Y</em>}' attribute.
@@ -165,7 +167,7 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * @generated
 	 * @ordered
 	 */
-	protected String positionY = POSITION_Y_EDEFAULT;
+	protected int positionY = POSITION_Y_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getWidth() <em>Width</em>}' attribute.
@@ -175,7 +177,7 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String WIDTH_EDEFAULT = null;
+	protected static final int WIDTH_EDEFAULT = 0;
 
 	/**
 	 * The cached value of the '{@link #getWidth() <em>Width</em>}' attribute.
@@ -185,27 +187,27 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * @generated
 	 * @ordered
 	 */
-	protected String width = WIDTH_EDEFAULT;
+	protected int width = WIDTH_EDEFAULT;
 
 	/**
-	 * The default value of the '{@link #getHeigth() <em>Heigth</em>}' attribute.
+	 * The default value of the '{@link #getHeight() <em>Height</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHeigth()
+	 * @see #getHeight()
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String HEIGTH_EDEFAULT = null;
+	protected static final int HEIGHT_EDEFAULT = 0;
 
 	/**
-	 * The cached value of the '{@link #getHeigth() <em>Heigth</em>}' attribute.
+	 * The cached value of the '{@link #getHeight() <em>Height</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getHeigth()
+	 * @see #getHeight()
 	 * @generated
 	 * @ordered
 	 */
-	protected String heigth = HEIGTH_EDEFAULT;
+	protected int height = HEIGHT_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getBackgroundColor() <em>Background Color</em>}' attribute.
@@ -266,6 +268,46 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * @ordered
 	 */
 	protected String titleFontSize = TITLE_FONT_SIZE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPathImage() <em>Path Image</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPathImage()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PATH_IMAGE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPathImage() <em>Path Image</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPathImage()
+	 * @generated
+	 * @ordered
+	 */
+	protected String pathImage = PATH_IMAGE_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getStyle() <em>Style</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStyle()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String STYLE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getStyle() <em>Style</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStyle()
+	 * @generated
+	 * @ordered
+	 */
+	protected String style = STYLE_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getLstModelElements() <em>Lst Model Elements</em>}' containment reference list.
@@ -385,7 +427,7 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPositionX() {
+	public int getPositionX() {
 		return positionX;
 	}
 
@@ -394,8 +436,8 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPositionX(String newPositionX) {
-		String oldPositionX = positionX;
+	public void setPositionX(int newPositionX) {
+		int oldPositionX = positionX;
 		positionX = newPositionX;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.USER_INTERFACE__POSITION_X, oldPositionX, positionX));
@@ -406,7 +448,7 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getPositionY() {
+	public int getPositionY() {
 		return positionY;
 	}
 
@@ -415,8 +457,8 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setPositionY(String newPositionY) {
-		String oldPositionY = positionY;
+	public void setPositionY(int newPositionY) {
+		int oldPositionY = positionY;
 		positionY = newPositionY;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.USER_INTERFACE__POSITION_Y, oldPositionY, positionY));
@@ -427,7 +469,7 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getWidth() {
+	public int getWidth() {
 		return width;
 	}
 
@@ -436,8 +478,8 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setWidth(String newWidth) {
-		String oldWidth = width;
+	public void setWidth(int newWidth) {
+		int oldWidth = width;
 		width = newWidth;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.USER_INTERFACE__WIDTH, oldWidth, width));
@@ -448,8 +490,8 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public String getHeigth() {
-		return heigth;
+	public int getHeight() {
+		return height;
 	}
 
 	/**
@@ -457,11 +499,11 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHeigth(String newHeigth) {
-		String oldHeigth = heigth;
-		heigth = newHeigth;
+	public void setHeight(int newHeight) {
+		int oldHeight = height;
+		height = newHeight;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.USER_INTERFACE__HEIGTH, oldHeigth, heigth));
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.USER_INTERFACE__HEIGHT, oldHeight, height));
 	}
 
 	/**
@@ -532,6 +574,48 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getPathImage() {
+		return pathImage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPathImage(String newPathImage) {
+		String oldPathImage = pathImage;
+		pathImage = newPathImage;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.USER_INTERFACE__PATH_IMAGE, oldPathImage, pathImage));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String getStyle() {
+		return style;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setStyle(String newStyle) {
+		String oldStyle = style;
+		style = newStyle;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UidiagramPackage.USER_INTERFACE__STYLE, oldStyle, style));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EList<ModelElement> getLstModelElements() {
 		if (lstModelElements == null) {
 			lstModelElements = new EObjectContainmentEList<ModelElement>(ModelElement.class, this, UidiagramPackage.USER_INTERFACE__LST_MODEL_ELEMENTS);
@@ -575,14 +659,18 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 				return getPositionY();
 			case UidiagramPackage.USER_INTERFACE__WIDTH:
 				return getWidth();
-			case UidiagramPackage.USER_INTERFACE__HEIGTH:
-				return getHeigth();
+			case UidiagramPackage.USER_INTERFACE__HEIGHT:
+				return getHeight();
 			case UidiagramPackage.USER_INTERFACE__BACKGROUND_COLOR:
 				return getBackgroundColor();
 			case UidiagramPackage.USER_INTERFACE__TITLE_FONT:
 				return getTitleFont();
 			case UidiagramPackage.USER_INTERFACE__TITLE_FONT_SIZE:
 				return getTitleFontSize();
+			case UidiagramPackage.USER_INTERFACE__PATH_IMAGE:
+				return getPathImage();
+			case UidiagramPackage.USER_INTERFACE__STYLE:
+				return getStyle();
 			case UidiagramPackage.USER_INTERFACE__LST_MODEL_ELEMENTS:
 				return getLstModelElements();
 		}
@@ -611,16 +699,16 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 				setColor((String)newValue);
 				return;
 			case UidiagramPackage.USER_INTERFACE__POSITION_X:
-				setPositionX((String)newValue);
+				setPositionX((Integer)newValue);
 				return;
 			case UidiagramPackage.USER_INTERFACE__POSITION_Y:
-				setPositionY((String)newValue);
+				setPositionY((Integer)newValue);
 				return;
 			case UidiagramPackage.USER_INTERFACE__WIDTH:
-				setWidth((String)newValue);
+				setWidth((Integer)newValue);
 				return;
-			case UidiagramPackage.USER_INTERFACE__HEIGTH:
-				setHeigth((String)newValue);
+			case UidiagramPackage.USER_INTERFACE__HEIGHT:
+				setHeight((Integer)newValue);
 				return;
 			case UidiagramPackage.USER_INTERFACE__BACKGROUND_COLOR:
 				setBackgroundColor((String)newValue);
@@ -630,6 +718,12 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 				return;
 			case UidiagramPackage.USER_INTERFACE__TITLE_FONT_SIZE:
 				setTitleFontSize((String)newValue);
+				return;
+			case UidiagramPackage.USER_INTERFACE__PATH_IMAGE:
+				setPathImage((String)newValue);
+				return;
+			case UidiagramPackage.USER_INTERFACE__STYLE:
+				setStyle((String)newValue);
 				return;
 			case UidiagramPackage.USER_INTERFACE__LST_MODEL_ELEMENTS:
 				getLstModelElements().clear();
@@ -668,8 +762,8 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 			case UidiagramPackage.USER_INTERFACE__WIDTH:
 				setWidth(WIDTH_EDEFAULT);
 				return;
-			case UidiagramPackage.USER_INTERFACE__HEIGTH:
-				setHeigth(HEIGTH_EDEFAULT);
+			case UidiagramPackage.USER_INTERFACE__HEIGHT:
+				setHeight(HEIGHT_EDEFAULT);
 				return;
 			case UidiagramPackage.USER_INTERFACE__BACKGROUND_COLOR:
 				setBackgroundColor(BACKGROUND_COLOR_EDEFAULT);
@@ -679,6 +773,12 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 				return;
 			case UidiagramPackage.USER_INTERFACE__TITLE_FONT_SIZE:
 				setTitleFontSize(TITLE_FONT_SIZE_EDEFAULT);
+				return;
+			case UidiagramPackage.USER_INTERFACE__PATH_IMAGE:
+				setPathImage(PATH_IMAGE_EDEFAULT);
+				return;
+			case UidiagramPackage.USER_INTERFACE__STYLE:
+				setStyle(STYLE_EDEFAULT);
 				return;
 			case UidiagramPackage.USER_INTERFACE__LST_MODEL_ELEMENTS:
 				getLstModelElements().clear();
@@ -704,19 +804,23 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 			case UidiagramPackage.USER_INTERFACE__COLOR:
 				return COLOR_EDEFAULT == null ? color != null : !COLOR_EDEFAULT.equals(color);
 			case UidiagramPackage.USER_INTERFACE__POSITION_X:
-				return POSITION_X_EDEFAULT == null ? positionX != null : !POSITION_X_EDEFAULT.equals(positionX);
+				return positionX != POSITION_X_EDEFAULT;
 			case UidiagramPackage.USER_INTERFACE__POSITION_Y:
-				return POSITION_Y_EDEFAULT == null ? positionY != null : !POSITION_Y_EDEFAULT.equals(positionY);
+				return positionY != POSITION_Y_EDEFAULT;
 			case UidiagramPackage.USER_INTERFACE__WIDTH:
-				return WIDTH_EDEFAULT == null ? width != null : !WIDTH_EDEFAULT.equals(width);
-			case UidiagramPackage.USER_INTERFACE__HEIGTH:
-				return HEIGTH_EDEFAULT == null ? heigth != null : !HEIGTH_EDEFAULT.equals(heigth);
+				return width != WIDTH_EDEFAULT;
+			case UidiagramPackage.USER_INTERFACE__HEIGHT:
+				return height != HEIGHT_EDEFAULT;
 			case UidiagramPackage.USER_INTERFACE__BACKGROUND_COLOR:
 				return BACKGROUND_COLOR_EDEFAULT == null ? backgroundColor != null : !BACKGROUND_COLOR_EDEFAULT.equals(backgroundColor);
 			case UidiagramPackage.USER_INTERFACE__TITLE_FONT:
 				return TITLE_FONT_EDEFAULT == null ? titleFont != null : !TITLE_FONT_EDEFAULT.equals(titleFont);
 			case UidiagramPackage.USER_INTERFACE__TITLE_FONT_SIZE:
 				return TITLE_FONT_SIZE_EDEFAULT == null ? titleFontSize != null : !TITLE_FONT_SIZE_EDEFAULT.equals(titleFontSize);
+			case UidiagramPackage.USER_INTERFACE__PATH_IMAGE:
+				return PATH_IMAGE_EDEFAULT == null ? pathImage != null : !PATH_IMAGE_EDEFAULT.equals(pathImage);
+			case UidiagramPackage.USER_INTERFACE__STYLE:
+				return STYLE_EDEFAULT == null ? style != null : !STYLE_EDEFAULT.equals(style);
 			case UidiagramPackage.USER_INTERFACE__LST_MODEL_ELEMENTS:
 				return lstModelElements != null && !lstModelElements.isEmpty();
 		}
@@ -747,14 +851,18 @@ public class UserInterfaceImpl extends EObjectImpl implements UserInterface {
 		result.append(positionY);
 		result.append(", width: ");
 		result.append(width);
-		result.append(", heigth: ");
-		result.append(heigth);
+		result.append(", height: ");
+		result.append(height);
 		result.append(", backgroundColor: ");
 		result.append(backgroundColor);
 		result.append(", titleFont: ");
 		result.append(titleFont);
 		result.append(", titleFontSize: ");
 		result.append(titleFontSize);
+		result.append(", pathImage: ");
+		result.append(pathImage);
+		result.append(", style: ");
+		result.append(style);
 		result.append(')');
 		return result.toString();
 	}

@@ -136,6 +136,9 @@ public class GroupGroupLstChildModelElementsCompartment2EditPart extends ShapeCo
 			if (type == UidiagramElementTypes.TreeView_3016) {
 				return this;
 			}
+			if (type == UidiagramElementTypes.Column_3031) {
+				return this;
+			}
 			return getParent().getTargetEditPart(request);
 		}
 		if (request instanceof CreateUnspecifiedTypeConnectionRequest) {

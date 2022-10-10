@@ -28,6 +28,10 @@ import uidiagram.diagram.edit.parts.CheckBox2EditPart;
 import uidiagram.diagram.edit.parts.CheckBoxEditPart;
 import uidiagram.diagram.edit.parts.CheckBoxName2EditPart;
 import uidiagram.diagram.edit.parts.CheckBoxNameEditPart;
+import uidiagram.diagram.edit.parts.Column2EditPart;
+import uidiagram.diagram.edit.parts.ColumnEditPart;
+import uidiagram.diagram.edit.parts.ColumnName2EditPart;
+import uidiagram.diagram.edit.parts.ColumnNameEditPart;
 import uidiagram.diagram.edit.parts.ComboBox2EditPart;
 import uidiagram.diagram.edit.parts.ComboBoxEditPart;
 import uidiagram.diagram.edit.parts.ComboBoxName2EditPart;
@@ -214,6 +218,10 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 			return getImage("Navigator?Node?http://uidiagram?Separator", UidiagramElementTypes.Separator_3029); //$NON-NLS-1$
 		case TreeView2EditPart.VISUAL_ID:
 			return getImage("Navigator?Node?http://uidiagram?TreeView", UidiagramElementTypes.TreeView_3030); //$NON-NLS-1$
+		case ColumnEditPart.VISUAL_ID:
+			return getImage("Navigator?Node?http://uidiagram?Column", UidiagramElementTypes.Column_3031); //$NON-NLS-1$
+		case Column2EditPart.VISUAL_ID:
+			return getImage("Navigator?Node?http://uidiagram?Column", UidiagramElementTypes.Column_3032); //$NON-NLS-1$
 		}
 		return getImage("Navigator?UnknownElement", null); //$NON-NLS-1$
 	}
@@ -336,6 +344,10 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 			return getSeparator_3029Text(view);
 		case TreeView2EditPart.VISUAL_ID:
 			return getTreeView_3030Text(view);
+		case ColumnEditPart.VISUAL_ID:
+			return getColumn_3031Text(view);
+		case Column2EditPart.VISUAL_ID:
+			return getColumn_3032Text(view);
 		}
 		return getUnknownElementText(view);
 	}
@@ -839,6 +851,38 @@ public class UidiagramNavigatorLabelProvider extends LabelProvider
 					ParserOptions.NONE.intValue());
 		} else {
 			UidiagramDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5030); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	* @generated
+	*/
+	private String getColumn_3031Text(View view) {
+		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.Column_3031,
+				view.getElement() != null ? view.getElement() : view,
+				UidiagramVisualIDRegistry.getType(ColumnNameEditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			UidiagramDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5032); //$NON-NLS-1$
+			return ""; //$NON-NLS-1$
+		}
+	}
+
+	/**
+	* @generated
+	*/
+	private String getColumn_3032Text(View view) {
+		IParser parser = UidiagramParserProvider.getParser(UidiagramElementTypes.Column_3032,
+				view.getElement() != null ? view.getElement() : view,
+				UidiagramVisualIDRegistry.getType(ColumnName2EditPart.VISUAL_ID));
+		if (parser != null) {
+			return parser.getPrintString(new EObjectAdapter(view.getElement() != null ? view.getElement() : view),
+					ParserOptions.NONE.intValue());
+		} else {
+			UidiagramDiagramEditorPlugin.getInstance().logError("Parser was not found for label " + 5033); //$NON-NLS-1$
 			return ""; //$NON-NLS-1$
 		}
 	}

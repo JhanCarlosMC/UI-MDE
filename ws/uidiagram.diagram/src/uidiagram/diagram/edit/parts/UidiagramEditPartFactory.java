@@ -130,6 +130,12 @@ public class UidiagramEditPartFactory implements EditPartFactory {
 			case TreeViewNameEditPart.VISUAL_ID:
 				return new TreeViewNameEditPart(view);
 
+			case ColumnEditPart.VISUAL_ID:
+				return new ColumnEditPart(view);
+
+			case ColumnNameEditPart.VISUAL_ID:
+				return new ColumnNameEditPart(view);
+
 			case Button2EditPart.VISUAL_ID:
 				return new Button2EditPart(view);
 
@@ -213,6 +219,12 @@ public class UidiagramEditPartFactory implements EditPartFactory {
 
 			case TreeViewName2EditPart.VISUAL_ID:
 				return new TreeViewName2EditPart(view);
+
+			case Column2EditPart.VISUAL_ID:
+				return new Column2EditPart(view);
+
+			case ColumnName2EditPart.VISUAL_ID:
+				return new ColumnName2EditPart(view);
 
 			case UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart.VISUAL_ID:
 				return new UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart(view);

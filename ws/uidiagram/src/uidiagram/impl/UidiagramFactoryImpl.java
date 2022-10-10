@@ -77,6 +77,7 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 			case UidiagramPackage.NOTEBOOK: return createNotebook();
 			case UidiagramPackage.SEPARATOR: return createSeparator();
 			case UidiagramPackage.TREE_VIEW: return createTreeView();
+			case UidiagramPackage.COLUMN: return createColumn();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -290,6 +291,16 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	public TreeView createTreeView() {
 		TreeViewImpl treeView = new TreeViewImpl();
 		return treeView;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Column createColumn() {
+		ColumnImpl column = new ColumnImpl();
+		return column;
 	}
 
 	/**

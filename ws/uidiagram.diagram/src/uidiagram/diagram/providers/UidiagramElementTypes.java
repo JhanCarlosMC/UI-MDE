@@ -22,6 +22,8 @@ import uidiagram.diagram.edit.parts.Button2EditPart;
 import uidiagram.diagram.edit.parts.ButtonEditPart;
 import uidiagram.diagram.edit.parts.CheckBox2EditPart;
 import uidiagram.diagram.edit.parts.CheckBoxEditPart;
+import uidiagram.diagram.edit.parts.Column2EditPart;
+import uidiagram.diagram.edit.parts.ColumnEditPart;
 import uidiagram.diagram.edit.parts.ComboBox2EditPart;
 import uidiagram.diagram.edit.parts.ComboBoxEditPart;
 import uidiagram.diagram.edit.parts.Frame2EditPart;
@@ -154,6 +156,11 @@ public class UidiagramElementTypes {
 	/**
 	* @generated
 	*/
+	public static final IElementType Column_3031 = getElementType("uidiagram.diagram.Column_3031"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
 	public static final IElementType Button_3017 = getElementType("uidiagram.diagram.Button_3017"); //$NON-NLS-1$
 	/**
 	* @generated
@@ -207,6 +214,11 @@ public class UidiagramElementTypes {
 	* @generated
 	*/
 	public static final IElementType TreeView_3030 = getElementType("uidiagram.diagram.TreeView_3030"); //$NON-NLS-1$
+
+	/**
+	* @generated
+	*/
+	public static final IElementType Column_3032 = getElementType("uidiagram.diagram.Column_3032"); //$NON-NLS-1$
 
 	/**
 	* @generated
@@ -282,6 +294,8 @@ public class UidiagramElementTypes {
 
 			elements.put(TreeView_3016, UidiagramPackage.eINSTANCE.getTreeView());
 
+			elements.put(Column_3031, UidiagramPackage.eINSTANCE.getColumn());
+
 			elements.put(Button_3017, UidiagramPackage.eINSTANCE.getButton());
 
 			elements.put(Label_3018, UidiagramPackage.eINSTANCE.getLabel());
@@ -309,6 +323,8 @@ public class UidiagramElementTypes {
 			elements.put(Separator_3029, UidiagramPackage.eINSTANCE.getSeparator());
 
 			elements.put(TreeView_3030, UidiagramPackage.eINSTANCE.getTreeView());
+
+			elements.put(Column_3032, UidiagramPackage.eINSTANCE.getColumn());
 		}
 		return (ENamedElement) elements.get(type);
 	}
@@ -344,6 +360,7 @@ public class UidiagramElementTypes {
 			KNOWN_ELEMENT_TYPES.add(Notebook_3014);
 			KNOWN_ELEMENT_TYPES.add(Separator_3015);
 			KNOWN_ELEMENT_TYPES.add(TreeView_3016);
+			KNOWN_ELEMENT_TYPES.add(Column_3031);
 			KNOWN_ELEMENT_TYPES.add(Button_3017);
 			KNOWN_ELEMENT_TYPES.add(Label_3018);
 			KNOWN_ELEMENT_TYPES.add(CheckBox_3019);
@@ -358,6 +375,7 @@ public class UidiagramElementTypes {
 			KNOWN_ELEMENT_TYPES.add(Notebook_3028);
 			KNOWN_ELEMENT_TYPES.add(Separator_3029);
 			KNOWN_ELEMENT_TYPES.add(TreeView_3030);
+			KNOWN_ELEMENT_TYPES.add(Column_3032);
 		}
 		return KNOWN_ELEMENT_TYPES.contains(elementType);
 	}
@@ -403,6 +421,8 @@ public class UidiagramElementTypes {
 			return Separator_3015;
 		case TreeViewEditPart.VISUAL_ID:
 			return TreeView_3016;
+		case ColumnEditPart.VISUAL_ID:
+			return Column_3031;
 		case Button2EditPart.VISUAL_ID:
 			return Button_3017;
 		case Label2EditPart.VISUAL_ID:
@@ -431,6 +451,8 @@ public class UidiagramElementTypes {
 			return Separator_3029;
 		case TreeView2EditPart.VISUAL_ID:
 			return TreeView_3030;
+		case Column2EditPart.VISUAL_ID:
+			return Column_3032;
 		}
 		return null;
 	}

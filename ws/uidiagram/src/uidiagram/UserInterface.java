@@ -22,10 +22,12 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link uidiagram.UserInterface#getPositionX <em>Position X</em>}</li>
  *   <li>{@link uidiagram.UserInterface#getPositionY <em>Position Y</em>}</li>
  *   <li>{@link uidiagram.UserInterface#getWidth <em>Width</em>}</li>
- *   <li>{@link uidiagram.UserInterface#getHeigth <em>Heigth</em>}</li>
+ *   <li>{@link uidiagram.UserInterface#getHeight <em>Height</em>}</li>
  *   <li>{@link uidiagram.UserInterface#getBackgroundColor <em>Background Color</em>}</li>
  *   <li>{@link uidiagram.UserInterface#getTitleFont <em>Title Font</em>}</li>
  *   <li>{@link uidiagram.UserInterface#getTitleFontSize <em>Title Font Size</em>}</li>
+ *   <li>{@link uidiagram.UserInterface#getPathImage <em>Path Image</em>}</li>
+ *   <li>{@link uidiagram.UserInterface#getStyle <em>Style</em>}</li>
  *   <li>{@link uidiagram.UserInterface#getLstModelElements <em>Lst Model Elements</em>}</li>
  * </ul>
  *
@@ -147,12 +149,12 @@ public interface UserInterface extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Position X</em>' attribute.
-	 * @see #setPositionX(String)
+	 * @see #setPositionX(int)
 	 * @see uidiagram.UidiagramPackage#getUserInterface_PositionX()
 	 * @model
 	 * @generated
 	 */
-	String getPositionX();
+	int getPositionX();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.UserInterface#getPositionX <em>Position X</em>}' attribute.
@@ -162,7 +164,7 @@ public interface UserInterface extends EObject {
 	 * @see #getPositionX()
 	 * @generated
 	 */
-	void setPositionX(String value);
+	void setPositionX(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Position Y</b></em>' attribute.
@@ -173,12 +175,12 @@ public interface UserInterface extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Position Y</em>' attribute.
-	 * @see #setPositionY(String)
+	 * @see #setPositionY(int)
 	 * @see uidiagram.UidiagramPackage#getUserInterface_PositionY()
 	 * @model
 	 * @generated
 	 */
-	String getPositionY();
+	int getPositionY();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.UserInterface#getPositionY <em>Position Y</em>}' attribute.
@@ -188,7 +190,7 @@ public interface UserInterface extends EObject {
 	 * @see #getPositionY()
 	 * @generated
 	 */
-	void setPositionY(String value);
+	void setPositionY(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Width</b></em>' attribute.
@@ -199,12 +201,12 @@ public interface UserInterface extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Width</em>' attribute.
-	 * @see #setWidth(String)
+	 * @see #setWidth(int)
 	 * @see uidiagram.UidiagramPackage#getUserInterface_Width()
 	 * @model
 	 * @generated
 	 */
-	String getWidth();
+	int getWidth();
 
 	/**
 	 * Sets the value of the '{@link uidiagram.UserInterface#getWidth <em>Width</em>}' attribute.
@@ -214,33 +216,33 @@ public interface UserInterface extends EObject {
 	 * @see #getWidth()
 	 * @generated
 	 */
-	void setWidth(String value);
+	void setWidth(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Heigth</b></em>' attribute.
+	 * Returns the value of the '<em><b>Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Heigth</em>' attribute isn't clear,
+	 * If the meaning of the '<em>Height</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Heigth</em>' attribute.
-	 * @see #setHeigth(String)
-	 * @see uidiagram.UidiagramPackage#getUserInterface_Heigth()
+	 * @return the value of the '<em>Height</em>' attribute.
+	 * @see #setHeight(int)
+	 * @see uidiagram.UidiagramPackage#getUserInterface_Height()
 	 * @model
 	 * @generated
 	 */
-	String getHeigth();
+	int getHeight();
 
 	/**
-	 * Sets the value of the '{@link uidiagram.UserInterface#getHeigth <em>Heigth</em>}' attribute.
+	 * Sets the value of the '{@link uidiagram.UserInterface#getHeight <em>Height</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Heigth</em>' attribute.
-	 * @see #getHeigth()
+	 * @param value the new value of the '<em>Height</em>' attribute.
+	 * @see #getHeight()
 	 * @generated
 	 */
-	void setHeigth(String value);
+	void setHeight(int value);
 
 	/**
 	 * Returns the value of the '<em><b>Background Color</b></em>' attribute.
@@ -319,6 +321,58 @@ public interface UserInterface extends EObject {
 	 * @generated
 	 */
 	void setTitleFontSize(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Path Image</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Path Image</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Path Image</em>' attribute.
+	 * @see #setPathImage(String)
+	 * @see uidiagram.UidiagramPackage#getUserInterface_PathImage()
+	 * @model
+	 * @generated
+	 */
+	String getPathImage();
+
+	/**
+	 * Sets the value of the '{@link uidiagram.UserInterface#getPathImage <em>Path Image</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Path Image</em>' attribute.
+	 * @see #getPathImage()
+	 * @generated
+	 */
+	void setPathImage(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Style</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Style</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Style</em>' attribute.
+	 * @see #setStyle(String)
+	 * @see uidiagram.UidiagramPackage#getUserInterface_Style()
+	 * @model
+	 * @generated
+	 */
+	String getStyle();
+
+	/**
+	 * Sets the value of the '{@link uidiagram.UserInterface#getStyle <em>Style</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Style</em>' attribute.
+	 * @see #getStyle()
+	 * @generated
+	 */
+	void setStyle(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Lst Model Elements</b></em>' containment reference list.

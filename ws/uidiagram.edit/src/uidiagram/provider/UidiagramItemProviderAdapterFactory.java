@@ -555,6 +555,29 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link uidiagram.Column} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ColumnItemProvider columnItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link uidiagram.Column}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createColumnAdapter() {
+		if (columnItemProvider == null) {
+			columnItemProvider = new ColumnItemProvider(this);
+		}
+
+		return columnItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -674,6 +697,7 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 		if (notebookItemProvider != null) notebookItemProvider.dispose();
 		if (separatorItemProvider != null) separatorItemProvider.dispose();
 		if (treeViewItemProvider != null) treeViewItemProvider.dispose();
+		if (columnItemProvider != null) columnItemProvider.dispose();
 	}
 
 }

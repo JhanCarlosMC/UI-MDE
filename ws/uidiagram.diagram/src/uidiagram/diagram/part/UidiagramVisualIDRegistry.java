@@ -20,6 +20,10 @@ import uidiagram.diagram.edit.parts.CheckBox2EditPart;
 import uidiagram.diagram.edit.parts.CheckBoxEditPart;
 import uidiagram.diagram.edit.parts.CheckBoxName2EditPart;
 import uidiagram.diagram.edit.parts.CheckBoxNameEditPart;
+import uidiagram.diagram.edit.parts.Column2EditPart;
+import uidiagram.diagram.edit.parts.ColumnEditPart;
+import uidiagram.diagram.edit.parts.ColumnName2EditPart;
+import uidiagram.diagram.edit.parts.ColumnNameEditPart;
 import uidiagram.diagram.edit.parts.ComboBox2EditPart;
 import uidiagram.diagram.edit.parts.ComboBoxEditPart;
 import uidiagram.diagram.edit.parts.ComboBoxName2EditPart;
@@ -231,6 +235,9 @@ public class UidiagramVisualIDRegistry {
 			if (UidiagramPackage.eINSTANCE.getTreeView().isSuperTypeOf(domainElement.eClass())) {
 				return TreeView2EditPart.VISUAL_ID;
 			}
+			if (UidiagramPackage.eINSTANCE.getColumn().isSuperTypeOf(domainElement.eClass())) {
+				return Column2EditPart.VISUAL_ID;
+			}
 			break;
 		case GroupGroupLstChildModelElementsCompartmentEditPart.VISUAL_ID:
 			if (UidiagramPackage.eINSTANCE.getGroup().isSuperTypeOf(domainElement.eClass())) {
@@ -278,6 +285,9 @@ public class UidiagramVisualIDRegistry {
 			if (UidiagramPackage.eINSTANCE.getTreeView().isSuperTypeOf(domainElement.eClass())) {
 				return TreeViewEditPart.VISUAL_ID;
 			}
+			if (UidiagramPackage.eINSTANCE.getColumn().isSuperTypeOf(domainElement.eClass())) {
+				return ColumnEditPart.VISUAL_ID;
+			}
 			break;
 		case GroupGroupLstChildModelElementsCompartment2EditPart.VISUAL_ID:
 			if (UidiagramPackage.eINSTANCE.getGroup().isSuperTypeOf(domainElement.eClass())) {
@@ -324,6 +334,9 @@ public class UidiagramVisualIDRegistry {
 			}
 			if (UidiagramPackage.eINSTANCE.getTreeView().isSuperTypeOf(domainElement.eClass())) {
 				return TreeViewEditPart.VISUAL_ID;
+			}
+			if (UidiagramPackage.eINSTANCE.getColumn().isSuperTypeOf(domainElement.eClass())) {
+				return ColumnEditPart.VISUAL_ID;
 			}
 			break;
 		}
@@ -448,6 +461,11 @@ public class UidiagramVisualIDRegistry {
 				return true;
 			}
 			break;
+		case ColumnEditPart.VISUAL_ID:
+			if (ColumnNameEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
 		case Button2EditPart.VISUAL_ID:
 			if (ButtonName2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
@@ -518,6 +536,11 @@ public class UidiagramVisualIDRegistry {
 				return true;
 			}
 			break;
+		case Column2EditPart.VISUAL_ID:
+			if (ColumnName2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			break;
 		case UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart.VISUAL_ID:
 			if (GroupEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
@@ -562,6 +585,9 @@ public class UidiagramVisualIDRegistry {
 				return true;
 			}
 			if (TreeView2EditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (Column2EditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -611,6 +637,9 @@ public class UidiagramVisualIDRegistry {
 			if (TreeViewEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
+			if (ColumnEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
 			break;
 		case GroupGroupLstChildModelElementsCompartment2EditPart.VISUAL_ID:
 			if (Group2EditPart.VISUAL_ID == nodeVisualID) {
@@ -656,6 +685,9 @@ public class UidiagramVisualIDRegistry {
 				return true;
 			}
 			if (TreeViewEditPart.VISUAL_ID == nodeVisualID) {
+				return true;
+			}
+			if (ColumnEditPart.VISUAL_ID == nodeVisualID) {
 				return true;
 			}
 			break;
@@ -745,6 +777,8 @@ public class UidiagramVisualIDRegistry {
 		case Notebook2EditPart.VISUAL_ID:
 		case Separator2EditPart.VISUAL_ID:
 		case TreeView2EditPart.VISUAL_ID:
+		case ColumnEditPart.VISUAL_ID:
+		case Column2EditPart.VISUAL_ID:
 			return true;
 		default:
 			break;

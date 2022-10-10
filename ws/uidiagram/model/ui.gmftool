@@ -30,6 +30,15 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="Column"
+          description="Create new Column">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="ComboBox"
           description="Create new ComboBox">
         <smallIcon

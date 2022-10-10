@@ -11,6 +11,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import uidiagram.Button;
 import uidiagram.CheckBox;
+import uidiagram.Column;
 import uidiagram.ComboBox;
 import uidiagram.Frame;
 import uidiagram.GraphicalContainer;
@@ -188,6 +189,13 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	private EClass treeViewEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass columnEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -361,7 +369,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getUserInterface_Heigth() {
+	public EAttribute getUserInterface_Height() {
 		return (EAttribute)userInterfaceEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -397,8 +405,26 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getUserInterface_PathImage() {
+		return (EAttribute)userInterfaceEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getUserInterface_Style() {
+		return (EAttribute)userInterfaceEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EReference getUserInterface_LstModelElements() {
-		return (EReference)userInterfaceEClass.getEStructuralFeatures().get(11);
+		return (EReference)userInterfaceEClass.getEStructuralFeatures().get(13);
 	}
 
 	/**
@@ -469,7 +495,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getModelElement_Heigth() {
+	public EAttribute getModelElement_Height() {
 		return (EAttribute)modelElementEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -498,6 +524,24 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 */
 	public EAttribute getModelElement_TitleFontSize() {
 		return (EAttribute)modelElementEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getModelElement_PathImage() {
+		return (EAttribute)modelElementEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getModelElement_Style() {
+		return (EAttribute)modelElementEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -667,6 +711,15 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getColumn() {
+		return columnEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public UidiagramFactory getUidiagramFactory() {
 		return (UidiagramFactory)getEFactoryInstance();
 	}
@@ -704,10 +757,12 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		createEAttribute(userInterfaceEClass, USER_INTERFACE__POSITION_X);
 		createEAttribute(userInterfaceEClass, USER_INTERFACE__POSITION_Y);
 		createEAttribute(userInterfaceEClass, USER_INTERFACE__WIDTH);
-		createEAttribute(userInterfaceEClass, USER_INTERFACE__HEIGTH);
+		createEAttribute(userInterfaceEClass, USER_INTERFACE__HEIGHT);
 		createEAttribute(userInterfaceEClass, USER_INTERFACE__BACKGROUND_COLOR);
 		createEAttribute(userInterfaceEClass, USER_INTERFACE__TITLE_FONT);
 		createEAttribute(userInterfaceEClass, USER_INTERFACE__TITLE_FONT_SIZE);
+		createEAttribute(userInterfaceEClass, USER_INTERFACE__PATH_IMAGE);
+		createEAttribute(userInterfaceEClass, USER_INTERFACE__STYLE);
 		createEReference(userInterfaceEClass, USER_INTERFACE__LST_MODEL_ELEMENTS);
 
 		modelElementEClass = createEClass(MODEL_ELEMENT);
@@ -717,10 +772,12 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		createEAttribute(modelElementEClass, MODEL_ELEMENT__POSITION_X);
 		createEAttribute(modelElementEClass, MODEL_ELEMENT__POSITION_Y);
 		createEAttribute(modelElementEClass, MODEL_ELEMENT__WIDTH);
-		createEAttribute(modelElementEClass, MODEL_ELEMENT__HEIGTH);
+		createEAttribute(modelElementEClass, MODEL_ELEMENT__HEIGHT);
 		createEAttribute(modelElementEClass, MODEL_ELEMENT__BACKGROUND_COLOR);
 		createEAttribute(modelElementEClass, MODEL_ELEMENT__TITLE_FONT);
 		createEAttribute(modelElementEClass, MODEL_ELEMENT__TITLE_FONT_SIZE);
+		createEAttribute(modelElementEClass, MODEL_ELEMENT__PATH_IMAGE);
+		createEAttribute(modelElementEClass, MODEL_ELEMENT__STYLE);
 
 		graphicalContainerEClass = createEClass(GRAPHICAL_CONTAINER);
 		createEReference(graphicalContainerEClass, GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS);
@@ -756,6 +813,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		separatorEClass = createEClass(SEPARATOR);
 
 		treeViewEClass = createEClass(TREE_VIEW);
+
+		columnEClass = createEClass(COLUMN);
 	}
 
 	/**
@@ -803,6 +862,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		notebookEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		separatorEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		treeViewEClass.getESuperTypes().add(this.getGraphicalIndividual());
+		columnEClass.getESuperTypes().add(this.getGraphicalIndividual());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(modelFactoryEClass, ModelFactory.class, "ModelFactory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -816,26 +876,30 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		initEAttribute(getUserInterface_Title(), ecorePackage.getEString(), "title", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUserInterface_IdModelElement(), ecorePackage.getEString(), "idModelElement", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUserInterface_Color(), ecorePackage.getEString(), "color", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUserInterface_PositionX(), ecorePackage.getEString(), "positionX", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUserInterface_PositionY(), ecorePackage.getEString(), "positionY", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUserInterface_Width(), ecorePackage.getEString(), "width", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getUserInterface_Heigth(), ecorePackage.getEString(), "heigth", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInterface_PositionX(), ecorePackage.getEInt(), "positionX", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInterface_PositionY(), ecorePackage.getEInt(), "positionY", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInterface_Width(), ecorePackage.getEInt(), "width", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInterface_Height(), ecorePackage.getEInt(), "height", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUserInterface_BackgroundColor(), ecorePackage.getEString(), "backgroundColor", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUserInterface_TitleFont(), ecorePackage.getEString(), "titleFont", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUserInterface_TitleFontSize(), ecorePackage.getEString(), "titleFontSize", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInterface_PathImage(), ecorePackage.getEString(), "pathImage", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserInterface_Style(), ecorePackage.getEString(), "style", null, 0, 1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUserInterface_LstModelElements(), this.getModelElement(), null, "lstModelElements", null, 0, -1, UserInterface.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(modelElementEClass, ModelElement.class, "ModelElement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getModelElement_Name(), ecorePackage.getEString(), "name", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getModelElement_IdModelElement(), ecorePackage.getEString(), "idModelElement", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getModelElement_Color(), ecorePackage.getEString(), "color", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getModelElement_PositionX(), ecorePackage.getEString(), "positionX", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getModelElement_PositionY(), ecorePackage.getEString(), "positionY", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getModelElement_Width(), ecorePackage.getEString(), "width", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getModelElement_Heigth(), ecorePackage.getEString(), "heigth", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelElement_PositionX(), ecorePackage.getEInt(), "positionX", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelElement_PositionY(), ecorePackage.getEInt(), "positionY", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelElement_Width(), ecorePackage.getEInt(), "width", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelElement_Height(), ecorePackage.getEInt(), "height", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getModelElement_BackgroundColor(), ecorePackage.getEString(), "backgroundColor", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getModelElement_TitleFont(), ecorePackage.getEString(), "titleFont", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getModelElement_TitleFontSize(), ecorePackage.getEString(), "titleFontSize", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelElement_PathImage(), ecorePackage.getEString(), "pathImage", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getModelElement_Style(), ecorePackage.getEString(), "style", null, 0, 1, ModelElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(graphicalContainerEClass, GraphicalContainer.class, "GraphicalContainer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGraphicalContainer_LstChildModelElements(), this.getModelElement(), null, "lstChildModelElements", null, 0, -1, GraphicalContainer.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -871,6 +935,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		initEClass(separatorEClass, Separator.class, "Separator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(treeViewEClass, TreeView.class, "TreeView", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(columnEClass, Column.class, "Column", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -1017,6 +1083,12 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		   });	
 		addAnnotation
 		  (treeViewEClass, 
+		   source, 
+		   new String[] {
+			 "label", "name"
+		   });	
+		addAnnotation
+		  (columnEClass, 
 		   source, 
 		   new String[] {
 			 "label", "name"

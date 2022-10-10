@@ -21,7 +21,7 @@
       </labelMappings>
       <tool
           xsi:type="gmftool:CreationTool"
-          href="ui.gmftool#//@palette/@tools.0/@tools.15"/>
+          href="ui.gmftool#//@palette/@tools.0/@tools.16"/>
       <diagramNode
           href="ui.gmfgraph#UserInterface"/>
       <children
@@ -41,7 +41,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.4"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.5"/>
           <diagramNode
               href="ui.gmfgraph#Group"/>
           <children
@@ -134,8 +134,14 @@
             <containmentFeature
                 href="ui.ecore#//GraphicalContainer/lstChildModelElements"/>
           </children>
+          <children
+              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@compartments.0"
+              referencedChild="//@nodes.0/@ownedChild/@children.15/@ownedChild">
+            <containmentFeature
+                href="ui.ecore#//GraphicalContainer/lstChildModelElements"/>
+          </children>
           <compartments
-              children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.14">
+              children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.14 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.15">
             <compartment
                 href="ui.gmfgraph#GroupLstChildModelElementsCompartment"/>
           </compartments>
@@ -178,7 +184,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.5"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.6"/>
           <diagramNode
               href="ui.gmfgraph#Label"/>
         </ownedChild>
@@ -220,7 +226,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.13"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.14"/>
           <diagramNode
               href="ui.gmfgraph#TextInput"/>
         </ownedChild>
@@ -241,7 +247,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.9"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.10"/>
           <diagramNode
               href="ui.gmfgraph#RadioButton"/>
         </ownedChild>
@@ -262,7 +268,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.3"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.4"/>
           <diagramNode
               href="ui.gmfgraph#Frame"/>
         </ownedChild>
@@ -283,7 +289,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.6"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.7"/>
           <diagramNode
               href="ui.gmfgraph#LabelFrame"/>
         </ownedChild>
@@ -304,7 +310,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.7"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.8"/>
           <diagramNode
               href="ui.gmfgraph#MenuButton"/>
         </ownedChild>
@@ -325,7 +331,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.10"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.11"/>
           <diagramNode
               href="ui.gmfgraph#ScrollBar"/>
         </ownedChild>
@@ -346,7 +352,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.12"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.13"/>
           <diagramNode
               href="ui.gmfgraph#SpinBox"/>
         </ownedChild>
@@ -367,7 +373,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.2"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.3"/>
           <diagramNode
               href="ui.gmfgraph#ComboBox"/>
         </ownedChild>
@@ -388,7 +394,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.8"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.9"/>
           <diagramNode
               href="ui.gmfgraph#Notebook"/>
         </ownedChild>
@@ -409,7 +415,7 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.11"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.12"/>
           <diagramNode
               href="ui.gmfgraph#Separator"/>
         </ownedChild>
@@ -430,13 +436,34 @@
           </labelMappings>
           <tool
               xsi:type="gmftool:CreationTool"
-              href="ui.gmftool#//@palette/@tools.0/@tools.14"/>
+              href="ui.gmftool#//@palette/@tools.0/@tools.15"/>
           <diagramNode
               href="ui.gmfgraph#TreeView"/>
         </ownedChild>
       </children>
+      <children
+          compartment="//@nodes.0/@ownedChild/@compartments.0">
+        <containmentFeature
+            href="ui.ecore#//UserInterface/lstModelElements"/>
+        <ownedChild>
+          <domainMetaElement
+              href="ui.ecore#//Column"/>
+          <labelMappings
+              xsi:type="gmfmap:FeatureLabelMapping">
+            <diagramLabel
+                href="ui.gmfgraph#ColumnLabel"/>
+            <features
+                href="ui.ecore#//ModelElement/name"/>
+          </labelMappings>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="ui.gmftool#//@palette/@tools.0/@tools.2"/>
+          <diagramNode
+              href="ui.gmfgraph#Column"/>
+        </ownedChild>
+      </children>
       <compartments
-          children="//@nodes.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.14">
+          children="//@nodes.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.10 //@nodes.0/@ownedChild/@children.11 //@nodes.0/@ownedChild/@children.12 //@nodes.0/@ownedChild/@children.13 //@nodes.0/@ownedChild/@children.14 //@nodes.0/@ownedChild/@children.15">
         <compartment
             href="ui.gmfgraph#UserInterfaceLstModelElementsCompartment"/>
       </compartments>

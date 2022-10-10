@@ -19,6 +19,8 @@ import uidiagram.diagram.edit.parts.Button2EditPart;
 import uidiagram.diagram.edit.parts.ButtonEditPart;
 import uidiagram.diagram.edit.parts.CheckBox2EditPart;
 import uidiagram.diagram.edit.parts.CheckBoxEditPart;
+import uidiagram.diagram.edit.parts.Column2EditPart;
+import uidiagram.diagram.edit.parts.ColumnEditPart;
 import uidiagram.diagram.edit.parts.ComboBox2EditPart;
 import uidiagram.diagram.edit.parts.ComboBoxEditPart;
 import uidiagram.diagram.edit.parts.Frame2EditPart;
@@ -177,6 +179,10 @@ public class UidiagramDiagramUpdater {
 				result.add(new UidiagramNodeDescriptor(childElement, visualID));
 				continue;
 			}
+			if (visualID == Column2EditPart.VISUAL_ID) {
+				result.add(new UidiagramNodeDescriptor(childElement, visualID));
+				continue;
+			}
 		}
 		return result;
 	}
@@ -255,6 +261,10 @@ public class UidiagramDiagramUpdater {
 				continue;
 			}
 			if (visualID == TreeViewEditPart.VISUAL_ID) {
+				result.add(new UidiagramNodeDescriptor(childElement, visualID));
+				continue;
+			}
+			if (visualID == ColumnEditPart.VISUAL_ID) {
 				result.add(new UidiagramNodeDescriptor(childElement, visualID));
 				continue;
 			}
@@ -339,6 +349,10 @@ public class UidiagramDiagramUpdater {
 				result.add(new UidiagramNodeDescriptor(childElement, visualID));
 				continue;
 			}
+			if (visualID == ColumnEditPart.VISUAL_ID) {
+				result.add(new UidiagramNodeDescriptor(childElement, visualID));
+				continue;
+			}
 		}
 		return result;
 	}
@@ -384,6 +398,8 @@ public class UidiagramDiagramUpdater {
 			return getSeparator_3015ContainedLinks(view);
 		case TreeViewEditPart.VISUAL_ID:
 			return getTreeView_3016ContainedLinks(view);
+		case ColumnEditPart.VISUAL_ID:
+			return getColumn_3031ContainedLinks(view);
 		case Button2EditPart.VISUAL_ID:
 			return getButton_3017ContainedLinks(view);
 		case Label2EditPart.VISUAL_ID:
@@ -412,6 +428,8 @@ public class UidiagramDiagramUpdater {
 			return getSeparator_3029ContainedLinks(view);
 		case TreeView2EditPart.VISUAL_ID:
 			return getTreeView_3030ContainedLinks(view);
+		case Column2EditPart.VISUAL_ID:
+			return getColumn_3032ContainedLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -455,6 +473,8 @@ public class UidiagramDiagramUpdater {
 			return getSeparator_3015IncomingLinks(view);
 		case TreeViewEditPart.VISUAL_ID:
 			return getTreeView_3016IncomingLinks(view);
+		case ColumnEditPart.VISUAL_ID:
+			return getColumn_3031IncomingLinks(view);
 		case Button2EditPart.VISUAL_ID:
 			return getButton_3017IncomingLinks(view);
 		case Label2EditPart.VISUAL_ID:
@@ -483,6 +503,8 @@ public class UidiagramDiagramUpdater {
 			return getSeparator_3029IncomingLinks(view);
 		case TreeView2EditPart.VISUAL_ID:
 			return getTreeView_3030IncomingLinks(view);
+		case Column2EditPart.VISUAL_ID:
+			return getColumn_3032IncomingLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -526,6 +548,8 @@ public class UidiagramDiagramUpdater {
 			return getSeparator_3015OutgoingLinks(view);
 		case TreeViewEditPart.VISUAL_ID:
 			return getTreeView_3016OutgoingLinks(view);
+		case ColumnEditPart.VISUAL_ID:
+			return getColumn_3031OutgoingLinks(view);
 		case Button2EditPart.VISUAL_ID:
 			return getButton_3017OutgoingLinks(view);
 		case Label2EditPart.VISUAL_ID:
@@ -554,6 +578,8 @@ public class UidiagramDiagramUpdater {
 			return getSeparator_3029OutgoingLinks(view);
 		case TreeView2EditPart.VISUAL_ID:
 			return getTreeView_3030OutgoingLinks(view);
+		case Column2EditPart.VISUAL_ID:
+			return getColumn_3032OutgoingLinks(view);
 		}
 		return Collections.emptyList();
 	}
@@ -685,6 +711,13 @@ public class UidiagramDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<UidiagramLinkDescriptor> getColumn_3031ContainedLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<UidiagramLinkDescriptor> getButton_3017ContainedLinks(View view) {
@@ -779,6 +812,13 @@ public class UidiagramDiagramUpdater {
 	 * @generated
 	 */
 	public static List<UidiagramLinkDescriptor> getTreeView_3030ContainedLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<UidiagramLinkDescriptor> getColumn_3032ContainedLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -902,6 +942,13 @@ public class UidiagramDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<UidiagramLinkDescriptor> getColumn_3031IncomingLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<UidiagramLinkDescriptor> getButton_3017IncomingLinks(View view) {
@@ -996,6 +1043,13 @@ public class UidiagramDiagramUpdater {
 	 * @generated
 	 */
 	public static List<UidiagramLinkDescriptor> getTreeView_3030IncomingLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<UidiagramLinkDescriptor> getColumn_3032IncomingLinks(View view) {
 		return Collections.emptyList();
 	}
 
@@ -1119,6 +1173,13 @@ public class UidiagramDiagramUpdater {
 	}
 
 	/**
+	* @generated
+	*/
+	public static List<UidiagramLinkDescriptor> getColumn_3031OutgoingLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
 	 * @generated
 	 */
 	public static List<UidiagramLinkDescriptor> getButton_3017OutgoingLinks(View view) {
@@ -1213,6 +1274,13 @@ public class UidiagramDiagramUpdater {
 	 * @generated
 	 */
 	public static List<UidiagramLinkDescriptor> getTreeView_3030OutgoingLinks(View view) {
+		return Collections.emptyList();
+	}
+
+	/**
+	* @generated
+	*/
+	public static List<UidiagramLinkDescriptor> getColumn_3032OutgoingLinks(View view) {
 		return Collections.emptyList();
 	}
 

@@ -47,6 +47,10 @@ import uidiagram.diagram.edit.parts.CheckBox2EditPart;
 import uidiagram.diagram.edit.parts.CheckBoxEditPart;
 import uidiagram.diagram.edit.parts.CheckBoxName2EditPart;
 import uidiagram.diagram.edit.parts.CheckBoxNameEditPart;
+import uidiagram.diagram.edit.parts.Column2EditPart;
+import uidiagram.diagram.edit.parts.ColumnEditPart;
+import uidiagram.diagram.edit.parts.ColumnName2EditPart;
+import uidiagram.diagram.edit.parts.ColumnNameEditPart;
 import uidiagram.diagram.edit.parts.ComboBox2EditPart;
 import uidiagram.diagram.edit.parts.ComboBoxEditPart;
 import uidiagram.diagram.edit.parts.ComboBoxName2EditPart;
@@ -135,10 +139,10 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	*/
 	protected boolean provides(CreateViewForKindOperation op) {
 		/*
-				if (op.getViewKind() == Node.class)
-					return getNodeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
-				if (op.getViewKind() == Edge.class)
-					return getEdgeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
+		    if (op.getViewKind() == Node.class)
+		      return getNodeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
+		    if (op.getViewKind() == Edge.class)
+		      return getEdgeViewClass(op.getSemanticAdapter(), op.getContainerView(), op.getSemanticHint()) != null;
 		*/
 		return true;
 	}
@@ -204,6 +208,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				case NotebookEditPart.VISUAL_ID:
 				case SeparatorEditPart.VISUAL_ID:
 				case TreeViewEditPart.VISUAL_ID:
+				case ColumnEditPart.VISUAL_ID:
 				case Group2EditPart.VISUAL_ID:
 				case Button2EditPart.VISUAL_ID:
 				case Label2EditPart.VISUAL_ID:
@@ -219,6 +224,7 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				case Notebook2EditPart.VISUAL_ID:
 				case Separator2EditPart.VISUAL_ID:
 				case TreeView2EditPart.VISUAL_ID:
+				case Column2EditPart.VISUAL_ID:
 					if (domainElement == null || visualID != UidiagramVisualIDRegistry
 							.getNodeVisualID(op.getContainerView(), domainElement)) {
 						return false; // visual id in semantic hint should match visual id for domain element
@@ -237,14 +243,15 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 				|| MenuButtonEditPart.VISUAL_ID == visualID || ScrollBarEditPart.VISUAL_ID == visualID
 				|| SpinBoxEditPart.VISUAL_ID == visualID || ComboBoxEditPart.VISUAL_ID == visualID
 				|| NotebookEditPart.VISUAL_ID == visualID || SeparatorEditPart.VISUAL_ID == visualID
-				|| TreeViewEditPart.VISUAL_ID == visualID || Button2EditPart.VISUAL_ID == visualID
-				|| Label2EditPart.VISUAL_ID == visualID || CheckBox2EditPart.VISUAL_ID == visualID
-				|| TextInput2EditPart.VISUAL_ID == visualID || RadioButton2EditPart.VISUAL_ID == visualID
-				|| Frame2EditPart.VISUAL_ID == visualID || LabelFrame2EditPart.VISUAL_ID == visualID
-				|| MenuButton2EditPart.VISUAL_ID == visualID || ScrollBar2EditPart.VISUAL_ID == visualID
-				|| SpinBox2EditPart.VISUAL_ID == visualID || ComboBox2EditPart.VISUAL_ID == visualID
-				|| Notebook2EditPart.VISUAL_ID == visualID || Separator2EditPart.VISUAL_ID == visualID
-				|| TreeView2EditPart.VISUAL_ID == visualID;
+				|| TreeViewEditPart.VISUAL_ID == visualID || ColumnEditPart.VISUAL_ID == visualID
+				|| Button2EditPart.VISUAL_ID == visualID || Label2EditPart.VISUAL_ID == visualID
+				|| CheckBox2EditPart.VISUAL_ID == visualID || TextInput2EditPart.VISUAL_ID == visualID
+				|| RadioButton2EditPart.VISUAL_ID == visualID || Frame2EditPart.VISUAL_ID == visualID
+				|| LabelFrame2EditPart.VISUAL_ID == visualID || MenuButton2EditPart.VISUAL_ID == visualID
+				|| ScrollBar2EditPart.VISUAL_ID == visualID || SpinBox2EditPart.VISUAL_ID == visualID
+				|| ComboBox2EditPart.VISUAL_ID == visualID || Notebook2EditPart.VISUAL_ID == visualID
+				|| Separator2EditPart.VISUAL_ID == visualID || TreeView2EditPart.VISUAL_ID == visualID
+				|| Column2EditPart.VISUAL_ID == visualID;
 	}
 
 	/**
@@ -327,6 +334,8 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 			return createSeparator_3015(domainElement, containerView, index, persisted, preferencesHint);
 		case TreeViewEditPart.VISUAL_ID:
 			return createTreeView_3016(domainElement, containerView, index, persisted, preferencesHint);
+		case ColumnEditPart.VISUAL_ID:
+			return createColumn_3031(domainElement, containerView, index, persisted, preferencesHint);
 		case Button2EditPart.VISUAL_ID:
 			return createButton_3017(domainElement, containerView, index, persisted, preferencesHint);
 		case Label2EditPart.VISUAL_ID:
@@ -355,6 +364,8 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 			return createSeparator_3029(domainElement, containerView, index, persisted, preferencesHint);
 		case TreeView2EditPart.VISUAL_ID:
 			return createTreeView_3030(domainElement, containerView, index, persisted, preferencesHint);
+		case Column2EditPart.VISUAL_ID:
+			return createColumn_3032(domainElement, containerView, index, persisted, preferencesHint);
 		}
 		// can't happen, provided #provides(CreateNodeViewOperation) is correct
 		return null;
@@ -1002,6 +1013,42 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 	/**
 	* @generated
 	*/
+	public Node createColumn_3031(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(UidiagramVisualIDRegistry.getType(ColumnEditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5032 = createLabel(node, UidiagramVisualIDRegistry.getType(ColumnNameEditPart.VISUAL_ID));
+		return node;
+	}
+
+	/**
+	* @generated
+	*/
 	public Node createButton_3017(EObject domainElement, View containerView, int index, boolean persisted,
 			PreferencesHint preferencesHint) {
 		Shape node = NotationFactory.eINSTANCE.createShape();
@@ -1500,6 +1547,42 @@ public class UidiagramViewProvider extends AbstractProvider implements IViewProv
 		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
 				FigureUtilities.RGBToInteger(fillRGB));
 		Node label5030 = createLabel(node, UidiagramVisualIDRegistry.getType(TreeViewName2EditPart.VISUAL_ID));
+		return node;
+	}
+
+	/**
+	* @generated
+	*/
+	public Node createColumn_3032(EObject domainElement, View containerView, int index, boolean persisted,
+			PreferencesHint preferencesHint) {
+		Shape node = NotationFactory.eINSTANCE.createShape();
+		node.setLayoutConstraint(NotationFactory.eINSTANCE.createBounds());
+		node.setType(UidiagramVisualIDRegistry.getType(Column2EditPart.VISUAL_ID));
+		ViewUtil.insertChildView(containerView, node, index, persisted);
+		node.setElement(domainElement);
+		// initializeFromPreferences 
+		final IPreferenceStore prefStore = (IPreferenceStore) preferencesHint.getPreferenceStore();
+
+		org.eclipse.swt.graphics.RGB lineRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_LINE_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getLineStyle_LineColor(),
+				FigureUtilities.RGBToInteger(lineRGB));
+		FontStyle nodeFontStyle = (FontStyle) node.getStyle(NotationPackage.Literals.FONT_STYLE);
+		if (nodeFontStyle != null) {
+			FontData fontData = PreferenceConverter.getFontData(prefStore, IPreferenceConstants.PREF_DEFAULT_FONT);
+			nodeFontStyle.setFontName(fontData.getName());
+			nodeFontStyle.setFontHeight(fontData.getHeight());
+			nodeFontStyle.setBold((fontData.getStyle() & SWT.BOLD) != 0);
+			nodeFontStyle.setItalic((fontData.getStyle() & SWT.ITALIC) != 0);
+			org.eclipse.swt.graphics.RGB fontRGB = PreferenceConverter.getColor(prefStore,
+					IPreferenceConstants.PREF_FONT_COLOR);
+			nodeFontStyle.setFontColor(FigureUtilities.RGBToInteger(fontRGB).intValue());
+		}
+		org.eclipse.swt.graphics.RGB fillRGB = PreferenceConverter.getColor(prefStore,
+				IPreferenceConstants.PREF_FILL_COLOR);
+		ViewUtil.setStructuralFeatureValue(node, NotationPackage.eINSTANCE.getFillStyle_FillColor(),
+				FigureUtilities.RGBToInteger(fillRGB));
+		Node label5033 = createLabel(node, UidiagramVisualIDRegistry.getType(ColumnName2EditPart.VISUAL_ID));
 		return node;
 	}
 

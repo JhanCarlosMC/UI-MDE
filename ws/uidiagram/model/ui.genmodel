@@ -19,10 +19,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UserInterface/positionX"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UserInterface/positionY"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UserInterface/width"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UserInterface/heigth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UserInterface/height"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UserInterface/backgroundColor"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UserInterface/titleFont"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UserInterface/titleFontSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UserInterface/pathImage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//UserInterface/style"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ui.ecore#//UserInterface/lstModelElements"/>
     </genClasses>
     <genClasses ecoreClass="ui.ecore#//ModelElement">
@@ -32,10 +34,12 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//ModelElement/positionX"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//ModelElement/positionY"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//ModelElement/width"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//ModelElement/heigth"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//ModelElement/height"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//ModelElement/backgroundColor"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//ModelElement/titleFont"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//ModelElement/titleFontSize"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//ModelElement/pathImage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ui.ecore#//ModelElement/style"/>
     </genClasses>
     <genClasses ecoreClass="ui.ecore#//GraphicalContainer">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ui.ecore#//GraphicalContainer/lstChildModelElements"/>
@@ -56,5 +60,6 @@
     <genClasses ecoreClass="ui.ecore#//Notebook"/>
     <genClasses ecoreClass="ui.ecore#//Separator"/>
     <genClasses ecoreClass="ui.ecore#//TreeView"/>
+    <genClasses ecoreClass="ui.ecore#//Column"/>
   </genPackages>
 </genmodel:GenModel>

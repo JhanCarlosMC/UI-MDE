@@ -225,6 +225,11 @@ public class GraphicalContainerItemProvider extends ModelElementItemProvider {
 			(createChildParameter
 				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
 				 UidiagramFactory.eINSTANCE.createTreeView()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
+				 UidiagramFactory.eINSTANCE.createColumn()));
 	}
 
 }

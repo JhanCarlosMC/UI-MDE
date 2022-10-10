@@ -8,6 +8,7 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 
 import uidiagram.diagram.edit.commands.Button2CreateCommand;
 import uidiagram.diagram.edit.commands.CheckBox2CreateCommand;
+import uidiagram.diagram.edit.commands.Column2CreateCommand;
 import uidiagram.diagram.edit.commands.ComboBox2CreateCommand;
 import uidiagram.diagram.edit.commands.Frame2CreateCommand;
 import uidiagram.diagram.edit.commands.GroupCreateCommand;
@@ -84,6 +85,9 @@ public class UserInterfaceUserInterfaceLstModelElementsCompartmentItemSemanticEd
 		}
 		if (UidiagramElementTypes.TreeView_3030 == req.getElementType()) {
 			return getGEFWrapper(new TreeView2CreateCommand(req));
+		}
+		if (UidiagramElementTypes.Column_3032 == req.getElementType()) {
+			return getGEFWrapper(new Column2CreateCommand(req));
 		}
 		return super.getCreateCommand(req);
 	}
