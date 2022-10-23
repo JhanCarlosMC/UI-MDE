@@ -11,29 +11,87 @@
  */]
 [template public generateElement(anUserInterface : UserInterface)]
 [comment @main/]
-[file (anUserInterface.name+'.html', false, 'UTF-8')]
+[file (anUserInterface.name+'.py', false, 'UTF-8')]
+from tkinter import *
+from tkinter import tk
 
+root = tk.Tk()
+root.tittle('[anUserInterface.title/]')
+
+[generateCodeWidgets(anUserInterface)/]
+
+root.mainloop()
 
 [/file]
 [/template]
+
 
 [template public generateCodeWidgets(anUserInterface : UserInterface)]
 [for(widget : ModelElement | lstModelElements)]
 [if (widget.oclIsKindOf(GraphicalIndividual))]
 [generateIndividualElement(widget)/]
 [/if]
-[if (widget.oclIsKindOf(GraphicalContainer))]
 
+[if (widget.oclIsKindOf(GraphicalContainer))]
+[generateGraphicalContainer(widget)/]
 [/if]
 [/for]
 [/template]
 
+
+[template public generateIndividualElement(anIndividualElement : ModelElement)]
+[if (anIndividualElement.oclIsKindOf(Label))]
+label[anIndividualElement.idModelElement/] = tk.Label(root, text='[anIndividualElement.name/]')
+label[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/], height=[anIndividualElement.height/],font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]))
+label[anIndividualElement.idModelElement/].grid()
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(Button))]
+button[anIndividualElement.idModelElement/] = tk.Button(root, text='[anIndividualElement.name/]')
+button[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/], font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]),  fg='[anIndividualElement.color/]', activebackground = '[anIndividualElement.color/]')
+button[anIndividualElement.idModelElement/].grid()
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(TextInput))]
+textInput[anIndividualElement.idModelElement/] = tk.Entry(root, textvariable='[anIndividualElement.name/]')
+textInput[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/], font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]))
+textInput[anIndividualElement.idModelElement/].grid()
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(Frame))]
+tk.Frame(root=root)
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(CheckBox))]
+checkbuttontk[anIndividualElement.idModelElement/] = Checkbutton(root, text='[anIndividualElement.name/]')
+checkbuttontk[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/],font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]))
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(RadioButton))]
+radioButton'[anIndividualElement.idModelElement/] = 'tk.Radiobutton(text='[anIndividualElement.name/]', value='[anIndividualElement.idModelElement/]')
+radioButton'[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/],font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]))
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(Separator))]
+separator[anIndividualElement.idModelElement/] = tk.Separator(orient='[anIndividualElement.style/]')
+[/if]
+
+[if (anIndividualElement.oclIsKindOf(LabelFrame))]
+labelFrame[anIndividualElement.idModelElement/] = tk.LabelFrame(root, text='[anIndividualElement.name/]')
+labelFrame[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/],font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]))
+[/if]
+
+
+[/template]
+
+
+
 [template public generateGraphicalContainer(anGraphicalContainer : ModelElement)]
-[if (anGraphicalContainer.oclIsKindOf(Container)) ]
+[if (anGraphicalContainer.oclIsKindOf(GraphicalContainer)) ]
     <div>  
 [for (widget : ModelElement | anGraphicalContainer.oclAsType(GraphicalContainer))]
 [if (widget.oclIsKindOf(GraphicalIndividual))]
-[generateIndividualElement(widget)/]
+
 [/if]
 [if (widget.oclIsKindOf(GraphicalContainer))]
 [generateGraphicalContainer(widget)/]
@@ -43,14 +101,3 @@
 [/if]
 [/template]
 
-[template public generateIndividualElement(anIndividualElement : ModelElement)]
-[if (anIndividualElement.oclIsKindOf(Label))]
-  <label for="[anIndividualElement.title/]">[anIndividualElement.title/]</label>
-[/if]
-
-[if (anIndividualElement.oclIsKindOf(TextInput))]
-    <input type="[anIndividualElement.title/]" placeholder="[anIndividualElement.title/]"></input>
-[/if]
-
-
-[/template]

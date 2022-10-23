@@ -52,7 +52,7 @@ class GraphicalContainer extends ModelElement {
 	 val ModelElement[*] lstChildModelElements; 
 }
 class GraphicalIndividual extends ModelElement {
-	
+
 }
 
 @gmf.node(label = "name")
