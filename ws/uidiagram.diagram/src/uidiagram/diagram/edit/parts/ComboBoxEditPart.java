@@ -43,7 +43,7 @@ public class ComboBoxEditPart extends ShapeNodeEditPart {
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 3013;
+	public static final int VISUAL_ID = 3047;
 
 	/**
 	* @generated
@@ -350,4 +350,5 @@ public class ComboBoxEditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
+
 }

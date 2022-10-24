@@ -60,7 +60,7 @@ public class SpinBoxNameEditPart extends CompartmentEditPart implements ITextAwa
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 5010;
+	public static final int VISUAL_ID = 5046;
 
 	/**
 	* @generated
@@ -295,7 +295,7 @@ public class SpinBoxNameEditPart extends CompartmentEditPart implements ITextAwa
 	*/
 	public IParser getParser() {
 		if (parser == null) {
-			parser = UidiagramParserProvider.getParser(UidiagramElementTypes.SpinBox_3012, getParserElement(),
+			parser = UidiagramParserProvider.getParser(UidiagramElementTypes.SpinBox_3046, getParserElement(),
 					UidiagramVisualIDRegistry.getType(uidiagram.diagram.edit.parts.SpinBoxNameEditPart.VISUAL_ID));
 		}
 		return parser;

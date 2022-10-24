@@ -346,4 +346,5 @@ public class Label2EditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
+
 }

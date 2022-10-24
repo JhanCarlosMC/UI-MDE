@@ -55,12 +55,12 @@ import uidiagram.diagram.providers.UidiagramParserProvider;
 /**
  * @generated
  */
-public class TreeViewNameEditPart extends CompartmentEditPart implements ITextAwareEditPart {
+public class TreeviewNameEditPart extends CompartmentEditPart implements ITextAwareEditPart {
 
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 5014;
+	public static final int VISUAL_ID = 5038;
 
 	/**
 	* @generated
@@ -90,7 +90,7 @@ public class TreeViewNameEditPart extends CompartmentEditPart implements ITextAw
 	/**
 	* @generated
 	*/
-	public TreeViewNameEditPart(View view) {
+	public TreeviewNameEditPart(View view) {
 		super(view);
 	}
 
@@ -295,8 +295,8 @@ public class TreeViewNameEditPart extends CompartmentEditPart implements ITextAw
 	*/
 	public IParser getParser() {
 		if (parser == null) {
-			parser = UidiagramParserProvider.getParser(UidiagramElementTypes.TreeView_3016, getParserElement(),
-					UidiagramVisualIDRegistry.getType(uidiagram.diagram.edit.parts.TreeViewNameEditPart.VISUAL_ID));
+			parser = UidiagramParserProvider.getParser(UidiagramElementTypes.Treeview_3033, getParserElement(),
+					UidiagramVisualIDRegistry.getType(uidiagram.diagram.edit.parts.TreeviewNameEditPart.VISUAL_ID));
 		}
 		return parser;
 	}

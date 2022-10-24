@@ -5,6 +5,7 @@ package uidiagram.diagram.edit.parts;
 
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.MarginBorder;
+import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.RoundedRectangle;
 import org.eclipse.draw2d.Shape;
 import org.eclipse.draw2d.StackLayout;
@@ -32,18 +33,19 @@ import org.eclipse.gmf.runtime.notation.impl.NodeImpl;
 import org.eclipse.swt.graphics.Color;
 
 import uidiagram.ModelElement;
-import uidiagram.diagram.edit.policies.TreeView2ItemSemanticEditPolicy;
+import uidiagram.diagram.edit.policies.OpenDiagramEditPolicy;
+import uidiagram.diagram.edit.policies.Treeview2ItemSemanticEditPolicy;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
 
 /**
  * @generated
  */
-public class TreeView2EditPart extends ShapeNodeEditPart {
+public class Treeview2EditPart extends ShapeNodeEditPart {
 
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 3030;
+	public static final int VISUAL_ID = 3040;
 
 	/**
 	* @generated
@@ -58,7 +60,7 @@ public class TreeView2EditPart extends ShapeNodeEditPart {
 	/**
 	* @generated
 	*/
-	public TreeView2EditPart(View view) {
+	public Treeview2EditPart(View view) {
 		super(view);
 	}
 
@@ -67,9 +69,9 @@ public class TreeView2EditPart extends ShapeNodeEditPart {
 	*/
 	protected void createDefaultEditPolicies() {
 		super.createDefaultEditPolicies();
-		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new TreeView2ItemSemanticEditPolicy());
+		installEditPolicy(EditPolicyRoles.SEMANTIC_ROLE, new Treeview2ItemSemanticEditPolicy());
 		installEditPolicy(EditPolicy.LAYOUT_ROLE, createLayoutEditPolicy());
-		// XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
+		installEditPolicy(EditPolicyRoles.OPEN_ROLE, new OpenDiagramEditPolicy()); // XXX need an SCR to runtime to have another abstract superclass that would let children add reasonable editpolicies
 		// removeEditPolicy(org.eclipse.gmf.runtime.diagram.ui.editpolicies.EditPolicyRoles.CONNECTION_HANDLES_ROLE);
 	}
 
@@ -102,22 +104,28 @@ public class TreeView2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected IFigure createNodeShape() {
-		return primaryShape = new TreeViewFigure();
+		return primaryShape = new TreeviewFigure();
 	}
 
 	/**
 	* @generated
 	*/
-	public TreeViewFigure getPrimaryShape() {
-		return (TreeViewFigure) primaryShape;
+	public TreeviewFigure getPrimaryShape() {
+		return (TreeviewFigure) primaryShape;
 	}
 
 	/**
 	* @generated
 	*/
 	protected boolean addFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof TreeViewName2EditPart) {
-			((TreeViewName2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureTreeViewLabelFigure());
+		if (childEditPart instanceof TreeviewName2EditPart) {
+			((TreeviewName2EditPart) childEditPart).setLabel(getPrimaryShape().getFigureTreeviewLabelFigure());
+			return true;
+		}
+		if (childEditPart instanceof TreeviewTreeviewLstChildModelElementsCompartment2EditPart) {
+			IFigure pane = getPrimaryShape().getTreeviewLstChildModelElementsCompartmentFigure();
+			setupContentPane(pane); // FIXME each comparment should handle his content pane in his own way 
+			pane.add(((TreeviewTreeviewLstChildModelElementsCompartment2EditPart) childEditPart).getFigure());
 			return true;
 		}
 		return false;
@@ -127,7 +135,12 @@ public class TreeView2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected boolean removeFixedChild(EditPart childEditPart) {
-		if (childEditPart instanceof TreeViewName2EditPart) {
+		if (childEditPart instanceof TreeviewName2EditPart) {
+			return true;
+		}
+		if (childEditPart instanceof TreeviewTreeviewLstChildModelElementsCompartment2EditPart) {
+			IFigure pane = getPrimaryShape().getTreeviewLstChildModelElementsCompartmentFigure();
+			pane.remove(((TreeviewTreeviewLstChildModelElementsCompartment2EditPart) childEditPart).getFigure());
 			return true;
 		}
 		return false;
@@ -157,6 +170,9 @@ public class TreeView2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	protected IFigure getContentPaneFor(IGraphicalEditPart editPart) {
+		if (editPart instanceof TreeviewTreeviewLstChildModelElementsCompartment2EditPart) {
+			return getPrimaryShape().getTreeviewLstChildModelElementsCompartmentFigure();
+		}
 		return getContentPane();
 	}
 
@@ -250,23 +266,27 @@ public class TreeView2EditPart extends ShapeNodeEditPart {
 	* @generated
 	*/
 	public EditPart getPrimaryChildEditPart() {
-		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(TreeViewName2EditPart.VISUAL_ID));
+		return getChildBySemanticHint(UidiagramVisualIDRegistry.getType(TreeviewName2EditPart.VISUAL_ID));
 	}
 
 	/**
 	 * @generated
 	 */
-	public class TreeViewFigure extends RoundedRectangle {
+	public class TreeviewFigure extends RoundedRectangle {
 
 		/**
 		 * @generated
 		 */
-		private WrappingLabel fFigureTreeViewLabelFigure;
+		private WrappingLabel fFigureTreeviewLabelFigure;
+		/**
+		 * @generated
+		 */
+		private RectangleFigure fTreeviewLstChildModelElementsCompartmentFigure;
 
 		/**
 		 * @generated
 		 */
-		public TreeViewFigure() {
+		public TreeviewFigure() {
 			this.setCornerDimensions(new Dimension(getMapMode().DPtoLP(8), getMapMode().DPtoLP(8)));
 			this.setBorder(new MarginBorder(getMapMode().DPtoLP(5), getMapMode().DPtoLP(5), getMapMode().DPtoLP(5),
 					getMapMode().DPtoLP(5)));
@@ -278,22 +298,38 @@ public class TreeView2EditPart extends ShapeNodeEditPart {
 		 */
 		private void createContents() {
 
-			fFigureTreeViewLabelFigure = new WrappingLabel();
+			fFigureTreeviewLabelFigure = new WrappingLabel();
 
-			fFigureTreeViewLabelFigure.setText("TreeView");
+			fFigureTreeviewLabelFigure.setText("Treeview");
+			fFigureTreeviewLabelFigure
+					.setMaximumSize(new Dimension(getMapMode().DPtoLP(10000), getMapMode().DPtoLP(50)));
 
-			this.add(fFigureTreeViewLabelFigure);
+			this.add(fFigureTreeviewLabelFigure);
+
+			fTreeviewLstChildModelElementsCompartmentFigure = new RectangleFigure();
+
+			fTreeviewLstChildModelElementsCompartmentFigure.setOutline(false);
+
+			this.add(fTreeviewLstChildModelElementsCompartmentFigure);
 
 		}
 
 		/**
 		 * @generated
 		 */
-		public WrappingLabel getFigureTreeViewLabelFigure() {
-			return fFigureTreeViewLabelFigure;
+		public WrappingLabel getFigureTreeviewLabelFigure() {
+			return fFigureTreeviewLabelFigure;
+		}
+
+		/**
+		 * @generated
+		 */
+		public RectangleFigure getTreeviewLstChildModelElementsCompartmentFigure() {
+			return fTreeviewLstChildModelElementsCompartmentFigure;
 		}
 
 	}
+
 	protected void handleNotificationEvent(Notification arg0) {
 		// SET was the type i need
 		if (arg0.getEventType() == Notification.SET) {
@@ -349,4 +385,5 @@ public class TreeView2EditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
+
 }

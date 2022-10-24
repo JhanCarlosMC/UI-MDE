@@ -54,7 +54,7 @@
     </eStructuralFeatures>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GraphicalIndividual" eSuperTypes="#//ModelElement"/>
-  <eClassifiers xsi:type="ecore:EClass" name="Group" eSuperTypes="#//GraphicalContainer">
+  <eClassifiers xsi:type="ecore:EClass" name="Treeview" eSuperTypes="#//GraphicalContainer">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
@@ -70,37 +70,17 @@
       <details key="figure" value="rectangle"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="CheckBox" eSuperTypes="#//GraphicalIndividual">
+  <eClassifiers xsi:type="ecore:EClass" name="CheckButton" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TextInput" eSuperTypes="#//GraphicalIndividual">
+  <eClassifiers xsi:type="ecore:EClass" name="Entry" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="RadioButton" eSuperTypes="#//GraphicalIndividual">
-    <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Frame" eSuperTypes="#//GraphicalIndividual">
-    <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="LabelFrame" eSuperTypes="#//GraphicalIndividual">
-    <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MenuButton" eSuperTypes="#//GraphicalIndividual">
-    <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ScrollBar" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>
@@ -115,17 +95,7 @@
       <details key="label" value="name"/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Notebook" eSuperTypes="#//GraphicalIndividual">
-    <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
-    </eAnnotations>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Separator" eSuperTypes="#//GraphicalIndividual">
-    <eAnnotations source="gmf.node">
-      <details key="label" value="name"/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TreeView" eSuperTypes="#//GraphicalIndividual">
     <eAnnotations source="gmf.node">
       <details key="label" value="name"/>
     </eAnnotations>

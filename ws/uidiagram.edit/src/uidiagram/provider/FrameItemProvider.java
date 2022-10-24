@@ -19,7 +19,7 @@ import uidiagram.Frame;
  * <!-- end-user-doc -->
  * @generated
  */
-public class FrameItemProvider extends GraphicalIndividualItemProvider {
+public class FrameItemProvider extends GraphicalContainerItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->

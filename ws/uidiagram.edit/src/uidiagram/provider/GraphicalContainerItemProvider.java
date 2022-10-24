@@ -154,7 +154,7 @@ public class GraphicalContainerItemProvider extends ModelElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
-				 UidiagramFactory.eINSTANCE.createGroup()));
+				 UidiagramFactory.eINSTANCE.createTreeview()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -169,37 +169,17 @@ public class GraphicalContainerItemProvider extends ModelElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
-				 UidiagramFactory.eINSTANCE.createCheckBox()));
+				 UidiagramFactory.eINSTANCE.createCheckButton()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
-				 UidiagramFactory.eINSTANCE.createTextInput()));
+				 UidiagramFactory.eINSTANCE.createEntry()));
 
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
 				 UidiagramFactory.eINSTANCE.createRadioButton()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
-				 UidiagramFactory.eINSTANCE.createFrame()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
-				 UidiagramFactory.eINSTANCE.createLabelFrame()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
-				 UidiagramFactory.eINSTANCE.createMenuButton()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
-				 UidiagramFactory.eINSTANCE.createScrollBar()));
 
 		newChildDescriptors.add
 			(createChildParameter
@@ -214,17 +194,7 @@ public class GraphicalContainerItemProvider extends ModelElementItemProvider {
 		newChildDescriptors.add
 			(createChildParameter
 				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
-				 UidiagramFactory.eINSTANCE.createNotebook()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
 				 UidiagramFactory.eINSTANCE.createSeparator()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(UidiagramPackage.Literals.GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS,
-				 UidiagramFactory.eINSTANCE.createTreeView()));
 
 		newChildDescriptors.add
 			(createChildParameter

@@ -14,124 +14,6 @@
         queryText="true"/>
   </nodeTraces>
   <childNodeTraces
-      visualID="3001"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Group') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
-    <nodeLabelTraces
-        visualID="5016"
-        queryText="true"/>
-    <compartmentTraces
-        visualID="7002"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3002"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Group') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5015"
-        queryText="true"/>
-    <compartmentTraces
-        visualID="7003"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3003"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Button') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5001"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3004"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Label') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5002"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3005"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'CheckBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5003"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3006"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'TextInput') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5004"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3007"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'RadioButton') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5005"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3008"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Frame') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5006"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3009"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'LabelFrame') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5007"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3010"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'MenuButton') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5008"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3011"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'ScrollBar') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5009"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3012"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'SpinBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5010"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3013"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'ComboBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5011"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3014"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Notebook') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5012"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3015"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Separator') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5013"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3016"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'TreeView') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5014"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
       visualID="3017"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Button') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
     <nodeLabelTraces
@@ -146,52 +28,10 @@
         queryText="true"/>
   </childNodeTraces>
   <childNodeTraces
-      visualID="3019"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'CheckBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
-    <nodeLabelTraces
-        visualID="5019"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3020"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'TextInput') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
-    <nodeLabelTraces
-        visualID="5020"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
       visualID="3021"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'RadioButton') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
     <nodeLabelTraces
         visualID="5021"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3022"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Frame') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
-    <nodeLabelTraces
-        visualID="5022"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3023"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'LabelFrame') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
-    <nodeLabelTraces
-        visualID="5023"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3024"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'MenuButton') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
-    <nodeLabelTraces
-        visualID="5024"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3025"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'ScrollBar') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
-    <nodeLabelTraces
-        visualID="5025"
         queryText="true"/>
   </childNodeTraces>
   <childNodeTraces
@@ -209,13 +49,6 @@
         queryText="true"/>
   </childNodeTraces>
   <childNodeTraces
-      visualID="3028"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Notebook') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
-    <nodeLabelTraces
-        visualID="5028"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
       visualID="3029"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Separator') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
     <nodeLabelTraces
@@ -223,24 +56,107 @@
         queryText="true"/>
   </childNodeTraces>
   <childNodeTraces
-      visualID="3030"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'TreeView') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
-    <nodeLabelTraces
-        visualID="5030"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
-      visualID="3031"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Column') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
-    <nodeLabelTraces
-        visualID="5032"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
       visualID="3032"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Column') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
     <nodeLabelTraces
         visualID="5033"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3033"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Treeview') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
+    <nodeLabelTraces
+        visualID="5038"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7004"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3038"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'CheckButton') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
+    <nodeLabelTraces
+        visualID="5039"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3039"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Entry') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'UserInterface') and _containmentMF_.name = 'lstModelElements')">
+    <nodeLabelTraces
+        visualID="5040"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3040"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Treeview') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
+    <nodeLabelTraces
+        visualID="5050"
+        queryText="true"/>
+    <compartmentTraces
+        visualID="7005"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3041"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Button') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
+    <nodeLabelTraces
+        visualID="5041"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3042"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Label') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
+    <nodeLabelTraces
+        visualID="5042"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3043"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'CheckButton') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
+    <nodeLabelTraces
+        visualID="5043"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3044"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Entry') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
+    <nodeLabelTraces
+        visualID="5044"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3045"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'RadioButton') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
+    <nodeLabelTraces
+        visualID="5045"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3046"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'SpinBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
+    <nodeLabelTraces
+        visualID="5046"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3047"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'ComboBox') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
+    <nodeLabelTraces
+        visualID="5047"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3048"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Separator') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
+    <nodeLabelTraces
+        visualID="5048"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3049"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'Column') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://uidiagram' and _eClass_.name = 'GraphicalContainer') and _containmentMF_.name = 'lstChildModelElements')">
+    <nodeLabelTraces
+        visualID="5049"
         queryText="true"/>
   </childNodeTraces>
 </trace:TraceModel>

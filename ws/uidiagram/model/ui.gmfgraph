@@ -14,18 +14,18 @@
       <accessors accessor="getFigureUserInterfaceLabelFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.0"/>
       <accessors accessor="getUserInterfaceLstModelElementsCompartmentFigure" figure="//@figures.0/@descriptors.0/@actualFigure/@children.1"/>
     </descriptors>
-    <descriptors name="GroupFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="GroupFigure">
+    <descriptors name="TreeviewFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="TreeviewFigure">
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
-        <children xsi:type="gmfgraph:Label" name="GroupLabelFigure" text="Group">
+        <children xsi:type="gmfgraph:Label" name="TreeviewLabelFigure" text="Treeview">
           <maximumSize dx="10000" dy="50"/>
         </children>
-        <children xsi:type="gmfgraph:Rectangle" name="GroupLstChildModelElementsCompartmentFigure" outline="false"/>
+        <children xsi:type="gmfgraph:Rectangle" name="TreeviewLstChildModelElementsCompartmentFigure" outline="false"/>
       </actualFigure>
-      <accessors accessor="getFigureGroupLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
-      <accessors accessor="getGroupLstChildModelElementsCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+      <accessors accessor="getFigureTreeviewLabelFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+      <accessors accessor="getTreeviewLstChildModelElementsCompartmentFigure" figure="//@figures.0/@descriptors.1/@actualFigure/@children.1"/>
     </descriptors>
     <descriptors name="ButtonFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ButtonFigure">
@@ -42,23 +42,23 @@
       </actualFigure>
       <accessors accessor="getFigureLabelLabelFigure" figure="//@figures.0/@descriptors.3/@actualFigure/@children.0"/>
     </descriptors>
-    <descriptors name="CheckBoxFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="CheckBoxFigure">
+    <descriptors name="CheckButtonFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="CheckButtonFigure">
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
-        <children xsi:type="gmfgraph:Label" name="CheckBoxLabelFigure" text="CheckBox"/>
+        <children xsi:type="gmfgraph:Label" name="CheckButtonLabelFigure" text="CheckButton"/>
       </actualFigure>
-      <accessors accessor="getFigureCheckBoxLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureCheckButtonLabelFigure" figure="//@figures.0/@descriptors.4/@actualFigure/@children.0"/>
     </descriptors>
-    <descriptors name="TextInputFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="TextInputFigure">
+    <descriptors name="EntryFigure">
+      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="EntryFigure">
         <border xsi:type="gmfgraph:MarginBorder">
           <insets top="5" left="5" bottom="5" right="5"/>
         </border>
-        <children xsi:type="gmfgraph:Label" name="TextInputLabelFigure" text="TextInput"/>
+        <children xsi:type="gmfgraph:Label" name="EntryLabelFigure" text="Entry"/>
       </actualFigure>
-      <accessors accessor="getFigureTextInputLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureEntryLabelFigure" figure="//@figures.0/@descriptors.5/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="RadioButtonFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="RadioButtonFigure">
@@ -69,42 +69,6 @@
       </actualFigure>
       <accessors accessor="getFigureRadioButtonLabelFigure" figure="//@figures.0/@descriptors.6/@actualFigure/@children.0"/>
     </descriptors>
-    <descriptors name="FrameFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="FrameFigure">
-        <border xsi:type="gmfgraph:MarginBorder">
-          <insets top="5" left="5" bottom="5" right="5"/>
-        </border>
-        <children xsi:type="gmfgraph:Label" name="FrameLabelFigure" text="Frame"/>
-      </actualFigure>
-      <accessors accessor="getFigureFrameLabelFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
-    </descriptors>
-    <descriptors name="LabelFrameFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="LabelFrameFigure">
-        <border xsi:type="gmfgraph:MarginBorder">
-          <insets top="5" left="5" bottom="5" right="5"/>
-        </border>
-        <children xsi:type="gmfgraph:Label" name="LabelFrameLabelFigure" text="LabelFrame"/>
-      </actualFigure>
-      <accessors accessor="getFigureLabelFrameLabelFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
-    </descriptors>
-    <descriptors name="MenuButtonFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="MenuButtonFigure">
-        <border xsi:type="gmfgraph:MarginBorder">
-          <insets top="5" left="5" bottom="5" right="5"/>
-        </border>
-        <children xsi:type="gmfgraph:Label" name="MenuButtonLabelFigure" text="MenuButton"/>
-      </actualFigure>
-      <accessors accessor="getFigureMenuButtonLabelFigure" figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
-    </descriptors>
-    <descriptors name="ScrollBarFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ScrollBarFigure">
-        <border xsi:type="gmfgraph:MarginBorder">
-          <insets top="5" left="5" bottom="5" right="5"/>
-        </border>
-        <children xsi:type="gmfgraph:Label" name="ScrollBarLabelFigure" text="ScrollBar"/>
-      </actualFigure>
-      <accessors accessor="getFigureScrollBarLabelFigure" figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
-    </descriptors>
     <descriptors name="SpinBoxFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="SpinBoxFigure">
         <border xsi:type="gmfgraph:MarginBorder">
@@ -112,7 +76,7 @@
         </border>
         <children xsi:type="gmfgraph:Label" name="SpinBoxLabelFigure" text="SpinBox"/>
       </actualFigure>
-      <accessors accessor="getFigureSpinBoxLabelFigure" figure="//@figures.0/@descriptors.11/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureSpinBoxLabelFigure" figure="//@figures.0/@descriptors.7/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="ComboBoxFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ComboBoxFigure">
@@ -121,16 +85,7 @@
         </border>
         <children xsi:type="gmfgraph:Label" name="ComboBoxLabelFigure" text="ComboBox"/>
       </actualFigure>
-      <accessors accessor="getFigureComboBoxLabelFigure" figure="//@figures.0/@descriptors.12/@actualFigure/@children.0"/>
-    </descriptors>
-    <descriptors name="NotebookFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="NotebookFigure">
-        <border xsi:type="gmfgraph:MarginBorder">
-          <insets top="5" left="5" bottom="5" right="5"/>
-        </border>
-        <children xsi:type="gmfgraph:Label" name="NotebookLabelFigure" text="Notebook"/>
-      </actualFigure>
-      <accessors accessor="getFigureNotebookLabelFigure" figure="//@figures.0/@descriptors.13/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureComboBoxLabelFigure" figure="//@figures.0/@descriptors.8/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="SeparatorFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="SeparatorFigure">
@@ -139,16 +94,7 @@
         </border>
         <children xsi:type="gmfgraph:Label" name="SeparatorLabelFigure" text="Separator"/>
       </actualFigure>
-      <accessors accessor="getFigureSeparatorLabelFigure" figure="//@figures.0/@descriptors.14/@actualFigure/@children.0"/>
-    </descriptors>
-    <descriptors name="TreeViewFigure">
-      <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="TreeViewFigure">
-        <border xsi:type="gmfgraph:MarginBorder">
-          <insets top="5" left="5" bottom="5" right="5"/>
-        </border>
-        <children xsi:type="gmfgraph:Label" name="TreeViewLabelFigure" text="TreeView"/>
-      </actualFigure>
-      <accessors accessor="getFigureTreeViewLabelFigure" figure="//@figures.0/@descriptors.15/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureSeparatorLabelFigure" figure="//@figures.0/@descriptors.9/@actualFigure/@children.0"/>
     </descriptors>
     <descriptors name="ColumnFigure">
       <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ColumnFigure">
@@ -157,43 +103,31 @@
         </border>
         <children xsi:type="gmfgraph:Label" name="ColumnLabelFigure" text="Column"/>
       </actualFigure>
-      <accessors accessor="getFigureColumnLabelFigure" figure="//@figures.0/@descriptors.16/@actualFigure/@children.0"/>
+      <accessors accessor="getFigureColumnLabelFigure" figure="//@figures.0/@descriptors.10/@actualFigure/@children.0"/>
     </descriptors>
   </figures>
   <nodes name="UserInterface" figure="UserInterfaceFigure"/>
-  <nodes name="Group" figure="GroupFigure"/>
+  <nodes name="Treeview" figure="TreeviewFigure"/>
   <nodes name="Button" figure="ButtonFigure"/>
   <nodes name="Label" figure="LabelFigure"/>
-  <nodes name="CheckBox" figure="CheckBoxFigure"/>
-  <nodes name="TextInput" figure="TextInputFigure"/>
+  <nodes name="CheckButton" figure="CheckButtonFigure"/>
+  <nodes name="Entry" figure="EntryFigure"/>
   <nodes name="RadioButton" figure="RadioButtonFigure"/>
-  <nodes name="Frame" figure="FrameFigure"/>
-  <nodes name="LabelFrame" figure="LabelFrameFigure"/>
-  <nodes name="MenuButton" figure="MenuButtonFigure"/>
-  <nodes name="ScrollBar" figure="ScrollBarFigure"/>
   <nodes name="SpinBox" figure="SpinBoxFigure"/>
   <nodes name="ComboBox" figure="ComboBoxFigure"/>
-  <nodes name="Notebook" figure="NotebookFigure"/>
   <nodes name="Separator" figure="SeparatorFigure"/>
-  <nodes name="TreeView" figure="TreeViewFigure"/>
   <nodes name="Column" figure="ColumnFigure"/>
   <compartments name="UserInterfaceLstModelElementsCompartment" figure="UserInterfaceFigure" collapsible="true" accessor="//@figures.0/@descriptors.0/@accessors.1"/>
-  <compartments name="GroupLstChildModelElementsCompartment" figure="GroupFigure" collapsible="true" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
+  <compartments name="TreeviewLstChildModelElementsCompartment" figure="TreeviewFigure" collapsible="true" accessor="//@figures.0/@descriptors.1/@accessors.1"/>
   <labels name="UserInterfaceLabel" figure="UserInterfaceFigure" accessor="//@figures.0/@descriptors.0/@accessors.0"/>
-  <labels name="GroupLabel" figure="GroupFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
+  <labels name="TreeviewLabel" figure="TreeviewFigure" accessor="//@figures.0/@descriptors.1/@accessors.0"/>
   <labels name="ButtonLabel" figure="ButtonFigure" accessor="//@figures.0/@descriptors.2/@accessors.0"/>
   <labels name="LabelLabel" figure="LabelFigure" accessor="//@figures.0/@descriptors.3/@accessors.0"/>
-  <labels name="CheckBoxLabel" figure="CheckBoxFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
-  <labels name="TextInputLabel" figure="TextInputFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
+  <labels name="CheckButtonLabel" figure="CheckButtonFigure" accessor="//@figures.0/@descriptors.4/@accessors.0"/>
+  <labels name="EntryLabel" figure="EntryFigure" accessor="//@figures.0/@descriptors.5/@accessors.0"/>
   <labels name="RadioButtonLabel" figure="RadioButtonFigure" accessor="//@figures.0/@descriptors.6/@accessors.0"/>
-  <labels name="FrameLabel" figure="FrameFigure" accessor="//@figures.0/@descriptors.7/@accessors.0"/>
-  <labels name="LabelFrameLabel" figure="LabelFrameFigure" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
-  <labels name="MenuButtonLabel" figure="MenuButtonFigure" accessor="//@figures.0/@descriptors.9/@accessors.0"/>
-  <labels name="ScrollBarLabel" figure="ScrollBarFigure" accessor="//@figures.0/@descriptors.10/@accessors.0"/>
-  <labels name="SpinBoxLabel" figure="SpinBoxFigure" accessor="//@figures.0/@descriptors.11/@accessors.0"/>
-  <labels name="ComboBoxLabel" figure="ComboBoxFigure" accessor="//@figures.0/@descriptors.12/@accessors.0"/>
-  <labels name="NotebookLabel" figure="NotebookFigure" accessor="//@figures.0/@descriptors.13/@accessors.0"/>
-  <labels name="SeparatorLabel" figure="SeparatorFigure" accessor="//@figures.0/@descriptors.14/@accessors.0"/>
-  <labels name="TreeViewLabel" figure="TreeViewFigure" accessor="//@figures.0/@descriptors.15/@accessors.0"/>
-  <labels name="ColumnLabel" figure="ColumnFigure" accessor="//@figures.0/@descriptors.16/@accessors.0"/>
+  <labels name="SpinBoxLabel" figure="SpinBoxFigure" accessor="//@figures.0/@descriptors.7/@accessors.0"/>
+  <labels name="ComboBoxLabel" figure="ComboBoxFigure" accessor="//@figures.0/@descriptors.8/@accessors.0"/>
+  <labels name="SeparatorLabel" figure="SeparatorFigure" accessor="//@figures.0/@descriptors.9/@accessors.0"/>
+  <labels name="ColumnLabel" figure="ColumnFigure" accessor="//@figures.0/@descriptors.10/@accessors.0"/>
 </gmfgraph:Canvas>

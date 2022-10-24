@@ -13,91 +13,79 @@
 [comment @main/]
 [file (anUserInterface.name+'.py', false, 'UTF-8')]
 from tkinter import *
-from tkinter import tk
+from tkinter import ttk
+import tkinter as tk
 
-root = tk.Tk()
-root.tittle('[anUserInterface.title/]')
+root = Tk()
+root.title('[anUserInterface.title/]')
+root.geometry("[anUserInterface.height/]x[anUserInterface.width/]")
 
 [generateCodeWidgets(anUserInterface)/]
-
 root.mainloop()
-
 [/file]
 [/template]
-
 
 [template public generateCodeWidgets(anUserInterface : UserInterface)]
 [for(widget : ModelElement | lstModelElements)]
 [if (widget.oclIsKindOf(GraphicalIndividual))]
 [generateIndividualElement(widget)/]
 [/if]
-
 [if (widget.oclIsKindOf(GraphicalContainer))]
 [generateGraphicalContainer(widget)/]
 [/if]
 [/for]
 [/template]
-
 
 [template public generateIndividualElement(anIndividualElement : ModelElement)]
 [if (anIndividualElement.oclIsKindOf(Label))]
-label[anIndividualElement.idModelElement/] = tk.Label(root, text='[anIndividualElement.name/]')
-label[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/], height=[anIndividualElement.height/],font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]))
-label[anIndividualElement.idModelElement/].grid()
+label[anIndividualElement.idModelElement/] = Label(root, text='[anIndividualElement.name/]')
+label[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/], height=[anIndividualElement.height/],font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], '[anIndividualElement.style/]'))
+label[anIndividualElement.idModelElement/].place(x=[anIndividualElement.positionX/], y=[anIndividualElement.positionY/])
 [/if]
-
 [if (anIndividualElement.oclIsKindOf(Button))]
-button[anIndividualElement.idModelElement/] = tk.Button(root, text='[anIndividualElement.name/]')
-button[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/], font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]),  fg='[anIndividualElement.color/]', activebackground = '[anIndividualElement.color/]')
-button[anIndividualElement.idModelElement/].grid()
+button[anIndividualElement.idModelElement/] = Button(root, text='[anIndividualElement.name/]')
+button[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/], font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], '[anIndividualElement.style/]'),  fg='[anIndividualElement.color/]', activebackground = '[anIndividualElement.color/]')
+button[anIndividualElement.idModelElement/].place(x=[anIndividualElement.positionX/], y=[anIndividualElement.positionY/])
 [/if]
-
-[if (anIndividualElement.oclIsKindOf(TextInput))]
-textInput[anIndividualElement.idModelElement/] = tk.Entry(root, textvariable='[anIndividualElement.name/]')
-textInput[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/], font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]))
-textInput[anIndividualElement.idModelElement/].grid()
+[if (anIndividualElement.oclIsKindOf(Entry))]
+entry[anIndividualElement.idModelElement/] = Entry(root)
+entry[anIndividualElement.idModelElement/].place(x=[anIndividualElement.positionX/], y=[anIndividualElement.positionY/], width=[anIndividualElement.width/],height=[anIndividualElement.height/])
 [/if]
-
-[if (anIndividualElement.oclIsKindOf(Frame))]
-tk.Frame(root=root)
+[if (anIndividualElement.oclIsKindOf(CheckButton))]
+checkbutton[anIndividualElement.idModelElement/] = Checkbutton(root, text='[anIndividualElement.name/]')
+checkbutton[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/])
+checkbutton[anIndividualElement.idModelElement/].place(x=[anIndividualElement.positionX/], y=[anIndividualElement.positionY/])
 [/if]
-
-[if (anIndividualElement.oclIsKindOf(CheckBox))]
-checkbuttontk[anIndividualElement.idModelElement/] = Checkbutton(root, text='[anIndividualElement.name/]')
-checkbuttontk[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/],font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]))
-[/if]
-
 [if (anIndividualElement.oclIsKindOf(RadioButton))]
-radioButton'[anIndividualElement.idModelElement/] = 'tk.Radiobutton(text='[anIndividualElement.name/]', value='[anIndividualElement.idModelElement/]')
-radioButton'[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/],font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]))
+radioButton[anIndividualElement.idModelElement/] = Radiobutton(text='[anIndividualElement.name/]', value='[anIndividualElement.idModelElement/]')
+radioButton[anIndividualElement.idModelElement/].place(width=[anIndividualElement.width/],height=[anIndividualElement.height/], x=[anIndividualElement.positionX/], y=[anIndividualElement.positionY/])
 [/if]
-
+[if (anIndividualElement.oclIsKindOf(ComboBox))]
+comboBox[anIndividualElement.idModelElement/] = ttk.Combobox(root, state="readonly")
+comboBox[anIndividualElement.idModelElement/].place(x=[anIndividualElement.positionX/], y=[anIndividualElement.positionY/])
+[/if]
+[if (anIndividualElement.oclIsKindOf(SpinBox))]
+spinBox[anIndividualElement.idModelElement/] = ttk.Spinbox(root, from_=0,to=100)
+spinBox[anIndividualElement.idModelElement/].place(x=[anIndividualElement.positionX/], y=[anIndividualElement.positionY/])
+[/if]
 [if (anIndividualElement.oclIsKindOf(Separator))]
-separator[anIndividualElement.idModelElement/] = tk.Separator(orient='[anIndividualElement.style/]')
+separator[anIndividualElement.idModelElement/] = ttk.Separator(root, orient='[anIndividualElement.style/]')
+separator[anIndividualElement.idModelElement/].place(x=[anIndividualElement.positionX/], y=[anIndividualElement.positionY/], relwidth=1, relheight=0.001)
 [/if]
-
-[if (anIndividualElement.oclIsKindOf(LabelFrame))]
-labelFrame[anIndividualElement.idModelElement/] = tk.LabelFrame(root, text='[anIndividualElement.name/]')
-labelFrame[anIndividualElement.idModelElement/].config(width=[anIndividualElement.width/],height=[anIndividualElement.height/],font=('[anIndividualElement.titleFont/]', [anIndividualElement.titleFontSize/], [anIndividualElement.style/]))
+[if (anIndividualElement.oclIsKindOf(Column))]
+treeview.heading('#[anIndividualElement.idModelElement/]', text='[anIndividualElement.name/]')
 [/if]
-
-
 [/template]
 
-
-
 [template public generateGraphicalContainer(anGraphicalContainer : ModelElement)]
-[if (anGraphicalContainer.oclIsKindOf(GraphicalContainer)) ]
-    <div>  
-[for (widget : ModelElement | anGraphicalContainer.oclAsType(GraphicalContainer))]
+[if (anGraphicalContainer.oclIsKindOf(Treeview)) ]
+treeview = ttk.Treeview(root, columns=('','',''))
+treeview.place(x=[anGraphicalContainer.positionX/], y=[anGraphicalContainer.positionY/])
+[for(widget : ModelElement | anGraphicalContainer.oclAsType(GraphicalContainer).lstChildModelElements)]
 [if (widget.oclIsKindOf(GraphicalIndividual))]
-
-[/if]
-[if (widget.oclIsKindOf(GraphicalContainer))]
-[generateGraphicalContainer(widget)/]
+[generateIndividualElement(widget)/]
 [/if]
 [/for]
-    </div>
 [/if]
 [/template]
 

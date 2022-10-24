@@ -647,14 +647,14 @@ public interface UidiagramPackage extends EPackage {
 	int GRAPHICAL_INDIVIDUAL_FEATURE_COUNT = MODEL_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.GroupImpl <em>Group</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.TreeviewImpl <em>Treeview</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.GroupImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getGroup()
+	 * @see uidiagram.impl.TreeviewImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getTreeview()
 	 * @generated
 	 */
-	int GROUP = 6;
+	int TREEVIEW = 6;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -663,7 +663,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__NAME = GRAPHICAL_CONTAINER__NAME;
+	int TREEVIEW__NAME = GRAPHICAL_CONTAINER__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Id Model Element</b></em>' attribute.
@@ -672,7 +672,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__ID_MODEL_ELEMENT = GRAPHICAL_CONTAINER__ID_MODEL_ELEMENT;
+	int TREEVIEW__ID_MODEL_ELEMENT = GRAPHICAL_CONTAINER__ID_MODEL_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Color</b></em>' attribute.
@@ -681,7 +681,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__COLOR = GRAPHICAL_CONTAINER__COLOR;
+	int TREEVIEW__COLOR = GRAPHICAL_CONTAINER__COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -690,7 +690,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__POSITION_X = GRAPHICAL_CONTAINER__POSITION_X;
+	int TREEVIEW__POSITION_X = GRAPHICAL_CONTAINER__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -699,7 +699,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__POSITION_Y = GRAPHICAL_CONTAINER__POSITION_Y;
+	int TREEVIEW__POSITION_Y = GRAPHICAL_CONTAINER__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -708,7 +708,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__WIDTH = GRAPHICAL_CONTAINER__WIDTH;
+	int TREEVIEW__WIDTH = GRAPHICAL_CONTAINER__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -717,7 +717,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__HEIGHT = GRAPHICAL_CONTAINER__HEIGHT;
+	int TREEVIEW__HEIGHT = GRAPHICAL_CONTAINER__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -726,7 +726,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__BACKGROUND_COLOR = GRAPHICAL_CONTAINER__BACKGROUND_COLOR;
+	int TREEVIEW__BACKGROUND_COLOR = GRAPHICAL_CONTAINER__BACKGROUND_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
@@ -735,7 +735,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__TITLE_FONT = GRAPHICAL_CONTAINER__TITLE_FONT;
+	int TREEVIEW__TITLE_FONT = GRAPHICAL_CONTAINER__TITLE_FONT;
 
 	/**
 	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
@@ -744,7 +744,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__TITLE_FONT_SIZE = GRAPHICAL_CONTAINER__TITLE_FONT_SIZE;
+	int TREEVIEW__TITLE_FONT_SIZE = GRAPHICAL_CONTAINER__TITLE_FONT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
@@ -753,7 +753,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__PATH_IMAGE = GRAPHICAL_CONTAINER__PATH_IMAGE;
+	int TREEVIEW__PATH_IMAGE = GRAPHICAL_CONTAINER__PATH_IMAGE;
 
 	/**
 	 * The feature id for the '<em><b>Style</b></em>' attribute.
@@ -762,7 +762,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__STYLE = GRAPHICAL_CONTAINER__STYLE;
+	int TREEVIEW__STYLE = GRAPHICAL_CONTAINER__STYLE;
 
 	/**
 	 * The feature id for the '<em><b>Lst Child Model Elements</b></em>' containment reference list.
@@ -771,16 +771,16 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP__LST_CHILD_MODEL_ELEMENTS = GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS;
+	int TREEVIEW__LST_CHILD_MODEL_ELEMENTS = GRAPHICAL_CONTAINER__LST_CHILD_MODEL_ELEMENTS;
 
 	/**
-	 * The number of structural features of the '<em>Group</em>' class.
+	 * The number of structural features of the '<em>Treeview</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GROUP_FEATURE_COUNT = GRAPHICAL_CONTAINER_FEATURE_COUNT + 0;
+	int TREEVIEW_FEATURE_COUNT = GRAPHICAL_CONTAINER_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.ButtonImpl <em>Button</em>}' class.
@@ -1037,14 +1037,14 @@ public interface UidiagramPackage extends EPackage {
 	int LABEL_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.CheckBoxImpl <em>Check Box</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.CheckButtonImpl <em>Check Button</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.CheckBoxImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getCheckBox()
+	 * @see uidiagram.impl.CheckButtonImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getCheckButton()
 	 * @generated
 	 */
-	int CHECK_BOX = 9;
+	int CHECK_BUTTON = 9;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1053,7 +1053,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__NAME = GRAPHICAL_INDIVIDUAL__NAME;
+	int CHECK_BUTTON__NAME = GRAPHICAL_INDIVIDUAL__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Id Model Element</b></em>' attribute.
@@ -1062,7 +1062,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
+	int CHECK_BUTTON__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Color</b></em>' attribute.
@@ -1071,7 +1071,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
+	int CHECK_BUTTON__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -1080,7 +1080,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
+	int CHECK_BUTTON__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -1089,7 +1089,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
+	int CHECK_BUTTON__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -1098,7 +1098,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
+	int CHECK_BUTTON__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -1107,7 +1107,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
+	int CHECK_BUTTON__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1116,7 +1116,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
+	int CHECK_BUTTON__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
@@ -1125,7 +1125,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
+	int CHECK_BUTTON__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
 
 	/**
 	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
@@ -1134,7 +1134,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+	int CHECK_BUTTON__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
@@ -1143,7 +1143,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+	int CHECK_BUTTON__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
 
 	/**
 	 * The feature id for the '<em><b>Style</b></em>' attribute.
@@ -1152,26 +1152,26 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
+	int CHECK_BUTTON__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
-	 * The number of structural features of the '<em>Check Box</em>' class.
+	 * The number of structural features of the '<em>Check Button</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHECK_BOX_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
+	int CHECK_BUTTON_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.TextInputImpl <em>Text Input</em>}' class.
+	 * The meta object id for the '{@link uidiagram.impl.EntryImpl <em>Entry</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.TextInputImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getTextInput()
+	 * @see uidiagram.impl.EntryImpl
+	 * @see uidiagram.impl.UidiagramPackageImpl#getEntry()
 	 * @generated
 	 */
-	int TEXT_INPUT = 10;
+	int ENTRY = 10;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -1180,7 +1180,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__NAME = GRAPHICAL_INDIVIDUAL__NAME;
+	int ENTRY__NAME = GRAPHICAL_INDIVIDUAL__NAME;
 
 	/**
 	 * The feature id for the '<em><b>Id Model Element</b></em>' attribute.
@@ -1189,7 +1189,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
+	int ENTRY__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
 
 	/**
 	 * The feature id for the '<em><b>Color</b></em>' attribute.
@@ -1198,7 +1198,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
+	int ENTRY__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Position X</b></em>' attribute.
@@ -1207,7 +1207,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
+	int ENTRY__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
 
 	/**
 	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
@@ -1216,7 +1216,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
+	int ENTRY__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
 
 	/**
 	 * The feature id for the '<em><b>Width</b></em>' attribute.
@@ -1225,7 +1225,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
+	int ENTRY__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
 
 	/**
 	 * The feature id for the '<em><b>Height</b></em>' attribute.
@@ -1234,7 +1234,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
+	int ENTRY__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
 
 	/**
 	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
@@ -1243,7 +1243,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
+	int ENTRY__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
 
 	/**
 	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
@@ -1252,7 +1252,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
+	int ENTRY__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
 
 	/**
 	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
@@ -1261,7 +1261,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
+	int ENTRY__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
 
 	/**
 	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
@@ -1270,7 +1270,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
+	int ENTRY__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
 
 	/**
 	 * The feature id for the '<em><b>Style</b></em>' attribute.
@@ -1279,16 +1279,16 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
+	int ENTRY__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
 
 	/**
-	 * The number of structural features of the '<em>Text Input</em>' class.
+	 * The number of structural features of the '<em>Entry</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TEXT_INPUT_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
+	int ENTRY_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link uidiagram.impl.RadioButtonImpl <em>Radio Button</em>}' class.
@@ -1418,514 +1418,6 @@ public interface UidiagramPackage extends EPackage {
 	int RADIO_BUTTON_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.FrameImpl <em>Frame</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.FrameImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getFrame()
-	 * @generated
-	 */
-	int FRAME = 12;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__NAME = GRAPHICAL_INDIVIDUAL__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Id Model Element</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Position X</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
-
-	/**
-	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
-
-	/**
-	 * The feature id for the '<em><b>Width</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
-
-	/**
-	 * The feature id for the '<em><b>Height</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
-
-	/**
-	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
-
-	/**
-	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
-
-	/**
-	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
-
-	/**
-	 * The feature id for the '<em><b>Style</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
-
-	/**
-	 * The number of structural features of the '<em>Frame</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FRAME_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link uidiagram.impl.LabelFrameImpl <em>Label Frame</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.LabelFrameImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getLabelFrame()
-	 * @generated
-	 */
-	int LABEL_FRAME = 13;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__NAME = GRAPHICAL_INDIVIDUAL__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Id Model Element</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Position X</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
-
-	/**
-	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
-
-	/**
-	 * The feature id for the '<em><b>Width</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
-
-	/**
-	 * The feature id for the '<em><b>Height</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
-
-	/**
-	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
-
-	/**
-	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
-
-	/**
-	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
-
-	/**
-	 * The feature id for the '<em><b>Style</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
-
-	/**
-	 * The number of structural features of the '<em>Label Frame</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int LABEL_FRAME_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link uidiagram.impl.MenuButtonImpl <em>Menu Button</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.MenuButtonImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getMenuButton()
-	 * @generated
-	 */
-	int MENU_BUTTON = 14;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__NAME = GRAPHICAL_INDIVIDUAL__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Id Model Element</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Position X</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
-
-	/**
-	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
-
-	/**
-	 * The feature id for the '<em><b>Width</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
-
-	/**
-	 * The feature id for the '<em><b>Height</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
-
-	/**
-	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
-
-	/**
-	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
-
-	/**
-	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
-
-	/**
-	 * The feature id for the '<em><b>Style</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
-
-	/**
-	 * The number of structural features of the '<em>Menu Button</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MENU_BUTTON_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
-
-	/**
-	 * The meta object id for the '{@link uidiagram.impl.ScrollBarImpl <em>Scroll Bar</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.ScrollBarImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getScrollBar()
-	 * @generated
-	 */
-	int SCROLL_BAR = 15;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__NAME = GRAPHICAL_INDIVIDUAL__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Id Model Element</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Position X</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
-
-	/**
-	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
-
-	/**
-	 * The feature id for the '<em><b>Width</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
-
-	/**
-	 * The feature id for the '<em><b>Height</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
-
-	/**
-	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
-
-	/**
-	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
-
-	/**
-	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
-
-	/**
-	 * The feature id for the '<em><b>Style</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
-
-	/**
-	 * The number of structural features of the '<em>Scroll Bar</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SCROLL_BAR_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link uidiagram.impl.SpinBoxImpl <em>Spin Box</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1933,7 +1425,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @see uidiagram.impl.UidiagramPackageImpl#getSpinBox()
 	 * @generated
 	 */
-	int SPIN_BOX = 16;
+	int SPIN_BOX = 12;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2060,7 +1552,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @see uidiagram.impl.UidiagramPackageImpl#getComboBox()
 	 * @generated
 	 */
-	int COMBO_BOX = 17;
+	int COMBO_BOX = 13;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2180,133 +1672,6 @@ public interface UidiagramPackage extends EPackage {
 	int COMBO_BOX_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.NotebookImpl <em>Notebook</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.NotebookImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getNotebook()
-	 * @generated
-	 */
-	int NOTEBOOK = 18;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__NAME = GRAPHICAL_INDIVIDUAL__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Id Model Element</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Position X</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
-
-	/**
-	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
-
-	/**
-	 * The feature id for the '<em><b>Width</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
-
-	/**
-	 * The feature id for the '<em><b>Height</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
-
-	/**
-	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
-
-	/**
-	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
-
-	/**
-	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
-
-	/**
-	 * The feature id for the '<em><b>Style</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
-
-	/**
-	 * The number of structural features of the '<em>Notebook</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NOTEBOOK_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
-
-	/**
 	 * The meta object id for the '{@link uidiagram.impl.SeparatorImpl <em>Separator</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2314,7 +1679,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @see uidiagram.impl.UidiagramPackageImpl#getSeparator()
 	 * @generated
 	 */
-	int SEPARATOR = 19;
+	int SEPARATOR = 14;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -2434,134 +1799,6 @@ public interface UidiagramPackage extends EPackage {
 	int SEPARATOR_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
 
 	/**
-	 * The meta object id for the '{@link uidiagram.impl.TreeViewImpl <em>Tree View</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see uidiagram.impl.TreeViewImpl
-	 * @see uidiagram.impl.UidiagramPackageImpl#getTreeView()
-	 * @generated
-	 */
-	int TREE_VIEW = 20;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__NAME = GRAPHICAL_INDIVIDUAL__NAME;
-
-	/**
-	 * The feature id for the '<em><b>Id Model Element</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__ID_MODEL_ELEMENT = GRAPHICAL_INDIVIDUAL__ID_MODEL_ELEMENT;
-
-	/**
-	 * The feature id for the '<em><b>Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__COLOR = GRAPHICAL_INDIVIDUAL__COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Position X</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__POSITION_X = GRAPHICAL_INDIVIDUAL__POSITION_X;
-
-	/**
-	 * The feature id for the '<em><b>Position Y</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__POSITION_Y = GRAPHICAL_INDIVIDUAL__POSITION_Y;
-
-	/**
-	 * The feature id for the '<em><b>Width</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__WIDTH = GRAPHICAL_INDIVIDUAL__WIDTH;
-
-	/**
-	 * The feature id for the '<em><b>Height</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__HEIGHT = GRAPHICAL_INDIVIDUAL__HEIGHT;
-
-	/**
-	 * The feature id for the '<em><b>Background Color</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__BACKGROUND_COLOR = GRAPHICAL_INDIVIDUAL__BACKGROUND_COLOR;
-
-	/**
-	 * The feature id for the '<em><b>Title Font</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__TITLE_FONT = GRAPHICAL_INDIVIDUAL__TITLE_FONT;
-
-	/**
-	 * The feature id for the '<em><b>Title Font Size</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__TITLE_FONT_SIZE = GRAPHICAL_INDIVIDUAL__TITLE_FONT_SIZE;
-
-	/**
-	 * The feature id for the '<em><b>Path Image</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__PATH_IMAGE = GRAPHICAL_INDIVIDUAL__PATH_IMAGE;
-
-	/**
-	 * The feature id for the '<em><b>Style</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW__STYLE = GRAPHICAL_INDIVIDUAL__STYLE;
-
-	/**
-	 * The number of structural features of the '<em>Tree View</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE_VIEW_FEATURE_COUNT = GRAPHICAL_INDIVIDUAL_FEATURE_COUNT + 0;
-
-
-	/**
 	 * The meta object id for the '{@link uidiagram.impl.ColumnImpl <em>Column</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2569,7 +1806,7 @@ public interface UidiagramPackage extends EPackage {
 	 * @see uidiagram.impl.UidiagramPackageImpl#getColumn()
 	 * @generated
 	 */
-	int COLUMN = 21;
+	int COLUMN = 15;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -3069,14 +2306,14 @@ public interface UidiagramPackage extends EPackage {
 	EClass getGraphicalIndividual();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.Group <em>Group</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.Treeview <em>Treeview</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Group</em>'.
-	 * @see uidiagram.Group
+	 * @return the meta object for class '<em>Treeview</em>'.
+	 * @see uidiagram.Treeview
 	 * @generated
 	 */
-	EClass getGroup();
+	EClass getTreeview();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.Button <em>Button</em>}'.
@@ -3099,24 +2336,24 @@ public interface UidiagramPackage extends EPackage {
 	EClass getLabel();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.CheckBox <em>Check Box</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.CheckButton <em>Check Button</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Check Box</em>'.
-	 * @see uidiagram.CheckBox
+	 * @return the meta object for class '<em>Check Button</em>'.
+	 * @see uidiagram.CheckButton
 	 * @generated
 	 */
-	EClass getCheckBox();
+	EClass getCheckButton();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.TextInput <em>Text Input</em>}'.
+	 * Returns the meta object for class '{@link uidiagram.Entry <em>Entry</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Text Input</em>'.
-	 * @see uidiagram.TextInput
+	 * @return the meta object for class '<em>Entry</em>'.
+	 * @see uidiagram.Entry
 	 * @generated
 	 */
-	EClass getTextInput();
+	EClass getEntry();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.RadioButton <em>Radio Button</em>}'.
@@ -3127,46 +2364,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getRadioButton();
-
-	/**
-	 * Returns the meta object for class '{@link uidiagram.Frame <em>Frame</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Frame</em>'.
-	 * @see uidiagram.Frame
-	 * @generated
-	 */
-	EClass getFrame();
-
-	/**
-	 * Returns the meta object for class '{@link uidiagram.LabelFrame <em>Label Frame</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Label Frame</em>'.
-	 * @see uidiagram.LabelFrame
-	 * @generated
-	 */
-	EClass getLabelFrame();
-
-	/**
-	 * Returns the meta object for class '{@link uidiagram.MenuButton <em>Menu Button</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Menu Button</em>'.
-	 * @see uidiagram.MenuButton
-	 * @generated
-	 */
-	EClass getMenuButton();
-
-	/**
-	 * Returns the meta object for class '{@link uidiagram.ScrollBar <em>Scroll Bar</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Scroll Bar</em>'.
-	 * @see uidiagram.ScrollBar
-	 * @generated
-	 */
-	EClass getScrollBar();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.SpinBox <em>Spin Box</em>}'.
@@ -3189,16 +2386,6 @@ public interface UidiagramPackage extends EPackage {
 	EClass getComboBox();
 
 	/**
-	 * Returns the meta object for class '{@link uidiagram.Notebook <em>Notebook</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Notebook</em>'.
-	 * @see uidiagram.Notebook
-	 * @generated
-	 */
-	EClass getNotebook();
-
-	/**
 	 * Returns the meta object for class '{@link uidiagram.Separator <em>Separator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3207,16 +2394,6 @@ public interface UidiagramPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSeparator();
-
-	/**
-	 * Returns the meta object for class '{@link uidiagram.TreeView <em>Tree View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Tree View</em>'.
-	 * @see uidiagram.TreeView
-	 * @generated
-	 */
-	EClass getTreeView();
 
 	/**
 	 * Returns the meta object for class '{@link uidiagram.Column <em>Column</em>}'.
@@ -3543,14 +2720,14 @@ public interface UidiagramPackage extends EPackage {
 		EClass GRAPHICAL_INDIVIDUAL = eINSTANCE.getGraphicalIndividual();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.GroupImpl <em>Group</em>}' class.
+		 * The meta object literal for the '{@link uidiagram.impl.TreeviewImpl <em>Treeview</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.GroupImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getGroup()
+		 * @see uidiagram.impl.TreeviewImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getTreeview()
 		 * @generated
 		 */
-		EClass GROUP = eINSTANCE.getGroup();
+		EClass TREEVIEW = eINSTANCE.getTreeview();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.ButtonImpl <em>Button</em>}' class.
@@ -3573,24 +2750,24 @@ public interface UidiagramPackage extends EPackage {
 		EClass LABEL = eINSTANCE.getLabel();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.CheckBoxImpl <em>Check Box</em>}' class.
+		 * The meta object literal for the '{@link uidiagram.impl.CheckButtonImpl <em>Check Button</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.CheckBoxImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getCheckBox()
+		 * @see uidiagram.impl.CheckButtonImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getCheckButton()
 		 * @generated
 		 */
-		EClass CHECK_BOX = eINSTANCE.getCheckBox();
+		EClass CHECK_BUTTON = eINSTANCE.getCheckButton();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.TextInputImpl <em>Text Input</em>}' class.
+		 * The meta object literal for the '{@link uidiagram.impl.EntryImpl <em>Entry</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.TextInputImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getTextInput()
+		 * @see uidiagram.impl.EntryImpl
+		 * @see uidiagram.impl.UidiagramPackageImpl#getEntry()
 		 * @generated
 		 */
-		EClass TEXT_INPUT = eINSTANCE.getTextInput();
+		EClass ENTRY = eINSTANCE.getEntry();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.RadioButtonImpl <em>Radio Button</em>}' class.
@@ -3601,46 +2778,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass RADIO_BUTTON = eINSTANCE.getRadioButton();
-
-		/**
-		 * The meta object literal for the '{@link uidiagram.impl.FrameImpl <em>Frame</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.FrameImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getFrame()
-		 * @generated
-		 */
-		EClass FRAME = eINSTANCE.getFrame();
-
-		/**
-		 * The meta object literal for the '{@link uidiagram.impl.LabelFrameImpl <em>Label Frame</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.LabelFrameImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getLabelFrame()
-		 * @generated
-		 */
-		EClass LABEL_FRAME = eINSTANCE.getLabelFrame();
-
-		/**
-		 * The meta object literal for the '{@link uidiagram.impl.MenuButtonImpl <em>Menu Button</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.MenuButtonImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getMenuButton()
-		 * @generated
-		 */
-		EClass MENU_BUTTON = eINSTANCE.getMenuButton();
-
-		/**
-		 * The meta object literal for the '{@link uidiagram.impl.ScrollBarImpl <em>Scroll Bar</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.ScrollBarImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getScrollBar()
-		 * @generated
-		 */
-		EClass SCROLL_BAR = eINSTANCE.getScrollBar();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.SpinBoxImpl <em>Spin Box</em>}' class.
@@ -3663,16 +2800,6 @@ public interface UidiagramPackage extends EPackage {
 		EClass COMBO_BOX = eINSTANCE.getComboBox();
 
 		/**
-		 * The meta object literal for the '{@link uidiagram.impl.NotebookImpl <em>Notebook</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.NotebookImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getNotebook()
-		 * @generated
-		 */
-		EClass NOTEBOOK = eINSTANCE.getNotebook();
-
-		/**
 		 * The meta object literal for the '{@link uidiagram.impl.SeparatorImpl <em>Separator</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -3681,16 +2808,6 @@ public interface UidiagramPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SEPARATOR = eINSTANCE.getSeparator();
-
-		/**
-		 * The meta object literal for the '{@link uidiagram.impl.TreeViewImpl <em>Tree View</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see uidiagram.impl.TreeViewImpl
-		 * @see uidiagram.impl.UidiagramPackageImpl#getTreeView()
-		 * @generated
-		 */
-		EClass TREE_VIEW = eINSTANCE.getTreeView();
 
 		/**
 		 * The meta object literal for the '{@link uidiagram.impl.ColumnImpl <em>Column</em>}' class.

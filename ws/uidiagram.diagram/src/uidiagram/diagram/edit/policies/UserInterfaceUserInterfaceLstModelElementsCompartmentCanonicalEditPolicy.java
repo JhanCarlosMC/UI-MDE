@@ -26,21 +26,23 @@ import org.eclipse.gmf.runtime.notation.View;
 
 import uidiagram.UidiagramPackage;
 import uidiagram.diagram.edit.parts.Button2EditPart;
-import uidiagram.diagram.edit.parts.CheckBox2EditPart;
+import uidiagram.diagram.edit.parts.ButtonEditPart;
+import uidiagram.diagram.edit.parts.CheckButton2EditPart;
+import uidiagram.diagram.edit.parts.CheckButtonEditPart;
 import uidiagram.diagram.edit.parts.Column2EditPart;
 import uidiagram.diagram.edit.parts.ComboBox2EditPart;
-import uidiagram.diagram.edit.parts.Frame2EditPart;
-import uidiagram.diagram.edit.parts.GroupEditPart;
+import uidiagram.diagram.edit.parts.ComboBoxEditPart;
+import uidiagram.diagram.edit.parts.Entry2EditPart;
+import uidiagram.diagram.edit.parts.EntryEditPart;
 import uidiagram.diagram.edit.parts.Label2EditPart;
-import uidiagram.diagram.edit.parts.LabelFrame2EditPart;
-import uidiagram.diagram.edit.parts.MenuButton2EditPart;
-import uidiagram.diagram.edit.parts.Notebook2EditPart;
+import uidiagram.diagram.edit.parts.LabelEditPart;
 import uidiagram.diagram.edit.parts.RadioButton2EditPart;
-import uidiagram.diagram.edit.parts.ScrollBar2EditPart;
+import uidiagram.diagram.edit.parts.RadioButtonEditPart;
 import uidiagram.diagram.edit.parts.Separator2EditPart;
+import uidiagram.diagram.edit.parts.SeparatorEditPart;
 import uidiagram.diagram.edit.parts.SpinBox2EditPart;
-import uidiagram.diagram.edit.parts.TextInput2EditPart;
-import uidiagram.diagram.edit.parts.TreeView2EditPart;
+import uidiagram.diagram.edit.parts.SpinBoxEditPart;
+import uidiagram.diagram.edit.parts.TreeviewEditPart;
 import uidiagram.diagram.part.UidiagramDiagramUpdater;
 import uidiagram.diagram.part.UidiagramNodeDescriptor;
 import uidiagram.diagram.part.UidiagramVisualIDRegistry;
@@ -98,21 +100,15 @@ public class UserInterfaceUserInterfaceLstModelElementsCompartmentCanonicalEditP
 	private boolean isMyDiagramElement(View view) {
 		int visualID = UidiagramVisualIDRegistry.getVisualID(view);
 		switch (visualID) {
-		case GroupEditPart.VISUAL_ID:
+		case TreeviewEditPart.VISUAL_ID:
 		case Button2EditPart.VISUAL_ID:
 		case Label2EditPart.VISUAL_ID:
-		case CheckBox2EditPart.VISUAL_ID:
-		case TextInput2EditPart.VISUAL_ID:
+		case CheckButton2EditPart.VISUAL_ID:
+		case Entry2EditPart.VISUAL_ID:
 		case RadioButton2EditPart.VISUAL_ID:
-		case Frame2EditPart.VISUAL_ID:
-		case LabelFrame2EditPart.VISUAL_ID:
-		case MenuButton2EditPart.VISUAL_ID:
-		case ScrollBar2EditPart.VISUAL_ID:
 		case SpinBox2EditPart.VISUAL_ID:
 		case ComboBox2EditPart.VISUAL_ID:
-		case Notebook2EditPart.VISUAL_ID:
 		case Separator2EditPart.VISUAL_ID:
-		case TreeView2EditPart.VISUAL_ID:
 		case Column2EditPart.VISUAL_ID:
 			return true;
 		}

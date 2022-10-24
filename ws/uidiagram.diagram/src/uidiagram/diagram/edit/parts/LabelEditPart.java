@@ -3,8 +3,6 @@
  */
 package uidiagram.diagram.edit.parts;
 
-import java.util.Calendar;
-
 import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.RectangleFigure;
 import org.eclipse.draw2d.Shape;
@@ -43,7 +41,7 @@ public class LabelEditPart extends ShapeNodeEditPart {
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 3004;
+	public static final int VISUAL_ID = 3042;
 
 	/**
 	* @generated

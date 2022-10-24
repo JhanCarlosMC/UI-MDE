@@ -17,6 +17,7 @@ import org.eclipse.gmf.runtime.notation.View;
 
 import uidiagram.Column;
 import uidiagram.GraphicalContainer;
+import uidiagram.Treeview;
 import uidiagram.UidiagramFactory;
 
 /**

@@ -21,8 +21,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="CheckBox"
-          description="Create new CheckBox">
+          title="CheckButton"
+          description="Create new CheckButton">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -48,17 +48,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Frame"
-          description="Create new Frame">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="Group"
-          description="Create new Group">
+          title="Entry"
+          description="Create new Entry">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -75,44 +66,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="LabelFrame"
-          description="Create new LabelFrame">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="MenuButton"
-          description="Create new MenuButton">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="Notebook"
-          description="Create new Notebook">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
           title="RadioButton"
           description="Create new RadioButton">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="ScrollBar"
-          description="Create new ScrollBar">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -138,17 +93,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="TextInput"
-          description="Create new TextInput">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="TreeView"
-          description="Create new TreeView">
+          title="Treeview"
+          description="Create new Treeview">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

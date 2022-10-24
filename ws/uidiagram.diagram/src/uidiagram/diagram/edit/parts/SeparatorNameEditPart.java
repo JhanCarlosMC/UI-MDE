@@ -60,7 +60,7 @@ public class SeparatorNameEditPart extends CompartmentEditPart implements ITextA
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 5013;
+	public static final int VISUAL_ID = 5048;
 
 	/**
 	* @generated
@@ -295,7 +295,7 @@ public class SeparatorNameEditPart extends CompartmentEditPart implements ITextA
 	*/
 	public IParser getParser() {
 		if (parser == null) {
-			parser = UidiagramParserProvider.getParser(UidiagramElementTypes.Separator_3015, getParserElement(),
+			parser = UidiagramParserProvider.getParser(UidiagramElementTypes.Separator_3048, getParserElement(),
 					UidiagramVisualIDRegistry.getType(uidiagram.diagram.edit.parts.SeparatorNameEditPart.VISUAL_ID));
 		}
 		return parser;

@@ -350,4 +350,5 @@ public class RadioButton2EditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
+
 }

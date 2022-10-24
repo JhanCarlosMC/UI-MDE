@@ -104,11 +104,11 @@ public class UidiagramSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.GROUP: {
-				Group group = (Group)theEObject;
-				T result = caseGroup(group);
-				if (result == null) result = caseGraphicalContainer(group);
-				if (result == null) result = caseModelElement(group);
+			case UidiagramPackage.TREEVIEW: {
+				Treeview treeview = (Treeview)theEObject;
+				T result = caseTreeview(treeview);
+				if (result == null) result = caseGraphicalContainer(treeview);
+				if (result == null) result = caseModelElement(treeview);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -128,19 +128,19 @@ public class UidiagramSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.CHECK_BOX: {
-				CheckBox checkBox = (CheckBox)theEObject;
-				T result = caseCheckBox(checkBox);
-				if (result == null) result = caseGraphicalIndividual(checkBox);
-				if (result == null) result = caseModelElement(checkBox);
+			case UidiagramPackage.CHECK_BUTTON: {
+				CheckButton checkButton = (CheckButton)theEObject;
+				T result = caseCheckButton(checkButton);
+				if (result == null) result = caseGraphicalIndividual(checkButton);
+				if (result == null) result = caseModelElement(checkButton);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.TEXT_INPUT: {
-				TextInput textInput = (TextInput)theEObject;
-				T result = caseTextInput(textInput);
-				if (result == null) result = caseGraphicalIndividual(textInput);
-				if (result == null) result = caseModelElement(textInput);
+			case UidiagramPackage.ENTRY: {
+				Entry entry = (Entry)theEObject;
+				T result = caseEntry(entry);
+				if (result == null) result = caseGraphicalIndividual(entry);
+				if (result == null) result = caseModelElement(entry);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -149,38 +149,6 @@ public class UidiagramSwitch<T> extends Switch<T> {
 				T result = caseRadioButton(radioButton);
 				if (result == null) result = caseGraphicalIndividual(radioButton);
 				if (result == null) result = caseModelElement(radioButton);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case UidiagramPackage.FRAME: {
-				Frame frame = (Frame)theEObject;
-				T result = caseFrame(frame);
-				if (result == null) result = caseGraphicalIndividual(frame);
-				if (result == null) result = caseModelElement(frame);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case UidiagramPackage.LABEL_FRAME: {
-				LabelFrame labelFrame = (LabelFrame)theEObject;
-				T result = caseLabelFrame(labelFrame);
-				if (result == null) result = caseGraphicalIndividual(labelFrame);
-				if (result == null) result = caseModelElement(labelFrame);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case UidiagramPackage.MENU_BUTTON: {
-				MenuButton menuButton = (MenuButton)theEObject;
-				T result = caseMenuButton(menuButton);
-				if (result == null) result = caseGraphicalIndividual(menuButton);
-				if (result == null) result = caseModelElement(menuButton);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case UidiagramPackage.SCROLL_BAR: {
-				ScrollBar scrollBar = (ScrollBar)theEObject;
-				T result = caseScrollBar(scrollBar);
-				if (result == null) result = caseGraphicalIndividual(scrollBar);
-				if (result == null) result = caseModelElement(scrollBar);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -200,27 +168,11 @@ public class UidiagramSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case UidiagramPackage.NOTEBOOK: {
-				Notebook notebook = (Notebook)theEObject;
-				T result = caseNotebook(notebook);
-				if (result == null) result = caseGraphicalIndividual(notebook);
-				if (result == null) result = caseModelElement(notebook);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
 			case UidiagramPackage.SEPARATOR: {
 				Separator separator = (Separator)theEObject;
 				T result = caseSeparator(separator);
 				if (result == null) result = caseGraphicalIndividual(separator);
 				if (result == null) result = caseModelElement(separator);
-				if (result == null) result = defaultCase(theEObject);
-				return result;
-			}
-			case UidiagramPackage.TREE_VIEW: {
-				TreeView treeView = (TreeView)theEObject;
-				T result = caseTreeView(treeView);
-				if (result == null) result = caseGraphicalIndividual(treeView);
-				if (result == null) result = caseModelElement(treeView);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -327,17 +279,17 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Group</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Treeview</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Group</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Treeview</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGroup(Group object) {
+	public T caseTreeview(Treeview object) {
 		return null;
 	}
 
@@ -372,32 +324,32 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Check Box</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Check Button</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Check Box</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Check Button</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCheckBox(CheckBox object) {
+	public T caseCheckButton(CheckButton object) {
 		return null;
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Text Input</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Entry</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Text Input</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Entry</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseTextInput(TextInput object) {
+	public T caseEntry(Entry object) {
 		return null;
 	}
 
@@ -413,66 +365,6 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseRadioButton(RadioButton object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Frame</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Frame</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseFrame(Frame object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Label Frame</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Label Frame</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseLabelFrame(LabelFrame object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Menu Button</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Menu Button</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseMenuButton(MenuButton object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Scroll Bar</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Scroll Bar</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseScrollBar(ScrollBar object) {
 		return null;
 	}
 
@@ -507,21 +399,6 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Notebook</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Notebook</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseNotebook(Notebook object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Separator</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -533,21 +410,6 @@ public class UidiagramSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSeparator(Separator object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Tree View</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Tree View</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseTreeView(TreeView object) {
 		return null;
 	}
 

@@ -4,16 +4,16 @@ package uidiagram.tests;
 
 import junit.textui.TestRunner;
 
-import uidiagram.TreeView;
+import uidiagram.Treeview;
 import uidiagram.UidiagramFactory;
 
 /**
  * <!-- begin-user-doc -->
- * A test case for the model object '<em><b>Tree View</b></em>'.
+ * A test case for the model object '<em><b>Treeview</b></em>'.
  * <!-- end-user-doc -->
  * @generated
  */
-public class TreeViewTest extends GraphicalIndividualTest {
+public class TreeviewTest extends GraphicalContainerTest {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -21,28 +21,28 @@ public class TreeViewTest extends GraphicalIndividualTest {
 	 * @generated
 	 */
 	public static void main(String[] args) {
-		TestRunner.run(TreeViewTest.class);
+		TestRunner.run(TreeviewTest.class);
 	}
 
 	/**
-	 * Constructs a new Tree View test case with the given name.
+	 * Constructs a new Treeview test case with the given name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TreeViewTest(String name) {
+	public TreeviewTest(String name) {
 		super(name);
 	}
 
 	/**
-	 * Returns the fixture for this Tree View test case.
+	 * Returns the fixture for this Treeview test case.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	protected TreeView getFixture() {
-		return (TreeView)fixture;
+	protected Treeview getFixture() {
+		return (Treeview)fixture;
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class TreeViewTest extends GraphicalIndividualTest {
 	 */
 	@Override
 	protected void setUp() throws Exception {
-		setFixture(UidiagramFactory.eINSTANCE.createTreeView());
+		setFixture(UidiagramFactory.eINSTANCE.createTreeview());
 	}
 
 	/**
@@ -67,4 +67,4 @@ public class TreeViewTest extends GraphicalIndividualTest {
 		setFixture(null);
 	}
 
-} //TreeViewTest
+} //TreeviewTest

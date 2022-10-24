@@ -56,10 +56,9 @@ class GraphicalIndividual extends ModelElement {
 }
 
 @gmf.node(label = "name")
-class Group extends GraphicalContainer {
-	
-}
+class Treeview extends GraphicalContainer {
 
+}
 
 @gmf.node(label = "name")
 class Button extends GraphicalIndividual {
@@ -70,33 +69,18 @@ class Label extends GraphicalIndividual {
 	
 }
 @gmf.node(label = "name")
-class CheckBox extends GraphicalIndividual {
+class CheckButton extends GraphicalIndividual {
 	
 }
 @gmf.node(label = "name")
-class TextInput extends GraphicalIndividual {
+class Entry extends GraphicalIndividual {
 	
 }
 @gmf.node(label = "name")
 class RadioButton extends GraphicalIndividual{
 	
 }
-@gmf.node(label = "name")
-class Frame extends GraphicalIndividual{
-	
-}
-@gmf.node(label = "name")
-class LabelFrame extends GraphicalIndividual{
-	
-}
-@gmf.node(label = "name")
-class MenuButton extends GraphicalIndividual{
-	
-}
-@gmf.node(label = "name")
-class ScrollBar extends GraphicalIndividual{
-	
-}
+
 @gmf.node(label = "name")
 class SpinBox extends GraphicalIndividual{
 	
@@ -105,16 +89,9 @@ class SpinBox extends GraphicalIndividual{
 class ComboBox extends GraphicalIndividual{
 	
 }
-@gmf.node(label = "name")
-class Notebook extends GraphicalIndividual{
-	
-}
+
 @gmf.node(label = "name")
 class Separator extends GraphicalIndividual{
-	
-}
-@gmf.node(label = "name")
-class TreeView extends GraphicalIndividual{
 	
 }
 

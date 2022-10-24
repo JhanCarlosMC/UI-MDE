@@ -13,5 +13,5 @@ package uidiagram;
  * @model annotation="gmf.node label='name'"
  * @generated
  */
-public interface Frame extends GraphicalIndividual {
+public interface Frame extends GraphicalContainer {
 } // Frame

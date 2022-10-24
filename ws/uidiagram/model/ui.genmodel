@@ -45,21 +45,15 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ui.ecore#//GraphicalContainer/lstChildModelElements"/>
     </genClasses>
     <genClasses ecoreClass="ui.ecore#//GraphicalIndividual"/>
-    <genClasses ecoreClass="ui.ecore#//Group"/>
+    <genClasses ecoreClass="ui.ecore#//Treeview"/>
     <genClasses ecoreClass="ui.ecore#//Button"/>
     <genClasses ecoreClass="ui.ecore#//Label"/>
-    <genClasses ecoreClass="ui.ecore#//CheckBox"/>
-    <genClasses ecoreClass="ui.ecore#//TextInput"/>
+    <genClasses ecoreClass="ui.ecore#//CheckButton"/>
+    <genClasses ecoreClass="ui.ecore#//Entry"/>
     <genClasses ecoreClass="ui.ecore#//RadioButton"/>
-    <genClasses ecoreClass="ui.ecore#//Frame"/>
-    <genClasses ecoreClass="ui.ecore#//LabelFrame"/>
-    <genClasses ecoreClass="ui.ecore#//MenuButton"/>
-    <genClasses ecoreClass="ui.ecore#//ScrollBar"/>
     <genClasses ecoreClass="ui.ecore#//SpinBox"/>
     <genClasses ecoreClass="ui.ecore#//ComboBox"/>
-    <genClasses ecoreClass="ui.ecore#//Notebook"/>
     <genClasses ecoreClass="ui.ecore#//Separator"/>
-    <genClasses ecoreClass="ui.ecore#//TreeView"/>
     <genClasses ecoreClass="ui.ecore#//Column"/>
   </genPackages>
 </genmodel:GenModel>

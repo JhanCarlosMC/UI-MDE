@@ -350,4 +350,5 @@ public class ComboBox2EditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
+
 }

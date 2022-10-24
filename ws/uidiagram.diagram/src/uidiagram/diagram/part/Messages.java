@@ -261,12 +261,12 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String CheckBox2CreationTool_title;
+	public static String CheckButton2CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String CheckBox2CreationTool_desc;
+	public static String CheckButton2CreationTool_desc;
 
 	/**
 	* @generated
@@ -291,132 +291,72 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String Frame5CreationTool_title;
+	public static String Entry5CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Frame5CreationTool_desc;
+	public static String Entry5CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Group6CreationTool_title;
+	public static String Label6CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Group6CreationTool_desc;
+	public static String Label6CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Label7CreationTool_title;
+	public static String RadioButton7CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Label7CreationTool_desc;
+	public static String RadioButton7CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String LabelFrame8CreationTool_title;
+	public static String Separator8CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String LabelFrame8CreationTool_desc;
+	public static String Separator8CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String MenuButton9CreationTool_title;
+	public static String SpinBox9CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String MenuButton9CreationTool_desc;
+	public static String SpinBox9CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String Notebook10CreationTool_title;
+	public static String Treeview10CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String Notebook10CreationTool_desc;
+	public static String Treeview10CreationTool_desc;
 
 	/**
 	* @generated
 	*/
-	public static String RadioButton11CreationTool_title;
+	public static String UserInterface11CreationTool_title;
 
 	/**
 	* @generated
 	*/
-	public static String RadioButton11CreationTool_desc;
-
-	/**
-	* @generated
-	*/
-	public static String ScrollBar12CreationTool_title;
-
-	/**
-	* @generated
-	*/
-	public static String ScrollBar12CreationTool_desc;
-
-	/**
-	* @generated
-	*/
-	public static String Separator13CreationTool_title;
-
-	/**
-	* @generated
-	*/
-	public static String Separator13CreationTool_desc;
-
-	/**
-	* @generated
-	*/
-	public static String SpinBox14CreationTool_title;
-
-	/**
-	* @generated
-	*/
-	public static String SpinBox14CreationTool_desc;
-
-	/**
-	* @generated
-	*/
-	public static String TextInput15CreationTool_title;
-
-	/**
-	* @generated
-	*/
-	public static String TextInput15CreationTool_desc;
-
-	/**
-	* @generated
-	*/
-	public static String TreeView16CreationTool_title;
-
-	/**
-	* @generated
-	*/
-	public static String TreeView16CreationTool_desc;
-
-	/**
-	* @generated
-	*/
-	public static String UserInterface17CreationTool_title;
-
-	/**
-	* @generated
-	*/
-	public static String UserInterface17CreationTool_desc;
+	public static String UserInterface11CreationTool_desc;
 
 	/**
 	* @generated
@@ -426,12 +366,12 @@ public class Messages extends NLS {
 	/**
 	* @generated
 	*/
-	public static String GroupGroupLstChildModelElementsCompartmentEditPart_title;
+	public static String TreeviewTreeviewLstChildModelElementsCompartmentEditPart_title;
 
 	/**
 	* @generated
 	*/
-	public static String GroupGroupLstChildModelElementsCompartment2EditPart_title;
+	public static String TreeviewTreeviewLstChildModelElementsCompartment2EditPart_title;
 
 	/**
 	* @generated

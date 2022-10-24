@@ -91,7 +91,7 @@ public class UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart exten
 			CreateElementRequestAdapter adapter = ((CreateViewAndElementRequest) request).getViewAndElementDescriptor()
 					.getCreateElementRequestAdapter();
 			IElementType type = (IElementType) adapter.getAdapter(IElementType.class);
-			if (type == UidiagramElementTypes.Group_3001) {
+			if (type == UidiagramElementTypes.Treeview_3033) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.Button_3017) {
@@ -100,25 +100,13 @@ public class UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart exten
 			if (type == UidiagramElementTypes.Label_3018) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.CheckBox_3019) {
+			if (type == UidiagramElementTypes.CheckButton_3038) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.TextInput_3020) {
+			if (type == UidiagramElementTypes.Entry_3039) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.RadioButton_3021) {
-				return this;
-			}
-			if (type == UidiagramElementTypes.Frame_3022) {
-				return this;
-			}
-			if (type == UidiagramElementTypes.LabelFrame_3023) {
-				return this;
-			}
-			if (type == UidiagramElementTypes.MenuButton_3024) {
-				return this;
-			}
-			if (type == UidiagramElementTypes.ScrollBar_3025) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.SpinBox_3026) {
@@ -127,13 +115,7 @@ public class UserInterfaceUserInterfaceLstModelElementsCompartmentEditPart exten
 			if (type == UidiagramElementTypes.ComboBox_3027) {
 				return this;
 			}
-			if (type == UidiagramElementTypes.Notebook_3028) {
-				return this;
-			}
 			if (type == UidiagramElementTypes.Separator_3029) {
-				return this;
-			}
-			if (type == UidiagramElementTypes.TreeView_3030) {
 				return this;
 			}
 			if (type == UidiagramElementTypes.Column_3032) {

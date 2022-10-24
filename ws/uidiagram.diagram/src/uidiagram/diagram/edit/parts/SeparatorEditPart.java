@@ -43,7 +43,7 @@ public class SeparatorEditPart extends ShapeNodeEditPart {
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 3015;
+	public static final int VISUAL_ID = 3048;
 
 	/**
 	* @generated
@@ -294,6 +294,7 @@ public class SeparatorEditPart extends ShapeNodeEditPart {
 		}
 
 	}
+
 	protected void handleNotificationEvent(Notification arg0) {
 		// SET was the type i need
 		if (arg0.getEventType() == Notification.SET) {
@@ -349,4 +350,5 @@ public class SeparatorEditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
+
 }

@@ -18,6 +18,7 @@ import org.eclipse.gmf.runtime.notation.View;
 import uidiagram.GraphicalContainer;
 import uidiagram.Separator;
 import uidiagram.UidiagramFactory;
+import uidiagram.UserInterface;
 
 /**
  * @generated

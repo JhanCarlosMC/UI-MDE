@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uidiagram:UI_Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uidiagram="http://uidiagram">
-  <listUserInterface name="Registro">
-    <lstModelElements xsi:type="uidiagram:Label" name="Nombre:"/>
-    <lstModelElements xsi:type="uidiagram:TextInput" name="nombre"/>
-    <lstModelElements xsi:type="uidiagram:Label" name="Cedula:"/>
-    <lstModelElements xsi:type="uidiagram:TextInput" name="cedula"/>
-    <lstModelElements xsi:type="uidiagram:Label" name="Apellido:"/>
-    <lstModelElements xsi:type="uidiagram:TextInput" name="apellido"/>
-    <lstModelElements xsi:type="uidiagram:Button" name="Registrar"/>
+  <listUserInterface name="Register" title="RegisterView" width="600" height="600" pathImage="">
+    <lstModelElements xsi:type="uidiagram:Label" name="Nombre" idModelElement="1" color="" positionX="14" positionY="14" width="6" height="1" titleFont="Arial" titleFontSize="11" style="bold"/>
+    <lstModelElements xsi:type="uidiagram:Label" name="Apellido" idModelElement="2" color="" positionX="14" positionY="62" width="6" height="1" titleFont="Arial" titleFontSize="11" pathImage="" style="bold"/>
+    <lstModelElements xsi:type="uidiagram:Button" name="Registrar" idModelElement="1" color="red" positionX="170" positionY="314" width="20" height="1" backgroundColor="" titleFont="Arial" titleFontSize="12" style="bold"/>
+    <lstModelElements xsi:type="uidiagram:Entry" name="Nombre" idModelElement="1" positionX="170" positionY="14" width="211" height="20" titleFont="" titleFontSize="" pathImage=""/>
+    <lstModelElements xsi:type="uidiagram:Entry" name="Apellido" idModelElement="2" positionX="170" positionY="62" width="211" height="20" titleFont="" titleFontSize="" pathImage=""/>
+    <lstModelElements xsi:type="uidiagram:CheckButton" name="Soltero(a)" idModelElement="1" positionX="170" positionY="104" width="6" height="1"/>
+    <lstModelElements xsi:type="uidiagram:Label" name="Estado Civil" idModelElement="3" color="" positionX="14" positionY="110" width="10" height="1" titleFont="Arial" titleFontSize="11" pathImage="" style="bold"/>
+    <lstModelElements xsi:type="uidiagram:CheckButton" name="Casado(a)" idModelElement="2" positionX="272" positionY="104" width="6" height="1"/>
+    <lstModelElements xsi:type="uidiagram:CheckButton" name="Divorciado(a)" idModelElement="3" positionX="374" positionY="104" width="10" height="1" titleFontSize=""/>
+    <lstModelElements xsi:type="uidiagram:RadioButton" name="Hombre" idModelElement="1" positionX="272" positionY="146" width="120" height="20"/>
+    <lstModelElements xsi:type="uidiagram:RadioButton" name="Mujer" idModelElement="2" positionX="170" positionY="146" width="120" height="20"/>
+    <lstModelElements xsi:type="uidiagram:Label" name="Genero" idModelElement="3" color="" positionX="2" positionY="152" width="10" height="1" titleFont="Arial" titleFontSize="11" pathImage="" style="bold"/>
+    <lstModelElements xsi:type="uidiagram:ComboBox" name="ciudad" idModelElement="1" positionX="170" positionY="194" width="127" height="20"/>
+    <lstModelElements xsi:type="uidiagram:Label" name="Ciudad" idModelElement="4" color="" positionX="2" positionY="200" width="9" height="1" titleFont="Arial" titleFontSize="11" pathImage="" style="bold"/>
+    <lstModelElements xsi:type="uidiagram:SpinBox" name="Edad" idModelElement="1" positionX="170" positionY="236" width="163" height="20"/>
+    <lstModelElements xsi:type="uidiagram:Label" name="Edad" idModelElement="5" color="" positionX="2" positionY="236" width="8" height="1" titleFont="Arial" titleFontSize="11" pathImage="" style="bold"/>
+    <lstModelElements xsi:type="uidiagram:Separator" name="separato" idModelElement="1" color="" positionY="386" width="457" height="8" style="horizontal"/>
+    <lstModelElements xsi:type="uidiagram:Treeview" name="test" positionX="-10" positionY="434" width="595" height="115">
+      <lstChildModelElements xsi:type="uidiagram:Column" name="Nombre" idModelElement="0" positionX="38" positionY="37" width="120" height="20"/>
+      <lstChildModelElements xsi:type="uidiagram:Column" name="Apellido" idModelElement="1" positionX="164" positionY="38" width="120" height="20"/>
+      <lstChildModelElements xsi:type="uidiagram:Column" name="Genero" idModelElement="2" positionX="290" positionY="39" width="120" height="20"/>
+      <lstChildModelElements xsi:type="uidiagram:Column" name="Edad" idModelElement="3" positionX="416" positionY="39" width="120" height="20"/>
+    </lstModelElements>
   </listUserInterface>
 </uidiagram:UI_Diagram>

@@ -8,6 +8,6 @@ import uidiagram.diagram.providers.UidiagramModelingAssistantProvider;
 /**
  * @generated
  */
-public class UidiagramModelingAssistantProviderOfTreeViewEditPart extends UidiagramModelingAssistantProvider {
+public class UidiagramModelingAssistantProviderOfTreeviewEditPart extends UidiagramModelingAssistantProvider {
 
 }

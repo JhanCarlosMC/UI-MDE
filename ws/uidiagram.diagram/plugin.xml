@@ -258,7 +258,7 @@
          </object>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Uidiagram"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,3001,3002,3003,3004,3005,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3031,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3027,3028,3029,3030,3032"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,3033,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3017,3018,3038,3039,3021,3026,3027,3029,3032"/>
       </viewProvider>
    </extension>
 
@@ -270,16 +270,16 @@
             <method name="getType()" value="Uidiagram"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2001,3001,3002,3003,3004,3005,3006,3007,3008,3009,3010,3011,3012,3013,3014,3015,3016,3031,3017,3018,3019,3020,3021,3022,3023,3024,3025,3026,3027,3028,3029,3030,3032"/>
+            <method name="getType()" value="2001,3033,3040,3041,3042,3043,3044,3045,3046,3047,3048,3049,3017,3018,3038,3039,3021,3026,3027,3029,3032"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
             <method name="getType()" value=""/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value="5031,5016,5015,5001,5002,5003,5004,5005,5006,5007,5008,5009,5010,5011,5012,5013,5014,5032,5017,5018,5019,5020,5021,5022,5023,5024,5025,5026,5027,5028,5029,5030,5033"/>
+            <method name="getType()" value="5031,5038,5050,5041,5042,5043,5044,5045,5046,5047,5048,5049,5017,5018,5039,5040,5021,5026,5027,5029,5033"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
-            <method name="getType()" value="7001,7002,7003"/>
+            <method name="getType()" value="7001,7004,7005"/>
          </object>
          <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
       </editpartProvider>
@@ -298,90 +298,60 @@
          <object class="uidiagram.diagram.edit.parts.UserInterfaceEditPart" id="UserInterface_2001"/>
          <context elements="UserInterface_2001"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfGroupEditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfTreeviewEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.GroupEditPart" id="Group_3001"/>
-         <context elements="Group_3001"/>
+         <object class="uidiagram.diagram.edit.parts.TreeviewEditPart" id="Treeview_3033"/>
+         <context elements="Treeview_3033"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfGroup2EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfTreeview2EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.Group2EditPart" id="Group_3002"/>
-         <context elements="Group_3002"/>
+         <object class="uidiagram.diagram.edit.parts.Treeview2EditPart" id="Treeview_3040"/>
+         <context elements="Treeview_3040"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfButtonEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.ButtonEditPart" id="Button_3003"/>
-         <context elements="Button_3003"/>
+         <object class="uidiagram.diagram.edit.parts.ButtonEditPart" id="Button_3041"/>
+         <context elements="Button_3041"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfLabelEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.LabelEditPart" id="Label_3004"/>
-         <context elements="Label_3004"/>
+         <object class="uidiagram.diagram.edit.parts.LabelEditPart" id="Label_3042"/>
+         <context elements="Label_3042"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfCheckBoxEditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfCheckButtonEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.CheckBoxEditPart" id="CheckBox_3005"/>
-         <context elements="CheckBox_3005"/>
+         <object class="uidiagram.diagram.edit.parts.CheckButtonEditPart" id="CheckButton_3043"/>
+         <context elements="CheckButton_3043"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfTextInputEditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfEntryEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.TextInputEditPart" id="TextInput_3006"/>
-         <context elements="TextInput_3006"/>
+         <object class="uidiagram.diagram.edit.parts.EntryEditPart" id="Entry_3044"/>
+         <context elements="Entry_3044"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfRadioButtonEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.RadioButtonEditPart" id="RadioButton_3007"/>
-         <context elements="RadioButton_3007"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfFrameEditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.FrameEditPart" id="Frame_3008"/>
-         <context elements="Frame_3008"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfLabelFrameEditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.LabelFrameEditPart" id="LabelFrame_3009"/>
-         <context elements="LabelFrame_3009"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfMenuButtonEditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.MenuButtonEditPart" id="MenuButton_3010"/>
-         <context elements="MenuButton_3010"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfScrollBarEditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.ScrollBarEditPart" id="ScrollBar_3011"/>
-         <context elements="ScrollBar_3011"/>
+         <object class="uidiagram.diagram.edit.parts.RadioButtonEditPart" id="RadioButton_3045"/>
+         <context elements="RadioButton_3045"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfSpinBoxEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.SpinBoxEditPart" id="SpinBox_3012"/>
-         <context elements="SpinBox_3012"/>
+         <object class="uidiagram.diagram.edit.parts.SpinBoxEditPart" id="SpinBox_3046"/>
+         <context elements="SpinBox_3046"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfComboBoxEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.ComboBoxEditPart" id="ComboBox_3013"/>
-         <context elements="ComboBox_3013"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfNotebookEditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.NotebookEditPart" id="Notebook_3014"/>
-         <context elements="Notebook_3014"/>
+         <object class="uidiagram.diagram.edit.parts.ComboBoxEditPart" id="ComboBox_3047"/>
+         <context elements="ComboBox_3047"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfSeparatorEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.SeparatorEditPart" id="Separator_3015"/>
-         <context elements="Separator_3015"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfTreeViewEditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.TreeViewEditPart" id="TreeView_3016"/>
-         <context elements="TreeView_3016"/>
+         <object class="uidiagram.diagram.edit.parts.SeparatorEditPart" id="Separator_3048"/>
+         <context elements="Separator_3048"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfColumnEditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.ColumnEditPart" id="Column_3031"/>
-         <context elements="Column_3031"/>
+         <object class="uidiagram.diagram.edit.parts.ColumnEditPart" id="Column_3049"/>
+         <context elements="Column_3049"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfButton2EditPart">
          <Priority name="Lowest"/>
@@ -393,40 +363,20 @@
          <object class="uidiagram.diagram.edit.parts.Label2EditPart" id="Label_3018"/>
          <context elements="Label_3018"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfCheckBox2EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfCheckButton2EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.CheckBox2EditPart" id="CheckBox_3019"/>
-         <context elements="CheckBox_3019"/>
+         <object class="uidiagram.diagram.edit.parts.CheckButton2EditPart" id="CheckButton_3038"/>
+         <context elements="CheckButton_3038"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfTextInput2EditPart">
+            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfEntry2EditPart">
          <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.TextInput2EditPart" id="TextInput_3020"/>
-         <context elements="TextInput_3020"/>
+         <object class="uidiagram.diagram.edit.parts.Entry2EditPart" id="Entry_3039"/>
+         <context elements="Entry_3039"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfRadioButton2EditPart">
          <Priority name="Lowest"/>
          <object class="uidiagram.diagram.edit.parts.RadioButton2EditPart" id="RadioButton_3021"/>
          <context elements="RadioButton_3021"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfFrame2EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.Frame2EditPart" id="Frame_3022"/>
-         <context elements="Frame_3022"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfLabelFrame2EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.LabelFrame2EditPart" id="LabelFrame_3023"/>
-         <context elements="LabelFrame_3023"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfMenuButton2EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.MenuButton2EditPart" id="MenuButton_3024"/>
-         <context elements="MenuButton_3024"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfScrollBar2EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.ScrollBar2EditPart" id="ScrollBar_3025"/>
-         <context elements="ScrollBar_3025"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfSpinBox2EditPart">
          <Priority name="Lowest"/>
@@ -438,20 +388,10 @@
          <object class="uidiagram.diagram.edit.parts.ComboBox2EditPart" id="ComboBox_3027"/>
          <context elements="ComboBox_3027"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfNotebook2EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.Notebook2EditPart" id="Notebook_3028"/>
-         <context elements="Notebook_3028"/>
-      </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfSeparator2EditPart">
          <Priority name="Lowest"/>
          <object class="uidiagram.diagram.edit.parts.Separator2EditPart" id="Separator_3029"/>
          <context elements="Separator_3029"/>
-      </modelingAssistantProvider>
-            <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfTreeView2EditPart">
-         <Priority name="Lowest"/>
-         <object class="uidiagram.diagram.edit.parts.TreeView2EditPart" id="TreeView_3030"/>
-         <context elements="TreeView_3030"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="uidiagram.diagram.providers.assistants.UidiagramModelingAssistantProviderOfColumn2EditPart">
          <Priority name="Lowest"/>
@@ -511,171 +451,111 @@
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <metamodelType
-               id="uidiagram.diagram.Group_3001"
-               name="%metatype.name.Group_3001"
+               id="uidiagram.diagram.Treeview_3033"
+               name="%metatype.name.Treeview_3033"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Group"
-               edithelper="uidiagram.diagram.edit.helpers.GroupEditHelper">
-            <param name="semanticHint" value="3001"/>
+               eclass="Treeview"
+               edithelper="uidiagram.diagram.edit.helpers.TreeviewEditHelper">
+            <param name="semanticHint" value="3033"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <specializationType
-               id="uidiagram.diagram.Group_3002"
-               name="%metatype.name.Group_3002"
+               id="uidiagram.diagram.Treeview_3040"
+               name="%metatype.name.Treeview_3040"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.Group_3001"/>
-            <param name="semanticHint" value="3002"/>
+            <specializes id="uidiagram.diagram.Treeview_3033"/>
+            <param name="semanticHint" value="3040"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <metamodelType
-               id="uidiagram.diagram.Button_3003"
-               name="%metatype.name.Button_3003"
+               id="uidiagram.diagram.Button_3041"
+               name="%metatype.name.Button_3041"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Button"
                edithelper="uidiagram.diagram.edit.helpers.ButtonEditHelper">
-            <param name="semanticHint" value="3003"/>
+            <param name="semanticHint" value="3041"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <metamodelType
-               id="uidiagram.diagram.Label_3004"
-               name="%metatype.name.Label_3004"
+               id="uidiagram.diagram.Label_3042"
+               name="%metatype.name.Label_3042"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Label"
                edithelper="uidiagram.diagram.edit.helpers.LabelEditHelper">
-            <param name="semanticHint" value="3004"/>
+            <param name="semanticHint" value="3042"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <metamodelType
-               id="uidiagram.diagram.CheckBox_3005"
-               name="%metatype.name.CheckBox_3005"
+               id="uidiagram.diagram.CheckButton_3043"
+               name="%metatype.name.CheckButton_3043"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="CheckBox"
-               edithelper="uidiagram.diagram.edit.helpers.CheckBoxEditHelper">
-            <param name="semanticHint" value="3005"/>
+               eclass="CheckButton"
+               edithelper="uidiagram.diagram.edit.helpers.CheckButtonEditHelper">
+            <param name="semanticHint" value="3043"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <metamodelType
-               id="uidiagram.diagram.TextInput_3006"
-               name="%metatype.name.TextInput_3006"
+               id="uidiagram.diagram.Entry_3044"
+               name="%metatype.name.Entry_3044"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="TextInput"
-               edithelper="uidiagram.diagram.edit.helpers.TextInputEditHelper">
-            <param name="semanticHint" value="3006"/>
+               eclass="Entry"
+               edithelper="uidiagram.diagram.edit.helpers.EntryEditHelper">
+            <param name="semanticHint" value="3044"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <metamodelType
-               id="uidiagram.diagram.RadioButton_3007"
-               name="%metatype.name.RadioButton_3007"
+               id="uidiagram.diagram.RadioButton_3045"
+               name="%metatype.name.RadioButton_3045"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="RadioButton"
                edithelper="uidiagram.diagram.edit.helpers.RadioButtonEditHelper">
-            <param name="semanticHint" value="3007"/>
+            <param name="semanticHint" value="3045"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <metamodelType
-               id="uidiagram.diagram.Frame_3008"
-               name="%metatype.name.Frame_3008"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Frame"
-               edithelper="uidiagram.diagram.edit.helpers.FrameEditHelper">
-            <param name="semanticHint" value="3008"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <metamodelType
-               id="uidiagram.diagram.LabelFrame_3009"
-               name="%metatype.name.LabelFrame_3009"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="LabelFrame"
-               edithelper="uidiagram.diagram.edit.helpers.LabelFrameEditHelper">
-            <param name="semanticHint" value="3009"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <metamodelType
-               id="uidiagram.diagram.MenuButton_3010"
-               name="%metatype.name.MenuButton_3010"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="MenuButton"
-               edithelper="uidiagram.diagram.edit.helpers.MenuButtonEditHelper">
-            <param name="semanticHint" value="3010"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <metamodelType
-               id="uidiagram.diagram.ScrollBar_3011"
-               name="%metatype.name.ScrollBar_3011"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="ScrollBar"
-               edithelper="uidiagram.diagram.edit.helpers.ScrollBarEditHelper">
-            <param name="semanticHint" value="3011"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <metamodelType
-               id="uidiagram.diagram.SpinBox_3012"
-               name="%metatype.name.SpinBox_3012"
+               id="uidiagram.diagram.SpinBox_3046"
+               name="%metatype.name.SpinBox_3046"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="SpinBox"
                edithelper="uidiagram.diagram.edit.helpers.SpinBoxEditHelper">
-            <param name="semanticHint" value="3012"/>
+            <param name="semanticHint" value="3046"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <metamodelType
-               id="uidiagram.diagram.ComboBox_3013"
-               name="%metatype.name.ComboBox_3013"
+               id="uidiagram.diagram.ComboBox_3047"
+               name="%metatype.name.ComboBox_3047"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="ComboBox"
                edithelper="uidiagram.diagram.edit.helpers.ComboBoxEditHelper">
-            <param name="semanticHint" value="3013"/>
+            <param name="semanticHint" value="3047"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <metamodelType
-               id="uidiagram.diagram.Notebook_3014"
-               name="%metatype.name.Notebook_3014"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Notebook"
-               edithelper="uidiagram.diagram.edit.helpers.NotebookEditHelper">
-            <param name="semanticHint" value="3014"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <metamodelType
-               id="uidiagram.diagram.Separator_3015"
-               name="%metatype.name.Separator_3015"
+               id="uidiagram.diagram.Separator_3048"
+               name="%metatype.name.Separator_3048"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Separator"
                edithelper="uidiagram.diagram.edit.helpers.SeparatorEditHelper">
-            <param name="semanticHint" value="3015"/>
+            <param name="semanticHint" value="3048"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <metamodelType
-               id="uidiagram.diagram.TreeView_3016"
-               name="%metatype.name.TreeView_3016"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="TreeView"
-               edithelper="uidiagram.diagram.edit.helpers.TreeViewEditHelper">
-            <param name="semanticHint" value="3016"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <metamodelType
-               id="uidiagram.diagram.Column_3031"
-               name="%metatype.name.Column_3031"
+               id="uidiagram.diagram.Column_3049"
+               name="%metatype.name.Column_3049"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="Column"
                edithelper="uidiagram.diagram.edit.helpers.ColumnEditHelper">
-            <param name="semanticHint" value="3031"/>
+            <param name="semanticHint" value="3049"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
@@ -683,7 +563,7 @@
                id="uidiagram.diagram.Button_3017"
                name="%metatype.name.Button_3017"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.Button_3003"/>
+            <specializes id="uidiagram.diagram.Button_3041"/>
             <param name="semanticHint" value="3017"/>
          </specializationType>
       </metamodel>
@@ -692,26 +572,26 @@
                id="uidiagram.diagram.Label_3018"
                name="%metatype.name.Label_3018"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.Label_3004"/>
+            <specializes id="uidiagram.diagram.Label_3042"/>
             <param name="semanticHint" value="3018"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <specializationType
-               id="uidiagram.diagram.CheckBox_3019"
-               name="%metatype.name.CheckBox_3019"
+               id="uidiagram.diagram.CheckButton_3038"
+               name="%metatype.name.CheckButton_3038"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.CheckBox_3005"/>
-            <param name="semanticHint" value="3019"/>
+            <specializes id="uidiagram.diagram.CheckButton_3043"/>
+            <param name="semanticHint" value="3038"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
          <specializationType
-               id="uidiagram.diagram.TextInput_3020"
-               name="%metatype.name.TextInput_3020"
+               id="uidiagram.diagram.Entry_3039"
+               name="%metatype.name.Entry_3039"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.TextInput_3006"/>
-            <param name="semanticHint" value="3020"/>
+            <specializes id="uidiagram.diagram.Entry_3044"/>
+            <param name="semanticHint" value="3039"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
@@ -719,44 +599,8 @@
                id="uidiagram.diagram.RadioButton_3021"
                name="%metatype.name.RadioButton_3021"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.RadioButton_3007"/>
+            <specializes id="uidiagram.diagram.RadioButton_3045"/>
             <param name="semanticHint" value="3021"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <specializationType
-               id="uidiagram.diagram.Frame_3022"
-               name="%metatype.name.Frame_3022"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.Frame_3008"/>
-            <param name="semanticHint" value="3022"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <specializationType
-               id="uidiagram.diagram.LabelFrame_3023"
-               name="%metatype.name.LabelFrame_3023"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.LabelFrame_3009"/>
-            <param name="semanticHint" value="3023"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <specializationType
-               id="uidiagram.diagram.MenuButton_3024"
-               name="%metatype.name.MenuButton_3024"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.MenuButton_3010"/>
-            <param name="semanticHint" value="3024"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <specializationType
-               id="uidiagram.diagram.ScrollBar_3025"
-               name="%metatype.name.ScrollBar_3025"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.ScrollBar_3011"/>
-            <param name="semanticHint" value="3025"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
@@ -764,7 +608,7 @@
                id="uidiagram.diagram.SpinBox_3026"
                name="%metatype.name.SpinBox_3026"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.SpinBox_3012"/>
+            <specializes id="uidiagram.diagram.SpinBox_3046"/>
             <param name="semanticHint" value="3026"/>
          </specializationType>
       </metamodel>
@@ -773,17 +617,8 @@
                id="uidiagram.diagram.ComboBox_3027"
                name="%metatype.name.ComboBox_3027"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.ComboBox_3013"/>
+            <specializes id="uidiagram.diagram.ComboBox_3047"/>
             <param name="semanticHint" value="3027"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <specializationType
-               id="uidiagram.diagram.Notebook_3028"
-               name="%metatype.name.Notebook_3028"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.Notebook_3014"/>
-            <param name="semanticHint" value="3028"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
@@ -791,17 +626,8 @@
                id="uidiagram.diagram.Separator_3029"
                name="%metatype.name.Separator_3029"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.Separator_3015"/>
+            <specializes id="uidiagram.diagram.Separator_3048"/>
             <param name="semanticHint" value="3029"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="http://uidiagram">
-         <specializationType
-               id="uidiagram.diagram.TreeView_3030"
-               name="%metatype.name.TreeView_3030"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.TreeView_3016"/>
-            <param name="semanticHint" value="3030"/>
          </specializationType>
       </metamodel>
       <metamodel nsURI="http://uidiagram">
@@ -809,7 +635,7 @@
                id="uidiagram.diagram.Column_3032"
                name="%metatype.name.Column_3032"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="uidiagram.diagram.Column_3031"/>
+            <specializes id="uidiagram.diagram.Column_3049"/>
             <param name="semanticHint" value="3032"/>
          </specializationType>
       </metamodel>
@@ -827,37 +653,25 @@
       <binding context="uidiagram.diagram.TypeContext">
          <elementType ref="uidiagram.diagram.UI_Diagram_1000"/>
          <elementType ref="uidiagram.diagram.UserInterface_2001"/>
-         <elementType ref="uidiagram.diagram.Group_3001"/>
-         <elementType ref="uidiagram.diagram.Group_3002"/>
-         <elementType ref="uidiagram.diagram.Button_3003"/>
-         <elementType ref="uidiagram.diagram.Label_3004"/>
-         <elementType ref="uidiagram.diagram.CheckBox_3005"/>
-         <elementType ref="uidiagram.diagram.TextInput_3006"/>
-         <elementType ref="uidiagram.diagram.RadioButton_3007"/>
-         <elementType ref="uidiagram.diagram.Frame_3008"/>
-         <elementType ref="uidiagram.diagram.LabelFrame_3009"/>
-         <elementType ref="uidiagram.diagram.MenuButton_3010"/>
-         <elementType ref="uidiagram.diagram.ScrollBar_3011"/>
-         <elementType ref="uidiagram.diagram.SpinBox_3012"/>
-         <elementType ref="uidiagram.diagram.ComboBox_3013"/>
-         <elementType ref="uidiagram.diagram.Notebook_3014"/>
-         <elementType ref="uidiagram.diagram.Separator_3015"/>
-         <elementType ref="uidiagram.diagram.TreeView_3016"/>
-         <elementType ref="uidiagram.diagram.Column_3031"/>
+         <elementType ref="uidiagram.diagram.Treeview_3033"/>
+         <elementType ref="uidiagram.diagram.Treeview_3040"/>
+         <elementType ref="uidiagram.diagram.Button_3041"/>
+         <elementType ref="uidiagram.diagram.Label_3042"/>
+         <elementType ref="uidiagram.diagram.CheckButton_3043"/>
+         <elementType ref="uidiagram.diagram.Entry_3044"/>
+         <elementType ref="uidiagram.diagram.RadioButton_3045"/>
+         <elementType ref="uidiagram.diagram.SpinBox_3046"/>
+         <elementType ref="uidiagram.diagram.ComboBox_3047"/>
+         <elementType ref="uidiagram.diagram.Separator_3048"/>
+         <elementType ref="uidiagram.diagram.Column_3049"/>
          <elementType ref="uidiagram.diagram.Button_3017"/>
          <elementType ref="uidiagram.diagram.Label_3018"/>
-         <elementType ref="uidiagram.diagram.CheckBox_3019"/>
-         <elementType ref="uidiagram.diagram.TextInput_3020"/>
+         <elementType ref="uidiagram.diagram.CheckButton_3038"/>
+         <elementType ref="uidiagram.diagram.Entry_3039"/>
          <elementType ref="uidiagram.diagram.RadioButton_3021"/>
-         <elementType ref="uidiagram.diagram.Frame_3022"/>
-         <elementType ref="uidiagram.diagram.LabelFrame_3023"/>
-         <elementType ref="uidiagram.diagram.MenuButton_3024"/>
-         <elementType ref="uidiagram.diagram.ScrollBar_3025"/>
          <elementType ref="uidiagram.diagram.SpinBox_3026"/>
          <elementType ref="uidiagram.diagram.ComboBox_3027"/>
-         <elementType ref="uidiagram.diagram.Notebook_3028"/>
          <elementType ref="uidiagram.diagram.Separator_3029"/>
-         <elementType ref="uidiagram.diagram.TreeView_3030"/>
          <elementType ref="uidiagram.diagram.Column_3032"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>
       </binding>

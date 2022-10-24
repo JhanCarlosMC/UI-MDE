@@ -22,7 +22,7 @@ public class SpinBoxItemSemanticEditPolicy extends UidiagramBaseItemSemanticEdit
 	* @generated
 	*/
 	public SpinBoxItemSemanticEditPolicy() {
-		super(UidiagramElementTypes.SpinBox_3012);
+		super(UidiagramElementTypes.SpinBox_3046);
 	}
 
 	/**

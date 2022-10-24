@@ -210,26 +210,26 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.Group} instances.
+	 * This keeps track of the one adapter used for all {@link uidiagram.Treeview} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected GroupItemProvider groupItemProvider;
+	protected TreeviewItemProvider treeviewItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link uidiagram.Group}.
+	 * This creates an adapter for a {@link uidiagram.Treeview}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createGroupAdapter() {
-		if (groupItemProvider == null) {
-			groupItemProvider = new GroupItemProvider(this);
+	public Adapter createTreeviewAdapter() {
+		if (treeviewItemProvider == null) {
+			treeviewItemProvider = new TreeviewItemProvider(this);
 		}
 
-		return groupItemProvider;
+		return treeviewItemProvider;
 	}
 
 	/**
@@ -279,49 +279,49 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.CheckBox} instances.
+	 * This keeps track of the one adapter used for all {@link uidiagram.CheckButton} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CheckBoxItemProvider checkBoxItemProvider;
+	protected CheckButtonItemProvider checkButtonItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link uidiagram.CheckBox}.
+	 * This creates an adapter for a {@link uidiagram.CheckButton}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createCheckBoxAdapter() {
-		if (checkBoxItemProvider == null) {
-			checkBoxItemProvider = new CheckBoxItemProvider(this);
+	public Adapter createCheckButtonAdapter() {
+		if (checkButtonItemProvider == null) {
+			checkButtonItemProvider = new CheckButtonItemProvider(this);
 		}
 
-		return checkBoxItemProvider;
+		return checkButtonItemProvider;
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.TextInput} instances.
+	 * This keeps track of the one adapter used for all {@link uidiagram.Entry} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected TextInputItemProvider textInputItemProvider;
+	protected EntryItemProvider entryItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link uidiagram.TextInput}.
+	 * This creates an adapter for a {@link uidiagram.Entry}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createTextInputAdapter() {
-		if (textInputItemProvider == null) {
-			textInputItemProvider = new TextInputItemProvider(this);
+	public Adapter createEntryAdapter() {
+		if (entryItemProvider == null) {
+			entryItemProvider = new EntryItemProvider(this);
 		}
 
-		return textInputItemProvider;
+		return entryItemProvider;
 	}
 
 	/**
@@ -345,98 +345,6 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 		}
 
 		return radioButtonItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.Frame} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected FrameItemProvider frameItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uidiagram.Frame}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createFrameAdapter() {
-		if (frameItemProvider == null) {
-			frameItemProvider = new FrameItemProvider(this);
-		}
-
-		return frameItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.LabelFrame} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected LabelFrameItemProvider labelFrameItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uidiagram.LabelFrame}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createLabelFrameAdapter() {
-		if (labelFrameItemProvider == null) {
-			labelFrameItemProvider = new LabelFrameItemProvider(this);
-		}
-
-		return labelFrameItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.MenuButton} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected MenuButtonItemProvider menuButtonItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uidiagram.MenuButton}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createMenuButtonAdapter() {
-		if (menuButtonItemProvider == null) {
-			menuButtonItemProvider = new MenuButtonItemProvider(this);
-		}
-
-		return menuButtonItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.ScrollBar} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ScrollBarItemProvider scrollBarItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uidiagram.ScrollBar}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createScrollBarAdapter() {
-		if (scrollBarItemProvider == null) {
-			scrollBarItemProvider = new ScrollBarItemProvider(this);
-		}
-
-		return scrollBarItemProvider;
 	}
 
 	/**
@@ -486,29 +394,6 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.Notebook} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected NotebookItemProvider notebookItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uidiagram.Notebook}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createNotebookAdapter() {
-		if (notebookItemProvider == null) {
-			notebookItemProvider = new NotebookItemProvider(this);
-		}
-
-		return notebookItemProvider;
-	}
-
-	/**
 	 * This keeps track of the one adapter used for all {@link uidiagram.Separator} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -529,29 +414,6 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 		}
 
 		return separatorItemProvider;
-	}
-
-	/**
-	 * This keeps track of the one adapter used for all {@link uidiagram.TreeView} instances.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected TreeViewItemProvider treeViewItemProvider;
-
-	/**
-	 * This creates an adapter for a {@link uidiagram.TreeView}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Adapter createTreeViewAdapter() {
-		if (treeViewItemProvider == null) {
-			treeViewItemProvider = new TreeViewItemProvider(this);
-		}
-
-		return treeViewItemProvider;
 	}
 
 	/**
@@ -682,21 +544,15 @@ public class UidiagramItemProviderAdapterFactory extends UidiagramAdapterFactory
 		if (modelElementItemProvider != null) modelElementItemProvider.dispose();
 		if (graphicalContainerItemProvider != null) graphicalContainerItemProvider.dispose();
 		if (graphicalIndividualItemProvider != null) graphicalIndividualItemProvider.dispose();
-		if (groupItemProvider != null) groupItemProvider.dispose();
+		if (treeviewItemProvider != null) treeviewItemProvider.dispose();
 		if (buttonItemProvider != null) buttonItemProvider.dispose();
 		if (labelItemProvider != null) labelItemProvider.dispose();
-		if (checkBoxItemProvider != null) checkBoxItemProvider.dispose();
-		if (textInputItemProvider != null) textInputItemProvider.dispose();
+		if (checkButtonItemProvider != null) checkButtonItemProvider.dispose();
+		if (entryItemProvider != null) entryItemProvider.dispose();
 		if (radioButtonItemProvider != null) radioButtonItemProvider.dispose();
-		if (frameItemProvider != null) frameItemProvider.dispose();
-		if (labelFrameItemProvider != null) labelFrameItemProvider.dispose();
-		if (menuButtonItemProvider != null) menuButtonItemProvider.dispose();
-		if (scrollBarItemProvider != null) scrollBarItemProvider.dispose();
 		if (spinBoxItemProvider != null) spinBoxItemProvider.dispose();
 		if (comboBoxItemProvider != null) comboBoxItemProvider.dispose();
-		if (notebookItemProvider != null) notebookItemProvider.dispose();
 		if (separatorItemProvider != null) separatorItemProvider.dispose();
-		if (treeViewItemProvider != null) treeViewItemProvider.dispose();
 		if (columnItemProvider != null) columnItemProvider.dispose();
 	}
 

@@ -16,6 +16,7 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 import org.eclipse.gmf.runtime.notation.View;
 
 import uidiagram.Column;
+import uidiagram.Treeview;
 import uidiagram.UidiagramFactory;
 import uidiagram.UserInterface;
 

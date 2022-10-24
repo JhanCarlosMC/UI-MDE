@@ -92,8 +92,8 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 				return createGraphicalIndividualAdapter();
 			}
 			@Override
-			public Adapter caseGroup(Group object) {
-				return createGroupAdapter();
+			public Adapter caseTreeview(Treeview object) {
+				return createTreeviewAdapter();
 			}
 			@Override
 			public Adapter caseButton(Button object) {
@@ -104,32 +104,16 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 				return createLabelAdapter();
 			}
 			@Override
-			public Adapter caseCheckBox(CheckBox object) {
-				return createCheckBoxAdapter();
+			public Adapter caseCheckButton(CheckButton object) {
+				return createCheckButtonAdapter();
 			}
 			@Override
-			public Adapter caseTextInput(TextInput object) {
-				return createTextInputAdapter();
+			public Adapter caseEntry(Entry object) {
+				return createEntryAdapter();
 			}
 			@Override
 			public Adapter caseRadioButton(RadioButton object) {
 				return createRadioButtonAdapter();
-			}
-			@Override
-			public Adapter caseFrame(Frame object) {
-				return createFrameAdapter();
-			}
-			@Override
-			public Adapter caseLabelFrame(LabelFrame object) {
-				return createLabelFrameAdapter();
-			}
-			@Override
-			public Adapter caseMenuButton(MenuButton object) {
-				return createMenuButtonAdapter();
-			}
-			@Override
-			public Adapter caseScrollBar(ScrollBar object) {
-				return createScrollBarAdapter();
 			}
 			@Override
 			public Adapter caseSpinBox(SpinBox object) {
@@ -140,16 +124,8 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 				return createComboBoxAdapter();
 			}
 			@Override
-			public Adapter caseNotebook(Notebook object) {
-				return createNotebookAdapter();
-			}
-			@Override
 			public Adapter caseSeparator(Separator object) {
 				return createSeparatorAdapter();
-			}
-			@Override
-			public Adapter caseTreeView(TreeView object) {
-				return createTreeViewAdapter();
 			}
 			@Override
 			public Adapter caseColumn(Column object) {
@@ -260,16 +236,16 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.Group <em>Group</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.Treeview <em>Treeview</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.Group
+	 * @see uidiagram.Treeview
 	 * @generated
 	 */
-	public Adapter createGroupAdapter() {
+	public Adapter createTreeviewAdapter() {
 		return null;
 	}
 
@@ -302,30 +278,30 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.CheckBox <em>Check Box</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.CheckButton <em>Check Button</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.CheckBox
+	 * @see uidiagram.CheckButton
 	 * @generated
 	 */
-	public Adapter createCheckBoxAdapter() {
+	public Adapter createCheckButtonAdapter() {
 		return null;
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.TextInput <em>Text Input</em>}'.
+	 * Creates a new adapter for an object of class '{@link uidiagram.Entry <em>Entry</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see uidiagram.TextInput
+	 * @see uidiagram.Entry
 	 * @generated
 	 */
-	public Adapter createTextInputAdapter() {
+	public Adapter createEntryAdapter() {
 		return null;
 	}
 
@@ -340,62 +316,6 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createRadioButtonAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.Frame <em>Frame</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uidiagram.Frame
-	 * @generated
-	 */
-	public Adapter createFrameAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.LabelFrame <em>Label Frame</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uidiagram.LabelFrame
-	 * @generated
-	 */
-	public Adapter createLabelFrameAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.MenuButton <em>Menu Button</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uidiagram.MenuButton
-	 * @generated
-	 */
-	public Adapter createMenuButtonAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.ScrollBar <em>Scroll Bar</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uidiagram.ScrollBar
-	 * @generated
-	 */
-	public Adapter createScrollBarAdapter() {
 		return null;
 	}
 
@@ -428,20 +348,6 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.Notebook <em>Notebook</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uidiagram.Notebook
-	 * @generated
-	 */
-	public Adapter createNotebookAdapter() {
-		return null;
-	}
-
-	/**
 	 * Creates a new adapter for an object of class '{@link uidiagram.Separator <em>Separator</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -452,20 +358,6 @@ public class UidiagramAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSeparatorAdapter() {
-		return null;
-	}
-
-	/**
-	 * Creates a new adapter for an object of class '{@link uidiagram.TreeView <em>Tree View</em>}'.
-	 * <!-- begin-user-doc -->
-	 * This default implementation returns null so that we can easily ignore cases;
-	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
-	 * <!-- end-user-doc -->
-	 * @return the new adapter.
-	 * @see uidiagram.TreeView
-	 * @generated
-	 */
-	public Adapter createTreeViewAdapter() {
 		return null;
 	}
 

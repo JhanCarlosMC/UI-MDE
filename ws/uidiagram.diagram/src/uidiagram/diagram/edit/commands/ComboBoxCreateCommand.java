@@ -18,6 +18,7 @@ import org.eclipse.gmf.runtime.notation.View;
 import uidiagram.ComboBox;
 import uidiagram.GraphicalContainer;
 import uidiagram.UidiagramFactory;
+import uidiagram.UserInterface;
 
 /**
  * @generated

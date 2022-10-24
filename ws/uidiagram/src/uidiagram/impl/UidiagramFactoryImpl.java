@@ -62,21 +62,15 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 			case UidiagramPackage.MODEL_ELEMENT: return createModelElement();
 			case UidiagramPackage.GRAPHICAL_CONTAINER: return createGraphicalContainer();
 			case UidiagramPackage.GRAPHICAL_INDIVIDUAL: return createGraphicalIndividual();
-			case UidiagramPackage.GROUP: return createGroup();
+			case UidiagramPackage.TREEVIEW: return createTreeview();
 			case UidiagramPackage.BUTTON: return createButton();
 			case UidiagramPackage.LABEL: return createLabel();
-			case UidiagramPackage.CHECK_BOX: return createCheckBox();
-			case UidiagramPackage.TEXT_INPUT: return createTextInput();
+			case UidiagramPackage.CHECK_BUTTON: return createCheckButton();
+			case UidiagramPackage.ENTRY: return createEntry();
 			case UidiagramPackage.RADIO_BUTTON: return createRadioButton();
-			case UidiagramPackage.FRAME: return createFrame();
-			case UidiagramPackage.LABEL_FRAME: return createLabelFrame();
-			case UidiagramPackage.MENU_BUTTON: return createMenuButton();
-			case UidiagramPackage.SCROLL_BAR: return createScrollBar();
 			case UidiagramPackage.SPIN_BOX: return createSpinBox();
 			case UidiagramPackage.COMBO_BOX: return createComboBox();
-			case UidiagramPackage.NOTEBOOK: return createNotebook();
 			case UidiagramPackage.SEPARATOR: return createSeparator();
-			case UidiagramPackage.TREE_VIEW: return createTreeView();
 			case UidiagramPackage.COLUMN: return createColumn();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -148,9 +142,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Group createGroup() {
-		GroupImpl group = new GroupImpl();
-		return group;
+	public Treeview createTreeview() {
+		TreeviewImpl treeview = new TreeviewImpl();
+		return treeview;
 	}
 
 	/**
@@ -178,9 +172,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public CheckBox createCheckBox() {
-		CheckBoxImpl checkBox = new CheckBoxImpl();
-		return checkBox;
+	public CheckButton createCheckButton() {
+		CheckButtonImpl checkButton = new CheckButtonImpl();
+		return checkButton;
 	}
 
 	/**
@@ -188,9 +182,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TextInput createTextInput() {
-		TextInputImpl textInput = new TextInputImpl();
-		return textInput;
+	public Entry createEntry() {
+		EntryImpl entry = new EntryImpl();
+		return entry;
 	}
 
 	/**
@@ -201,46 +195,6 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	public RadioButton createRadioButton() {
 		RadioButtonImpl radioButton = new RadioButtonImpl();
 		return radioButton;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Frame createFrame() {
-		FrameImpl frame = new FrameImpl();
-		return frame;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LabelFrame createLabelFrame() {
-		LabelFrameImpl labelFrame = new LabelFrameImpl();
-		return labelFrame;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MenuButton createMenuButton() {
-		MenuButtonImpl menuButton = new MenuButtonImpl();
-		return menuButton;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ScrollBar createScrollBar() {
-		ScrollBarImpl scrollBar = new ScrollBarImpl();
-		return scrollBar;
 	}
 
 	/**
@@ -268,29 +222,9 @@ public class UidiagramFactoryImpl extends EFactoryImpl implements UidiagramFacto
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Notebook createNotebook() {
-		NotebookImpl notebook = new NotebookImpl();
-		return notebook;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public Separator createSeparator() {
 		SeparatorImpl separator = new SeparatorImpl();
 		return separator;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public TreeView createTreeView() {
-		TreeViewImpl treeView = new TreeViewImpl();
-		return treeView;
 	}
 
 	/**

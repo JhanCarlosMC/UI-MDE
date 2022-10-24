@@ -9,24 +9,29 @@ import java.util.List;
 import org.eclipse.emf.common.notify.AdapterFactory;
 import org.eclipse.emf.common.notify.Notification;
 
-import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.emf.ecore.EStructuralFeature;
 
-import uidiagram.TreeView;
+import org.eclipse.emf.edit.provider.IItemPropertyDescriptor;
+import org.eclipse.emf.edit.provider.ViewerNotification;
+
+import uidiagram.Treeview;
+import uidiagram.UidiagramFactory;
+import uidiagram.UidiagramPackage;
 
 /**
- * This is the item provider adapter for a {@link uidiagram.TreeView} object.
+ * This is the item provider adapter for a {@link uidiagram.Treeview} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class TreeViewItemProvider extends GraphicalIndividualItemProvider {
+public class TreeviewItemProvider extends GraphicalContainerItemProvider {
 	/**
 	 * This constructs an instance from a factory and a notifier.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public TreeViewItemProvider(AdapterFactory adapterFactory) {
+	public TreeviewItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -46,14 +51,14 @@ public class TreeViewItemProvider extends GraphicalIndividualItemProvider {
 	}
 
 	/**
-	 * This returns TreeView.gif.
+	 * This returns Treeview.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/TreeView"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/Treeview"));
 	}
 
 	/**
@@ -64,10 +69,10 @@ public class TreeViewItemProvider extends GraphicalIndividualItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		String label = ((TreeView)object).getName();
+		String label = ((Treeview)object).getName();
 		return label == null || label.length() == 0 ?
-			getString("_UI_TreeView_type") :
-			getString("_UI_TreeView_type") + " " + label;
+			getString("_UI_Treeview_type") :
+			getString("_UI_Treeview_type") + " " + label;
 	}
 	
 

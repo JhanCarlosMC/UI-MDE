@@ -76,13 +76,13 @@ public interface UidiagramFactory extends EFactory {
 	GraphicalIndividual createGraphicalIndividual();
 
 	/**
-	 * Returns a new object of class '<em>Group</em>'.
+	 * Returns a new object of class '<em>Treeview</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Group</em>'.
+	 * @return a new object of class '<em>Treeview</em>'.
 	 * @generated
 	 */
-	Group createGroup();
+	Treeview createTreeview();
 
 	/**
 	 * Returns a new object of class '<em>Button</em>'.
@@ -103,22 +103,22 @@ public interface UidiagramFactory extends EFactory {
 	Label createLabel();
 
 	/**
-	 * Returns a new object of class '<em>Check Box</em>'.
+	 * Returns a new object of class '<em>Check Button</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Check Box</em>'.
+	 * @return a new object of class '<em>Check Button</em>'.
 	 * @generated
 	 */
-	CheckBox createCheckBox();
+	CheckButton createCheckButton();
 
 	/**
-	 * Returns a new object of class '<em>Text Input</em>'.
+	 * Returns a new object of class '<em>Entry</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Text Input</em>'.
+	 * @return a new object of class '<em>Entry</em>'.
 	 * @generated
 	 */
-	TextInput createTextInput();
+	Entry createEntry();
 
 	/**
 	 * Returns a new object of class '<em>Radio Button</em>'.
@@ -128,42 +128,6 @@ public interface UidiagramFactory extends EFactory {
 	 * @generated
 	 */
 	RadioButton createRadioButton();
-
-	/**
-	 * Returns a new object of class '<em>Frame</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Frame</em>'.
-	 * @generated
-	 */
-	Frame createFrame();
-
-	/**
-	 * Returns a new object of class '<em>Label Frame</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Label Frame</em>'.
-	 * @generated
-	 */
-	LabelFrame createLabelFrame();
-
-	/**
-	 * Returns a new object of class '<em>Menu Button</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Menu Button</em>'.
-	 * @generated
-	 */
-	MenuButton createMenuButton();
-
-	/**
-	 * Returns a new object of class '<em>Scroll Bar</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Scroll Bar</em>'.
-	 * @generated
-	 */
-	ScrollBar createScrollBar();
 
 	/**
 	 * Returns a new object of class '<em>Spin Box</em>'.
@@ -184,15 +148,6 @@ public interface UidiagramFactory extends EFactory {
 	ComboBox createComboBox();
 
 	/**
-	 * Returns a new object of class '<em>Notebook</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Notebook</em>'.
-	 * @generated
-	 */
-	Notebook createNotebook();
-
-	/**
 	 * Returns a new object of class '<em>Separator</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -200,15 +155,6 @@ public interface UidiagramFactory extends EFactory {
 	 * @generated
 	 */
 	Separator createSeparator();
-
-	/**
-	 * Returns a new object of class '<em>Tree View</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Tree View</em>'.
-	 * @generated
-	 */
-	TreeView createTreeView();
 
 	/**
 	 * Returns a new object of class '<em>Column</em>'.

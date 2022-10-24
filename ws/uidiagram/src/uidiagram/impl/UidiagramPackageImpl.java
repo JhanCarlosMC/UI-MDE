@@ -10,25 +10,20 @@ import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 import uidiagram.Button;
-import uidiagram.CheckBox;
+import uidiagram.CheckButton;
 import uidiagram.Column;
 import uidiagram.ComboBox;
+import uidiagram.Entry;
 import uidiagram.Frame;
 import uidiagram.GraphicalContainer;
 import uidiagram.GraphicalIndividual;
-import uidiagram.Group;
 import uidiagram.Label;
-import uidiagram.LabelFrame;
-import uidiagram.MenuButton;
 import uidiagram.ModelElement;
 import uidiagram.ModelFactory;
-import uidiagram.Notebook;
 import uidiagram.RadioButton;
-import uidiagram.ScrollBar;
 import uidiagram.Separator;
 import uidiagram.SpinBox;
-import uidiagram.TextInput;
-import uidiagram.TreeView;
+import uidiagram.Treeview;
 import uidiagram.UI_Diagram;
 import uidiagram.UidiagramFactory;
 import uidiagram.UidiagramPackage;
@@ -88,7 +83,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass groupEClass = null;
+	private EClass treeviewEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -109,14 +104,14 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass checkBoxEClass = null;
+	private EClass checkButtonEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass textInputEClass = null;
+	private EClass entryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -124,34 +119,6 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * @generated
 	 */
 	private EClass radioButtonEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass frameEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass labelFrameEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass menuButtonEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass scrollBarEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -172,21 +139,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass notebookEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass separatorEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass treeViewEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -576,8 +529,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getGroup() {
-		return groupEClass;
+	public EClass getTreeview() {
+		return treeviewEClass;
 	}
 
 	/**
@@ -603,8 +556,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getCheckBox() {
-		return checkBoxEClass;
+	public EClass getCheckButton() {
+		return checkButtonEClass;
 	}
 
 	/**
@@ -612,8 +565,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getTextInput() {
-		return textInputEClass;
+	public EClass getEntry() {
+		return entryEClass;
 	}
 
 	/**
@@ -623,42 +576,6 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 */
 	public EClass getRadioButton() {
 		return radioButtonEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getFrame() {
-		return frameEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getLabelFrame() {
-		return labelFrameEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getMenuButton() {
-		return menuButtonEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getScrollBar() {
-		return scrollBarEClass;
 	}
 
 	/**
@@ -684,26 +601,8 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getNotebook() {
-		return notebookEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EClass getSeparator() {
 		return separatorEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EClass getTreeView() {
-		return treeViewEClass;
 	}
 
 	/**
@@ -784,35 +683,23 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 
 		graphicalIndividualEClass = createEClass(GRAPHICAL_INDIVIDUAL);
 
-		groupEClass = createEClass(GROUP);
+		treeviewEClass = createEClass(TREEVIEW);
 
 		buttonEClass = createEClass(BUTTON);
 
 		labelEClass = createEClass(LABEL);
 
-		checkBoxEClass = createEClass(CHECK_BOX);
+		checkButtonEClass = createEClass(CHECK_BUTTON);
 
-		textInputEClass = createEClass(TEXT_INPUT);
+		entryEClass = createEClass(ENTRY);
 
 		radioButtonEClass = createEClass(RADIO_BUTTON);
-
-		frameEClass = createEClass(FRAME);
-
-		labelFrameEClass = createEClass(LABEL_FRAME);
-
-		menuButtonEClass = createEClass(MENU_BUTTON);
-
-		scrollBarEClass = createEClass(SCROLL_BAR);
 
 		spinBoxEClass = createEClass(SPIN_BOX);
 
 		comboBoxEClass = createEClass(COMBO_BOX);
 
-		notebookEClass = createEClass(NOTEBOOK);
-
 		separatorEClass = createEClass(SEPARATOR);
-
-		treeViewEClass = createEClass(TREE_VIEW);
 
 		columnEClass = createEClass(COLUMN);
 	}
@@ -847,21 +734,15 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 		// Add supertypes to classes
 		graphicalContainerEClass.getESuperTypes().add(this.getModelElement());
 		graphicalIndividualEClass.getESuperTypes().add(this.getModelElement());
-		groupEClass.getESuperTypes().add(this.getGraphicalContainer());
+		treeviewEClass.getESuperTypes().add(this.getGraphicalContainer());
 		buttonEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		labelEClass.getESuperTypes().add(this.getGraphicalIndividual());
-		checkBoxEClass.getESuperTypes().add(this.getGraphicalIndividual());
-		textInputEClass.getESuperTypes().add(this.getGraphicalIndividual());
+		checkButtonEClass.getESuperTypes().add(this.getGraphicalIndividual());
+		entryEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		radioButtonEClass.getESuperTypes().add(this.getGraphicalIndividual());
-		frameEClass.getESuperTypes().add(this.getGraphicalIndividual());
-		labelFrameEClass.getESuperTypes().add(this.getGraphicalIndividual());
-		menuButtonEClass.getESuperTypes().add(this.getGraphicalIndividual());
-		scrollBarEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		spinBoxEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		comboBoxEClass.getESuperTypes().add(this.getGraphicalIndividual());
-		notebookEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		separatorEClass.getESuperTypes().add(this.getGraphicalIndividual());
-		treeViewEClass.getESuperTypes().add(this.getGraphicalIndividual());
 		columnEClass.getESuperTypes().add(this.getGraphicalIndividual());
 
 		// Initialize classes and features; add operations and parameters
@@ -906,35 +787,23 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 
 		initEClass(graphicalIndividualEClass, GraphicalIndividual.class, "GraphicalIndividual", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(groupEClass, Group.class, "Group", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(treeviewEClass, Treeview.class, "Treeview", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(buttonEClass, Button.class, "Button", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(labelEClass, Label.class, "Label", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(checkBoxEClass, CheckBox.class, "CheckBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(checkButtonEClass, CheckButton.class, "CheckButton", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(textInputEClass, TextInput.class, "TextInput", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(entryEClass, Entry.class, "Entry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(radioButtonEClass, RadioButton.class, "RadioButton", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(frameEClass, Frame.class, "Frame", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(labelFrameEClass, LabelFrame.class, "LabelFrame", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(menuButtonEClass, MenuButton.class, "MenuButton", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(scrollBarEClass, ScrollBar.class, "ScrollBar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(spinBoxEClass, SpinBox.class, "SpinBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(comboBoxEClass, ComboBox.class, "ComboBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		initEClass(notebookEClass, Notebook.class, "Notebook", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
 		initEClass(separatorEClass, Separator.class, "Separator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(treeViewEClass, TreeView.class, "TreeView", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(columnEClass, Column.class, "Column", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -997,7 +866,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 			 "label", "name"
 		   });	
 		addAnnotation
-		  (groupEClass, 
+		  (treeviewEClass, 
 		   source, 
 		   new String[] {
 			 "label", "name"
@@ -1016,43 +885,19 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 			 "figure", "rectangle"
 		   });	
 		addAnnotation
-		  (checkBoxEClass, 
+		  (checkButtonEClass, 
 		   source, 
 		   new String[] {
 			 "label", "name"
 		   });	
 		addAnnotation
-		  (textInputEClass, 
+		  (entryEClass, 
 		   source, 
 		   new String[] {
 			 "label", "name"
 		   });	
 		addAnnotation
 		  (radioButtonEClass, 
-		   source, 
-		   new String[] {
-			 "label", "name"
-		   });	
-		addAnnotation
-		  (frameEClass, 
-		   source, 
-		   new String[] {
-			 "label", "name"
-		   });	
-		addAnnotation
-		  (labelFrameEClass, 
-		   source, 
-		   new String[] {
-			 "label", "name"
-		   });	
-		addAnnotation
-		  (menuButtonEClass, 
-		   source, 
-		   new String[] {
-			 "label", "name"
-		   });	
-		addAnnotation
-		  (scrollBarEClass, 
 		   source, 
 		   new String[] {
 			 "label", "name"
@@ -1070,19 +915,7 @@ public class UidiagramPackageImpl extends EPackageImpl implements UidiagramPacka
 			 "label", "name"
 		   });	
 		addAnnotation
-		  (notebookEClass, 
-		   source, 
-		   new String[] {
-			 "label", "name"
-		   });	
-		addAnnotation
 		  (separatorEClass, 
-		   source, 
-		   new String[] {
-			 "label", "name"
-		   });	
-		addAnnotation
-		  (treeViewEClass, 
 		   source, 
 		   new String[] {
 			 "label", "name"

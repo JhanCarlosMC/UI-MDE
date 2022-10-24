@@ -15,19 +15,19 @@ import org.eclipse.gmf.runtime.emf.type.core.requests.ConfigureRequest;
 import org.eclipse.gmf.runtime.emf.type.core.requests.CreateElementRequest;
 import org.eclipse.gmf.runtime.notation.View;
 
-import uidiagram.GraphicalContainer;
-import uidiagram.TreeView;
+import uidiagram.Treeview;
 import uidiagram.UidiagramFactory;
+import uidiagram.UserInterface;
 
 /**
  * @generated
  */
-public class TreeViewCreateCommand extends EditElementCommand {
+public class TreeviewCreateCommand extends EditElementCommand {
 
 	/**
 	* @generated
 	*/
-	public TreeViewCreateCommand(CreateElementRequest req) {
+	public TreeviewCreateCommand(CreateElementRequest req) {
 		super(req.getLabel(), null, req);
 	}
 
@@ -55,10 +55,10 @@ public class TreeViewCreateCommand extends EditElementCommand {
 	* @generated
 	*/
 	protected CommandResult doExecuteWithResult(IProgressMonitor monitor, IAdaptable info) throws ExecutionException {
-		TreeView newElement = UidiagramFactory.eINSTANCE.createTreeView();
+		Treeview newElement = UidiagramFactory.eINSTANCE.createTreeview();
 
-		GraphicalContainer owner = (GraphicalContainer) getElementToEdit();
-		owner.getLstChildModelElements().add(newElement);
+		UserInterface owner = (UserInterface) getElementToEdit();
+		owner.getLstModelElements().add(newElement);
 
 		doConfigure(newElement, monitor, info);
 
@@ -69,7 +69,7 @@ public class TreeViewCreateCommand extends EditElementCommand {
 	/**
 	* @generated
 	*/
-	protected void doConfigure(TreeView newElement, IProgressMonitor monitor, IAdaptable info)
+	protected void doConfigure(Treeview newElement, IProgressMonitor monitor, IAdaptable info)
 			throws ExecutionException {
 		IElementType elementType = ((CreateElementRequest) getRequest()).getElementType();
 		ConfigureRequest configureRequest = new ConfigureRequest(getEditingDomain(), newElement, elementType);

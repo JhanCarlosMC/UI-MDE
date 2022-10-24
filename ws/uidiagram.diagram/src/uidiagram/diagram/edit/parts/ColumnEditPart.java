@@ -43,7 +43,7 @@ public class ColumnEditPart extends ShapeNodeEditPart {
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 3031;
+	public static final int VISUAL_ID = 3049;
 
 	/**
 	* @generated
@@ -350,4 +350,5 @@ public class ColumnEditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
+
 }

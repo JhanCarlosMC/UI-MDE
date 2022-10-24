@@ -350,4 +350,5 @@ public class SpinBox2EditPart extends ShapeNodeEditPart {
 
 		super.handleNotificationEvent(arg0);
 	}
+
 }

@@ -22,7 +22,7 @@ public class SeparatorItemSemanticEditPolicy extends UidiagramBaseItemSemanticEd
 	* @generated
 	*/
 	public SeparatorItemSemanticEditPolicy() {
-		super(UidiagramElementTypes.Separator_3015);
+		super(UidiagramElementTypes.Separator_3048);
 	}
 
 	/**

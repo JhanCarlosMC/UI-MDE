@@ -43,7 +43,7 @@ public class SpinBoxEditPart extends ShapeNodeEditPart {
 	/**
 	* @generated
 	*/
-	public static final int VISUAL_ID = 3012;
+	public static final int VISUAL_ID = 3046;
 
 	/**
 	* @generated
@@ -294,7 +294,7 @@ public class SpinBoxEditPart extends ShapeNodeEditPart {
 		}
 
 	}
-	
+
 	protected void handleNotificationEvent(Notification arg0) {
 		// SET was the type i need
 		if (arg0.getEventType() == Notification.SET) {
